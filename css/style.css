@@ -1,0 +1,44 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+a
+{
+	color: white;
+}
+footer {
+	flex: 1 0 auto;
+}
+nav {
+	background-color: #ff8533;
+}
+footer.page-footer {
+	background-color: #65717e;
+	margin-top: 14%;
+}
+.rowSpe {
+	margin-left: 0px; 
+    margin-right: 0px; 
+	margin-top:30px;
+}
+i.amazing {
+	font-size:90px;
+}
+
+.button2 {
+	transition:0.7s;
+	color:#26a69a;
+	padding-left:10px;
+	padding-right:10px
+}
+.button2:hover {
+	transition:0.7s;
+	background-color:#26a69a;
+	border-radius:4px;
+	color:white;
+	box-shadow: 2px 2px 7px grey;
+}
+nav ul a {
+	font-size: 1.5em;
+}
