@@ -4,9 +4,9 @@
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul id="nav-mobile" class="left hide-on-med-and-down">
 			<li><a href="Accueil.php">Accueil</a></li>
-			<li><a href="Test.php">Faire le test</a></li>
-			<li><a href="Test.php">Reprendre le test</a></li>
-			<li><a href="Resultat.php">Revoir ses résultats</a></li>
+			<li><a href="Test.php">Désposer une annonce</a></li>
+			<li><a href="Test.php">Consulter les annonces</a></li>
+			<li><a href="Resultat.php">Consulter mes événements</a></li>
 			<li><a href="Profil.php">Profil</a></li>
 			<li><a href="Administrateur.php">Administrateur</a></li>
 		  <li><a href="Connexion.php">Connexion</a></li>
