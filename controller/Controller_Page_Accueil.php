@@ -13,7 +13,7 @@
 //		header("Location: Controller_Page_Connexion.php");
 //	}
 //	else {
-		require "../view/accueil.php";
+		require("../view/accueil.php");
 //	}
 
 //}
