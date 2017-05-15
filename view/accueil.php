@@ -8,7 +8,7 @@
 	<body>
 		<?php require ("header.php");?>
 		<div>
-			<h4 class="center-align">Bienvenue sur XXX</h4>
+			<h4 class="center-align">Bienvenue dans le lieu des étudiants!</h4>
 		</div>
 		<?php require ("footer.php");?>
 	</body>
