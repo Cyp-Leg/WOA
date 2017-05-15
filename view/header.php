@@ -1,8 +1,8 @@
 <nav>
-	<div class="nav-wrapper">
+	<div class="nav-wrapper blue lighten-4">
 		<a href="/accueil.php" class="brand-logo left">Le coin des étudiants</a>
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		<ul id="nav-mobile" class="right hide-on-med-and-down blue lighten-4">
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="accueil.php">Accueil</a></li>
 			<li><a href="deposit.php">Désposer une annonce</a></li>
 			<li><a href="consult.php">Consulter les annonces</a></li>
