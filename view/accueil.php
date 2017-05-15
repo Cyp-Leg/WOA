@@ -4,11 +4,11 @@
 		<title>Accueil Test Riasec</title>
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
-		<meta name="Description" content="Questionnaire en 12 parties du test Riasec appelé aussi test de Hollande. ">
-		<meta name="Keywords" content="test riasec hollande personnalité polytech montpellier questionnaire intérêts professionnels">
-		<meta name="Subject" content="Test Riasec ">
-		<meta name="Copyright" content="PolytechMontpellier">
-		<meta name="Author" content="PolytechMontpellier">
+		<meta name="Description" content="Lieu d\'échange entre étudiants">
+		<meta name="Keywords" content="échange offre offer event événement ville étudiant student">
+		<meta name="Subject" content="Le Coin des étudiants">
+		<meta name="Copyright" content="CyprienLegrand">
+		<meta name="Author" content="CyprienLegrand">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		 <?php include ("css/css_config.php") ?>
