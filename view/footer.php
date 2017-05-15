@@ -9,9 +9,7 @@
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Liens</h5>
 				<ul>
-					<li><a class="grey-text text-lighten-3" href="https://drive.google.com/file/d/0B_DYP0ZNzjI_Y3VwNzVTV29FYkk/view?usp=sharing">Fonctionnalités</a></li>
 					<li><a class="grey-text text-lighten-3" href="http://www.polytech-montpellier.fr">Polytech Montpellier</a></li>
-					<li><a class="grey-text text-lighten-3" href="https://fr.wikipedia.org/wiki/Mod%C3%A8le_RIASEC">Test RIASEC Wikipédia</a></li>
 				</ul>
 			</div>
 		</div>

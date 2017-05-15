@@ -39,6 +39,7 @@
               	<tr><td><input type="submit" value="Valider"></td></tr>
               </form>
           </tbody>
+        </table>
 		</div>
 		<?php require ("view/footer.php");?>
 	</body>
