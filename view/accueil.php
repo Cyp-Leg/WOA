@@ -1,77 +1,43 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title></title>
+		<title>Accueil Test Riasec</title>
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
-		<meta name="Description" content="Acueil du test Riasec">
-		<meta name="Keywords" content="">
-		<meta name="Subject" content="">
-		<meta name="Copyright" content="">
-		<meta name="Author" content="Groupe K Piscine">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		
-		 <?php include ("../css/css_config.php") ?>
+		<meta name="Description" content="A MODIFIER">
+		<meta name="Keywords" content="A MODIFIER">
+		<meta name="Subject" content="A MODIFIER ">
+		<meta name="Copyright" content="A MODIFIER>
+		<meta name="Author" content="PolytechMontpellier">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		 <?php include ("/opt/lampp/htdocs/WOA/css/css_config.php") ?>
 	</head>
 	<body>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="" class="brand-logo right">The place to bee</a>
-				<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li><a href="../controller/Controller_Page_Test.php">Mes événements</a></li>
-					<li><a href="">Accéder aux propositions</a></li>
-					<li><a href="">Créer une offre</a></li>
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li><a class="waves-effect waves-light btn" href="../controller/Controller_Page_Test.php">Mes événements</a></li>
-					<li><a class="waves-effect waves-light btn" href="">Accéder aux propositions</a></li>
-					<li><a class="waves-effect waves-light btn" href="">Créer une offre</a></li>
-				</ul>
-			</div>
-		</nav>
-		<br>
+		<?php require ("header.php");?>
 		<div>
-			<h4 class="center-align">Bienvenue to the place to bee</h4>
+			<h4 class="center-align">Bienvenue sur XXX</h4>
 		</div>
 		<br>
-		<div class="row rowSpe">
-			<a href="../controller/Controller_Page_Test.php" class="col s4 center-align button2" ><i class="amazing material-icons">assignment</i><h5>Faire le test</h5></a>
-			<a href="test.html" class="col s4 center-align button2"><i class="amazing material-icons">replay</i><h5>Reprendre le test</h5></a>
-			<a href="index.html" class="col s4 center-align button2"><i class="amazing material-icons">perm_identity</i><h5>Admins</h5></a>
+		<div class="container">
+			<div class="row rowSpe">
+				<a href="Test.php" class="col s12 m6 center-align button2" ><i class="amazing material-icons">play_circle_outline</i><h5>Faire le test</h5></a>
+				<a href="Test.php" class="col s12 m6 center-align button2" ><i class="amazing material-icons">replay</i><h5>Reprendre le test</h5></a>
+				<a href="Resultat.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">class</i><h5>Revoir ses résultats</h5></a>
+				<a href="Administrateur.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">supervisor_account</i><h5>Administrateur</h5></a>
+			  <a href="Profil.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">perm_identity</i><h5>Profil</h5></a>
+				<a href="Connexion.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">input</i><h5>Connexion</h5></a>
+			</div>
+			<br>
+			<div class="row z-depth-4 blue-grey lighten-5">
+				<div class="input-field col s12">
+					<h4>Analyse du questionnaire</h4>
+					<p>Ce questionnaire s’appuie sur une typologie définie par John HOLLAND, psychologue de formation. Elle distingue 6 types d’intérêts professionnels, chacun renvoyant aux environnements professionnels et aux métiers qui correspondent au mieux à chaque personnalité.<br>
+					Trouver un métier qui convient à qui l’on est vraiment est un gage de stabilité, de satisfaction et de réussite professionnelle. L’idée est, qu’en connaissant son profil typologique, un peut faire un pronostic sur le type d’environnement professionnel qui nous convient.<br>
+					Aucun d’entre nous ne peut se définir exclusivement au travers d’un seul type mais l’on peut toutefois déterminer celui qui est dominant (score le plus élevé).</p>
+				</div>
+			</div>
 		</div>
-		<br>
-		
-		<footer class="page-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">Footer Content</h5>
-						<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-					</div>
-					<div class="col l4 offset-l2 s12">
-						<h5 class="white-text">Links</h5>
-						<ul>
-							<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-							<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright">
-				<div class="container">
-				© 2014 Copyright Text
-					<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-				</div>
-			</div>
-        </footer>
+		<?php require ("footer.php");?>
 	</body>
 </html>
-<script src="jQuery.js"></script>
-<script src="materialize/js/materialize.js"></script>
-<script>
-$( document ).ready(function(){
-	$(".button-collapse").sideNav();
-})
-</script>
