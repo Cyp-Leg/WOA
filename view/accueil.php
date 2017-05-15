@@ -16,7 +16,7 @@
 	<body>
 		<?php require ("view/header.php");?>
 		<div>
-			<h4 class="center-align">Bienvenue sur le test Riasec</h4>
+			<h4 class="center-align">Bienvenue dans le coin des étudiants</h4>
 		</div>
 		<br>
 		<div class="container">
