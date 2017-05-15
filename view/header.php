@@ -1,21 +1,21 @@
 <nav>
 	<div class="nav-wrapper">
-		<a href="/Accueil.php" class="brand-logo right">Test Riasec</a>
+		<a href="/accueil.php" class="brand-logo left">Le coin des étudiants</a>
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		<ul id="nav-mobile" class="left hide-on-med-and-down">
-			<li><a href="Accueil.php">Accueil</a></li>
-			<li><a href="Test.php">Désposer une annonce</a></li>
-			<li><a href="Test.php">Consulter les annonces</a></li>
-			<li><a href="Resultat.php">Mes événements</a></li>
+		<ul id="nav-mobile" class="right hide-on-med-and-down blue lighten-4">
+			<li><a href="accueil.php">Accueil</a></li>
+			<li><a href="deposit.php">Désposer une annonce</a></li>
+			<li><a href="consult.php">Consulter les annonces</a></li>
+			<li><a href="personnal_events.php">Mes événements</a></li>
 			<li><a href="Administrateur.php">Administrateur</a></li>
 		  <li><a href="Connexion.php">Connexion</a></li>
 			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
 		</ul>
 		<ul class="side-nav" id="mobile-demo">
-			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
-			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
-			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
-			<li><a class="waves-effect waves-light btn" href="Resultat.php"><i class="large material-icons">class</i>Mes événements</a></li>
+			<li><a class="waves-effect waves-light btn" href="accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
+			<li><a class="waves-effect waves-light btn" href="deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
+			<li><a class="waves-effect waves-light btn" href="consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
+			<li><a class="waves-effect waves-light btn" href="personnal_events.php"><i class="large material-icons">class</i>Mes événements</a></li>
 			<li><a class="waves-effect waves-light btn" href="Administrateur.php"><i class="large material-icons">supervisor_account</i>Administrateur</a></li>
 			<li><a class="waves-effect waves-light btn" href="Connexion.php"><i class="large material-icons">input</i>Connexion</a></li>
 			<li><a class="waves-effect waves-light btn" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i>Déconnexion</a></li>
