@@ -21,22 +21,20 @@
 		<br>
 		<div class="container">
 			<br>
-			<div class="row z-depth-4 blue-grey lighten-5">
-				<div class="input-field col s12">
 					<h4 class="center-align">Déposez votre annonce!</h4>
-          <form action="deposit.php">
-          	<label for="announceTitle">Titre de l'annonce : </label>
-          	<input type="text" name="announceTitle" id="announceTitle"><br>
-          	<label for="announceDescrip">Description : </label>
-          	<textarea name="announceDescrip" id="announceDescrip"><br>
-          	<label for="annoucePrice">Prix : </label>
-          	<input type="text" name="announcePrice" id="announcePrice"><br>
-          	<label for="mail">Mail de contact : </label>
-          	<input type="text" name="mail" id="mail"><br>
-          	<input type="submit" value="Valider">
-          </form>
-				</div>
-			</div>
+          <p>
+            <form action="deposit.php">
+            	<label for="announceTitle">Titre de l'annonce : </label>
+            	<input type="text" name="announceTitle" id="announceTitle"><br>
+            	<label for="announceDescrip">Description : </label>
+            	<textarea name="announceDescrip" id="announceDescrip"><br>
+            	<label for="annoucePrice">Prix : </label>
+            	<input type="text" name="announcePrice" id="announcePrice"><br>
+            	<label for="mail">Mail de contact : </label>
+            	<input type="text" name="mail" id="mail"><br>
+            	<input type="submit" value="Valider">
+            </form>
+          </p>
 		</div>
 		<?php require ("view/footer.php");?>
 	</body>
