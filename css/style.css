@@ -15,14 +15,14 @@ footer {
 	flex: 1 0 auto;
 }
 nav {
-	background-color: #9fa8da;
+	background-color: #a4c5f9;
 }
 footer.page-footer {
-	background-color: #9fa8da;
+	background-color: #a4c5f9;
 }
 .rowSpe {
-	margin-left: 0px; 
-    margin-right: 0px; 
+	margin-left: 0px;
+    margin-right: 0px;
 	margin-top:30px;
 }
 i.amazing {
@@ -46,4 +46,3 @@ i.amazing {
 nav ul a {
 	font-size: 1.3em;
 }
-
