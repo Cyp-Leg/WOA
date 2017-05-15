@@ -3,7 +3,7 @@
 	<head>
 		<title>Accueil</title>
 
-		 <?php include ("/opt/lampp/htdocs/WOA/css/css_config.php") ?>
+		 <?php  include ("../css/css_config.php") ?>
 	</head>
 	<body>
 		<?php require ("header.php");?>
