@@ -13,14 +13,14 @@ canvas
 }
 footer {
 	flex: 1 0 auto;
-	margin-bottom:0;
-	magin-top:14%;
 }
 nav {
 	background-color: #a4c5f9;
 }
 footer.page-footer {
 	background-color: #a4c5f9;
+	margin-bottom:0;
+	magin-top:14%;
 }
 .rowSpe {
 	margin-left: 0px;
