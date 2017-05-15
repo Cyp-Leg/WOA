@@ -13,6 +13,8 @@ canvas
 }
 footer {
 	flex: 1 0 auto;
+	margin-bottom:0;
+	magin-top:14%;
 }
 nav {
 	background-color: #a4c5f9;

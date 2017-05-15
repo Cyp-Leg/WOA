@@ -23,10 +23,8 @@
 			<br>
 			<div class="row z-depth-4 blue-grey lighten-5">
 				<div class="input-field col s12">
-					<h4>Analyse du questionnaire</h4>
-					<p>Ce questionnaire s’appuie sur une typologie définie par John HOLLAND, psychologue de formation. Elle distingue 6 types d’intérêts professionnels, chacun renvoyant aux environnements professionnels et aux métiers qui correspondent au mieux à chaque personnalité.<br>
-					Trouver un métier qui convient à qui l’on est vraiment est un gage de stabilité, de satisfaction et de réussite professionnelle. L’idée est, qu’en connaissant son profil typologique, un peut faire un pronostic sur le type d’environnement professionnel qui nous convient.<br>
-					Aucun d’entre nous ne peut se définir exclusivement au travers d’un seul type mais l’on peut toutefois déterminer celui qui est dominant (score le plus élevé).</p>
+					<h4>Qu'est-ce que le coin des étudiants?</h4>
+					<p>A l'instar du célèbre site Leboncoin, Le Coin des étudiants est un site créé dans le but de faciliter les échanges entre étudiants. Ici les étudiants peuvent s'échanger ou vendre des objets utiles à leur vie de tous les jours, mais également rechercher et créer des événements dans leur ville, ce qui leur permet d'apprendre à connaître leur ville et ses étudiants.</p>
 				</div>
 			</div>
 		</div>
