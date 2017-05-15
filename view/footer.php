@@ -1,6 +1,6 @@
 <br>
 <footer class="page-footer">
-	<div class="container">
+	<div class="container blue lighten-4">
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">Projet piscine IG3 2016/2017</h5>
@@ -20,7 +20,7 @@
 	<div class="footer-copyright">
 		<div class="container">
 		© 2017 Copyright tous droits réservés à Amin BAZAZ, Matthieu DYE, Cyprien LEGRAND, Fabien TURGUT, Thaïs AURARD, James TERRIEN
-		
+
 		</div>
 	</div>
 </footer>
