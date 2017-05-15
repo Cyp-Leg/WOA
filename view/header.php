@@ -6,19 +6,17 @@
 			<li><a href="Accueil.php">Accueil</a></li>
 			<li><a href="Test.php">Désposer une annonce</a></li>
 			<li><a href="Test.php">Consulter les annonces</a></li>
-			<li><a href="Resultat.php">Consulter mes événements</a></li>
-			<li><a href="Profil.php">Profil</a></li>
+			<li><a href="Resultat.php">Mes événements</a></li>
 			<li><a href="Administrateur.php">Administrateur</a></li>
 		  <li><a href="Connexion.php">Connexion</a></li>
 			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
 		</ul>
 		<ul class="side-nav" id="mobile-demo">
 			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
-			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">play_circle_outline</i>Faire le test</a></li>
-			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">replay</i>Reprendre le test</a></li>
-			<li><a class="waves-effect waves-light btn" href="Resultat.php"><i class="large material-icons">class</i>Revoir ses résultats</a></li>
+			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
+			<li><a class="waves-effect waves-light btn" href="Test.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
+			<li><a class="waves-effect waves-light btn" href="Resultat.php"><i class="large material-icons">class</i>Mes événements</a></li>
 			<li><a class="waves-effect waves-light btn" href="Administrateur.php"><i class="large material-icons">supervisor_account</i>Administrateur</a></li>
-			<li><a class="waves-effect waves-light btn" href="Profil.php"><i class="large material-icons">perm_identity</i>Profil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Connexion.php"><i class="large material-icons">input</i>Connexion</a></li>
 			<li><a class="waves-effect waves-light btn" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i>Déconnexion</a></li>
 		</ul>
