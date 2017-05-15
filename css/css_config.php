@@ -1,6 +1,6 @@
 
 <html>
-	<link rel="stylesheet" href="materialize.css">
+	<link rel="stylesheet" href="/css/materialize/css/materialize.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="materialize.min.js"></script>
 	<script src="jQuery.js"></script>
