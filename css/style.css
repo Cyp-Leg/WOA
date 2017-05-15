@@ -3,19 +3,22 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 }
-a
+button a
 {
-	color: white;
+	color:white;
+}
+canvas
+{
+	margin:auto;
 }
 footer {
 	flex: 1 0 auto;
 }
 nav {
-	background-color: #ff8533;
+	background-color: #9fa8da;
 }
 footer.page-footer {
-	background-color: #65717e;
-	margin-top: 14%;
+	background-color: #9fa8da;
 }
 .rowSpe {
 	margin-left: 0px; 
@@ -24,6 +27,7 @@ footer.page-footer {
 }
 i.amazing {
 	font-size:90px;
+	padding:20px;
 }
 
 .button2 {
@@ -40,5 +44,6 @@ i.amazing {
 	box-shadow: 2px 2px 7px grey;
 }
 nav ul a {
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
+
