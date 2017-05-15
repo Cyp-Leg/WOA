@@ -20,14 +20,6 @@
 		</div>
 		<br>
 		<div class="container">
-			<div class="row rowSpe">
-				<?php if(etatTest() === 0){?><a href="Test.php" class="col s12 m6 center-align button2" ><i class="amazing material-icons">play_circle_outline</i><h5>Faire le test</h5></a><?php } ?>
-				<?php if(etatTest() === 1){?><a href="Test.php" class="col s12 m6 center-align button2" ><i class="amazing material-icons">replay</i><h5>Reprendre le test</h5></a><?php } ?>
-				<?php if(etatTest() === 2){?><a href="Resultat.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">class</i><h5>Revoir ses résultats</h5></a><?php } ?>
-				<?php if(isAdmin()){?><a href="Administrateur.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">supervisor_account</i><h5>Administrateur</h5></a><?php } ?>
-				<?php if(!isAdmin() && isConnected()){?><a href="Profil.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">perm_identity</i><h5>Profil</h5></a><?php } ?>
-				<?php if(!isConnected()){?><a href="Connexion.php" class="col s12 m6 center-align button2"><i class="amazing material-icons">input</i><h5>Connexion</h5></a><?php } ?>
-			</div>
 			<br>
 			<div class="row z-depth-4 blue-grey lighten-5">
 				<div class="input-field col s12">
