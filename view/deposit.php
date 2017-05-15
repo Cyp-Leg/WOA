@@ -29,13 +29,13 @@
     				<tbody>
               <form action="deposit.php">
                 <tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
-              	<td><input type="text" name="announceTitle" id="announceTitle"><br></td></tr>
+              	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
-              	<td><textarea name="announceDescrip" id="announceDescrip"><br></td></tr>
+              	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
               	<tr><td><label for="annoucePrice">Prix : </label></td>
-              	<td><input type="text" name="announcePrice" id="announcePrice"><br></td></tr>
+              	<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
               	<tr><td><label for="mail">Mail de contact : </label></td>
-              	<td><input type="text" name="mail" id="mail"><br></td></tr>
+              	<td><input type="text" name="mail" id="mail"></td></tr>
               	<tr><td><input type="submit" value="Valider"></td></tr>
               </form>
           </tbody>
