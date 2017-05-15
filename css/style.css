@@ -19,7 +19,8 @@ nav {
 }
 footer.page-footer {
 	background-color: #a4c5f9;
-	magin-top:14;
+	position: absolute;
+  botom: 0;
 }
 .rowSpe {
 	margin-left: 0px;
