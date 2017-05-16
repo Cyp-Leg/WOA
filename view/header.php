@@ -24,9 +24,9 @@
 </nav>
 <br>
 <script>
-$( document ).ready(function(){
+/*$( document ).ready(function(){
 	$(".button-collapse").sideNav();
-})
+})*/
 </script>
 
 <script>
