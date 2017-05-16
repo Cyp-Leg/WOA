@@ -29,7 +29,7 @@ class Users
 
   //  $id = 'DEFAULT';
 
-    $req = $bdheroku->prepare('INSERT INTO Users VALUES (DEFAULT, $firstname, $lastname, $nick, $mail, $gender)');
+    $req = $bdheroku->prepare('INSERT INTO Users VALUES (DEFAULT, '$firstname', '$lastname', '$nick', '$mail', '$gender')');
     /*$req->bindParam(':id',$id);
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);

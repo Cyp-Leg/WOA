@@ -9,7 +9,13 @@ $dsn = "pgsql:"
     . "sslmode=require;"
     . "password=cc7fb0ce567ba1edcc6c6a87be84b98d0058b4e7efac1ebe0cd11a73eccf9640";
 
-$db = new PDO($dsn);
+		try{
+			$db = new PDO($dsn);
+		}
+		catch (Exception $e)
+		{
+				die('Erreur : ' . $e->getMessage());
+		}
 return($db);
 }
 ?>
