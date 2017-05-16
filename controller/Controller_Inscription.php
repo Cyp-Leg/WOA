@@ -2,7 +2,7 @@
 require_once ("../model/Users.php");
 
 $firstname = htmlspecialchars($_POST['firstname']);
-$lastName = htmlspecialchars($_POST['lastname']);
+$lastname = htmlspecialchars($_POST['lastname']);
 $nick = htmlspecialchars($_POST['nick']);
 $mail = htmlspecialchars($_POST['email']);
 $gender = htmlspecialchars($_POST['gender']);
