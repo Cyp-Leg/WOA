@@ -22,8 +22,8 @@
 				<form class="col s12" method="post" action="/controller/Controller_Inscription.php">
 					<div class="row">
 						<div class="input-field col s9">
-							<input id="name" name="lastname" type="text" class="validate">
-							<label for="name" data-error="wrong" data-success="right">Nom</label>
+							<input id="lastname" name="lastname" type="text" class="validate">
+							<label for="lastname" data-error="wrong" data-success="right">Nom</label>
 						</div>
 					</div>
 					<div class="row">
