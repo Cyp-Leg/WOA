@@ -38,4 +38,20 @@ class Users
     $req->execute();
 
   }
+
+  public static function Get_All_Users()
+  {
+    require_once('Pdo.php');
+    $bdheroku=connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Users');
+
+    $req->execute();
+    while($data=$req->fetch())
+		{
+			$result[] = $data;
+		}
+
+		return $result;
+  }
 } ?>

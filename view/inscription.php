@@ -62,6 +62,26 @@
 					</div>
 				</form>
 			</div>
+      <div class="container">
+        <table class="bored highlight grey lighten-5">
+  				<thead>
+  					<tr>
+  						<th>Liste des utilisateurs</th>
+  					</tr>
+  				</thead>
+  				<tbody>
+  					<?php
+  						foreach($lesUsers as $row)
+  							{
+  								echo "<tr><td>".$row['usersfirstname']."</td>";
+  								echo "<td>".$row['Userslastname']."</td>";
+  								echo "<td>".$row['usersnick']."</td>";
+  								echo "<td>".$row['usersmail']."</td></tr>";
+  							}
+  					?>
+  				</tbody>
+			  </table>
+      </div>
 		</div>
 		<?php require ("view/footer.php");?>
 	</body>
