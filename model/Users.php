@@ -27,9 +27,9 @@ class Users
     $bdheroku=connexion();
 
 
-    $id = 'DEFAULT';
+    $id = DEFAULT;
 
-    $req = $bdheroku->prepare('INSERT INTO public.users(userid, usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:id,:firstname,:lastname,:nick,:mail,:gender)');
+    $req = $bdheroku->prepare('INSERT INTO Users(userid, usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:id,:firstname,:lastname,:nick,:mail,:gender)');
     $req->bindParam(':id',$id);
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
@@ -53,7 +53,7 @@ class Users
 
     while($data=$req->fetch())
 		{
-			$result[] = echo pg_last_error($bdheroku);
+			$result[] = $data;
 		}
 
 		return $result;
