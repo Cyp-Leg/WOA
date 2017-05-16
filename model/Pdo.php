@@ -1,7 +1,6 @@
 <?php
 function connexion()
 {
-	<?php
 $dsn = "pgsql:"
     . "host=ec2-184-73-194-179.compute-1.amazonaws.com;"
     . "dbname=ul28zxpr39no1rr;"
