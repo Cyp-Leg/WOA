@@ -32,14 +32,16 @@
 							<label for="firstname" data-error="wrong" data-success="right">Prénom</label>
 						</div>
 					</div>
-					<div class="input-field col s12">
-						<select name="gender" id="gender">
-						  <option value="" disabled selected>Entrer votre sexe</option>
-						  <option value="Homme">Homme</option>
-						  <option value="Femme">Femme</option>
-						</select>
-						<label for="gender">Sexe</label>
-					</div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select name="gender" id="gender">
+                <option value="" disabled selected>Entrer votre sexe</option>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+              </select>
+              <label for="gender">Sexe</label>
+            </div>
+        </div>
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="email" name="email" type="email" class="validate">
