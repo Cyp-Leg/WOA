@@ -27,15 +27,13 @@ class Users
     $bdheroku=connexion();
 
 
-  //  $id = 'DEFAULT';
 
-    $req = $bdheroku->prepare('INSERT INTO Users VALUES (DEFAULT, $firstname, $lastname, $nick, $mail, $gender)');
-    /*$req->bindParam(':id',$id);
+    $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:firstname,:lastname,:nick,:mail,:gender)');
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
 		$req->bindParam(':nick',$nick);
 		$req->bindParam(':mail',$mail);
-    $req->bindParam(':gender',$gender);*/
+    $req->bindParam(':gender',$gender);
 
     $req->execute();
 
@@ -49,8 +47,6 @@ class Users
     $req = $bdheroku->prepare('SELECT * FROM Users');
 
     $req->execute();
-
-
     while($data=$req->fetch())
 		{
 			$result[] = $data;
