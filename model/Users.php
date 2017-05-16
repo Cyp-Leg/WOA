@@ -18,7 +18,10 @@ class Users
 		return $data["usersid"]; //Verifier si null
 	}
 
-  public static function add_User($firstname,$lastname,$nick,$mail,$gender)
+
+
+
+  public static function Add_User($firstname,$lastname,$nick,$mail,$gender)
   {
     require_once('Pdo.php');
     $bdheroku=connexion();
