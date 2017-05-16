@@ -4084,6 +4084,7 @@ nav .brand-logo.center {
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
+    margin-left:10;
     -webkit-transform: none;
             transform: none;
   }
@@ -6897,7 +6898,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav {
   position: fixed;
   width: 300px;
-  left: 0;
+  right: 0;
   top: 0;
   margin: 0;
   -webkit-transform: translateX(-100%);
