@@ -33,6 +33,12 @@
 						</div>
 					</div>
           <div class="row">
+						<div class="input-field col s9">
+							<input id="nick" name="nick" type="text" class="validate">
+							<label for="nick" data-error="wrong" data-success="right">Pseudo</label>
+						</div>
+					</div>
+          <div class="row">
             <p>
               <input name="gender" type="radio" id="homme" />
               <label for="homme">Homme</label>
