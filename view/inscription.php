@@ -22,16 +22,16 @@
 				<form class="col s12" method="post" action="/controller/Controller_Inscription.php">
 					<div class="row">
 						<div class="input-field col s9">
-							<input id="lastname" name="lastname" type="text" class="validate">
-							<label for="lastname" data-error="wrong" data-success="right">Nom</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s9">
 							<input id="firstname" name="firstname" type="text" class="validate">
 							<label for="firstname" data-error="wrong" data-success="right">Prénom</label>
 						</div>
 					</div>
+  				<div class="row">
+  					<div class="input-field col s9">
+  						<input id="lastname" name="lastname" type="text" class="validate">
+  						<label for="lastname" data-error="wrong" data-success="right">Nom</label>
+  					</div>
+  				</div>
           <div class="row">
 						<div class="input-field col s9">
 							<input id="nick" name="nick" type="text" class="validate">
