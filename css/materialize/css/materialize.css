@@ -4084,7 +4084,7 @@ nav .brand-logo.center {
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
-    margin-left:10;
+    margin-left:10%;
     -webkit-transform: none;
             transform: none;
   }
