@@ -27,8 +27,7 @@ class Users
     $bdheroku=connexion();
 
 
-    $req = $bdheroku->prepare('INSERT INTO User(usersid, usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:id, :firstname,:lastname,:nick,:mail,:gender)');
-		$req->bindParam(':id','DEFAULT');
+    $req = $bdheroku->prepare('INSERT INTO User(usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:firstname,:lastname,:nick,:mail,:gender)');
 		$req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
 		$req->bindParam(':nick',$nick);
