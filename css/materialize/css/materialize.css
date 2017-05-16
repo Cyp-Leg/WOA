@@ -6975,7 +6975,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav li > a > i,
 .side-nav li > a > [class^="mdi-"], .side-nav li > a > [class*="mdi-"],
 .side-nav li > a > i.material-icons {
-  float: left;
+  float: right;
   height: 48px;
   line-height: 48px;
   margin: 0 32px 0 0;
