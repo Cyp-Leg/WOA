@@ -50,10 +50,10 @@ class Users
 
     $req->execute();
 
-    echo pg_last_error($bdheroku);
+
     while($data=$req->fetch())
 		{
-			$result[] = $data;
+			$result[] = echo pg_last_error($bdheroku);
 		}
 
 		return $result;
