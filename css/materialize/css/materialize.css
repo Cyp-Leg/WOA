@@ -4049,7 +4049,7 @@ nav .nav-wrapper {
 }
 
 nav .button-collapse {
-  float: right;
+  float: left;
   position: relative;
   z-index: 1;
   height: 56px;
@@ -4086,11 +4086,9 @@ nav .brand-logo.center {
     padding: 0;
     -webkit-transform: none;
             transform: none;
-    weight:75%;
-    height:75%;
   }
   nav .brand-logo.left {
-    left: 1.0rem;
+    left: 0.5rem;
   }
   nav .brand-logo.right {
     right: 0.5rem;
@@ -6899,7 +6897,7 @@ input[type=range]:focus::-ms-fill-upper {
 .side-nav {
   position: fixed;
   width: 300px;
-  right: 0;
+  left: 0;
   top: 0;
   margin: 0;
   -webkit-transform: translateX(-100%);
