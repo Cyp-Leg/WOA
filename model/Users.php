@@ -49,6 +49,8 @@ class Users
     $req = $bdheroku->prepare('SELECT * FROM Users');
 
     $req->execute();
+
+    echo pg_last_error($bdheroku);
     while($data=$req->fetch())
 		{
 			$result[] = $data;
