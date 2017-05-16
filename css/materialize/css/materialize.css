@@ -4049,7 +4049,7 @@ nav .nav-wrapper {
 }
 
 nav .button-collapse {
-  float: left;
+  float: right;
   position: relative;
   z-index: 1;
   height: 56px;
