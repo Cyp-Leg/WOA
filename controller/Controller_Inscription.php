@@ -8,16 +8,16 @@ $mail = htmlspecialchars($_POST['email']);
 $gender = htmlspecialchars($_POST['gender']);
 
 
-if(empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender)){
+/*if(empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender)){
   ?>
   <script type="text/javascript">alert('Veuillez remplir tous les champs!');</script>
   <?php
   header("Location: ../Inscription.php");
 }
-else {
+else {*/
   Users::Add_User($firstname,$lastname,$nick,$mail,$gender);
   header("Location: ../Accueil.php");
-}
+//}
 
 require_once('view/inscription.php');
 ?>
