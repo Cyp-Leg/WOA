@@ -11,7 +11,7 @@
 		  <li><a href="Connexion.php">Connexion</a></li>
 			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
 		</ul>
-		<ul class="side-nav" id="mobile-demo">
+		<ul class="side-nav right-aligned" id="mobile-demo">
 			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
