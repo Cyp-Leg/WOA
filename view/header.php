@@ -3,7 +3,7 @@
 		<a href="/accueil.php" class="brand-logo left">Le coin des étudiants</a>
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li><a href="Accueil.php">Accueil</a></li>
+			<li><a href="Accueil.php">Acvvvvcueil</a></li>
 			<li><a href="Deposit.php">Désposer une annonce</a></li>
 			<li><a href="Consult.php">Consulter les annonces</a></li>
 			<li><a href="Personnal_events.php">Mes événements</a></li>
@@ -12,7 +12,7 @@
 			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
 		</ul>
 		<ul class="side-nav right-aligned" id="mobile-demo">
-			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
+			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accaaaaaueil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Personnal_events.php"><i class="large material-icons">class</i>Mes événements</a></li>
@@ -24,9 +24,9 @@
 </nav>
 <br>
 <script>
-/*$( document ).ready(function(){
+$( document ).ready(function(){
 	$(".button-collapse").sideNav();
-})*/
+})
 </script>
 
 <script>
