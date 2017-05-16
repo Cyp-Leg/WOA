@@ -1,5 +1,5 @@
 <?php
-require_once ("../model/Users.php");
+require_once ("model/Users.php");
 
 $lesUsers=Users::Get_All_Users;
 
