@@ -4084,12 +4084,11 @@ nav .brand-logo.center {
   }
   nav .brand-logo.left, nav .brand-logo.right {
     padding: 0;
-    margin-left:10%;
     -webkit-transform: none;
             transform: none;
   }
   nav .brand-logo.left {
-    left: 0.5rem;
+    left: 1.0rem;
   }
   nav .brand-logo.right {
     right: 0.5rem;
