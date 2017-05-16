@@ -9,6 +9,9 @@ $gender = htmlspecialchars($_POST['gender']);
 
 
 if(empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender)){
+  ?>
+  <script>alert('Veuillez remplir tous les champs!');</script>
+  <?php
   header("Location: ../Inscription.php");
 }
 else {
