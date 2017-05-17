@@ -11,12 +11,15 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['category']);
 
 
-if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city) || empty($categ))
+if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city))
 {
   ?>
   <script type="text/javascript">alert('Merci de renseigner tous les champs!');</script>
   <?php
   header('Location: ../Deposit2.php');
+}
+else if(empty($categ)){
+  header('Location: ../Deposit4342.php');
 }
 else
 {
