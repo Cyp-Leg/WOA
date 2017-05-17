@@ -35,7 +35,7 @@
 								<tr><td><label>Catégorie</label></td>
 									<?php foreach($lesCategories as $row)
 										{
-											?><td><input name="category" type="radio" id="<?php echo $row['categoryid']?>" />
+											?><td><input name="announceCategory" type="radio" id="<?php echo $row['categoryid']?>" />
 												<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label></td>
 										<?php
 										}
