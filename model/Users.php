@@ -61,8 +61,6 @@ class Users
 
 
     $req = $bdheroku->prepare("SELECT usersid FROM Users WHERE usersnick=\'".$userNick."\'");
-    $req->bindParam(':userNick',$userNick);
-
     $data = $req->fetch();
 
     return $data['usersid'];
