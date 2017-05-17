@@ -34,7 +34,7 @@
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
 								<tr><td><label>Catégorie</label></td>
 									<td>
-		   							<select name="category" id="category">
+		   							<select name="announceCategory" id="announceCategory">
 		     							<option value="" disabled selected>Choisissez une catégorie</option>
 											<?php
 				  						foreach($lesCategories as $row)

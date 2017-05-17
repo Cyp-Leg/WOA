@@ -8,7 +8,7 @@ $price=htmlspecialchars($_POST['announcePrice']);
 $nick=htmlspecialchars($_POST['nick']);
 $mail=htmlspecialchars($_POST['mail']);
 $city=htmlspecialchars($_POST['announceCity']);
-$categ=htmlspecialchars($_POST['category']);
+$categ=htmlspecialchars($_POST['announceCategory']);
 
 
 if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city))
