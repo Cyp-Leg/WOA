@@ -15,7 +15,7 @@ if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($m
   ?>
   <script type="text/javascript">alert('Merci de renseigner tous les champs!');</script>
   <?php
-  header('Location: ../Deposit.php');
+  header('Location: ../Deposit2.php');
 }
 else
 {
