@@ -33,19 +33,16 @@
 									<td>
     								<select name="category" id="category">
       								<option value="" disabled selected>Choisissez une catégorie</option>
-											<option value="1">Meubles</option>
-											<option value="6">Matériel informatique</option>
-											<option value="7">Moyens de transport</option>
-											<?php/*
+											<?php
 				  						foreach($lesCategories as $row)
 				  							{
 				  								?><option value ="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?> </option>;
 				  							<?php
 												}
-				  					*/?>
+				  					?>
     								</select>
   								</td>
-								</tr></td>
+								</tr>
 								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
