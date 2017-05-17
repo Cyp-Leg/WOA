@@ -27,7 +27,7 @@
     					</tr>
     				</thead>
     				<tbody>
-              <form class="col s12" method="post" action="controller/Controller_Add_Deposit">
+              <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php">
 
 								<tr><td><label>Catégorie</label></td>
 									<td><div class="input-field col s12">
