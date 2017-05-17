@@ -67,7 +67,7 @@
 <script src="jQuery.js"></script>
 <script src="materialize/js/materialize.js"></script>
 <script>
-$( document ).ready(function(){
-	$(".button-collapse").sideNav();
-})
+$(document).ready(function() {
+    $('select').material_select();
+  });
 </script>
