@@ -19,7 +19,7 @@ class Announce
 
     public static function Get_All_Announces_By_Category($categoryId)
     {
-      require_once('Pdo.php'):
+      require_once('Pdo.php');
       $bdheroku = connexion();
 
       $req = $bdheroku->prepare('SELECT * FROM announce WHERE categoryid= :categoryId');
