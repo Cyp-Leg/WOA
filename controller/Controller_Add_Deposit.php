@@ -23,7 +23,7 @@ else if(empty($categ)){
 }
 else
 {
-  $userid=Users::Get_Userid_By_Nick($nick);
+  $userid=Users::Get_Userid_By_Nick($nick)['userid'];
   $citycheck=City::Get_City_By_Name($city);
 
   if(empty($userid)){
