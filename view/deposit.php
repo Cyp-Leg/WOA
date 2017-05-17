@@ -30,7 +30,7 @@
               <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php">
 
 								<tr><td><label>Catégorie</label></td>
-									<td><div class="input-field col s12">
+									<td>
     								<select name="category" id="category">
       								<option value="" disabled selected>Choisissez une catégorie</option>
 											<?php
@@ -41,7 +41,7 @@
 												}
 				  					?>
     								</select>
-  								</div></td>
+  								</td>
 								</tr></td>
 								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
