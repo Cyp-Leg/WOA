@@ -65,6 +65,6 @@ class Users
 
     $data = $req->fetch();
 
-    return $data;
+    return $data['usersid'];
   }
 } ?>
