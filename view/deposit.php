@@ -27,24 +27,19 @@
     					</tr>
     				</thead>
     				<tbody>
-              <form class="col s12" method="post" action="view/test.php">
+              <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php">
 
 
 								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
 								<tr><td><label>Catégorie</label></td>
-									<td>
-		   							<select name="announceCategory" id="announceCategory">
-		     							<option value="" disabled selected>Choisissez une catégorie</option>
-											<?php
-				  						foreach($lesCategories as $row)
-				  							{
-					 								?><option value ="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?> </option>;
-					 							<?php
-												}
-					 					?>
-		   							</select>
-		 							</td>
+									<?php foreach($lesCategories as $row)
+										{
+											?><td><input name="category" type="radio" id="<?php echo $row['categoryid']?>" />
+												<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label></td>
+										<?php
+										}
+										?>
 								</tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
               			<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
