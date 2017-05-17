@@ -36,7 +36,7 @@
 											<?php
 				  						foreach($lesCategories as $row)
 				  							{
-				  								echo "<option value =\"".$row['categoryid']."\">".$row['categoryname']."</option>";
+				  								?><option value ="<?php $row['categoryid']?>"><?php $row['categoryname']?> </option>;
 				  							}
 				  					?>
     								</select>
