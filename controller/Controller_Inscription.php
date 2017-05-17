@@ -1,5 +1,5 @@
 <?php
-require_once ("../model/Users.php");
+require_once ("model/Users.php");
 
 $firstname = htmlspecialchars($_POST['firstname']);
 $lastname = htmlspecialchars($_POST['lastname']);

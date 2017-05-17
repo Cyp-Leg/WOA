@@ -1,7 +1,7 @@
 <?php
 class Users
 {
-  public static function Get_User_Id($usernick)
+  /*public static function Get_User_Id($usernick)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
@@ -16,7 +16,7 @@ class Users
 		$data=$req->fetch();
 
 		return $data["usersid"]; //Verifier si null
-	}
+	}*/
 
 
 
@@ -53,5 +53,18 @@ class Users
 		}
 
 		return $result;
+  }
+
+  public static function Get_Userid_By_Nick($userNick)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usernick= :userNick');
+    $req->bindParam(':userNick',$userNick);
+
+    $data = $req->fetch();
+
+    return $data['userid'];
   }
 } ?>
