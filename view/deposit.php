@@ -64,8 +64,8 @@
 	</body>
 </html>
 
-<script src="jQuery.js"></script>
-<script src="materialize/js/materialize.js"></script>
+<script src="css/jQuery.js"></script>
+<script src="css/materialize/js/materialize.js"></script>
 <script>
 $(document).ready(function() {
     $('select').material_select();
