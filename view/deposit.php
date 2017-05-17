@@ -27,7 +27,7 @@
     					</tr>
     				</thead>
     				<tbody>
-              <form class="col s12" method="post" action="../controller/Controller_Add_Deposit.php">
+              <form class="col s12" method="post" action="view/test.php">
 
 
 								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
