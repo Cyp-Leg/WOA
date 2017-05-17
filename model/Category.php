@@ -13,7 +13,7 @@ class Category
     {
       $result[]=$data;
     }
+    return $result;
   }
-  return $result;
 }
 ?>
