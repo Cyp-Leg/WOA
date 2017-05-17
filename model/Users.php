@@ -60,7 +60,7 @@ class Users
     $bdheroku = connexion();
 
 
-    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usersnick= :userNick');
+    $req = $bdheroku->prepare('SELECT usersid FROM Users WHERE usersnick= :userNick');
     $req->bindParam(':userNick',$userNick);
 
     $data = $req->fetch();
