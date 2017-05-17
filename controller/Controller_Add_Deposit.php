@@ -18,9 +18,9 @@ if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($m
   <?php
   header('Location: ../Deposit2.php');
 }
-else if(empty($categ)){
+/*else if(empty($categ)){
   header('Location: ../Deposit4342.php');
-}
+}*/
 else
 {
   $userid=Users::Get_Userid_By_Nick($nick);
