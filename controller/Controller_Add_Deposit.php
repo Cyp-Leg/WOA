@@ -36,6 +36,7 @@ else
       $citycheck=City::Get_City_By_Name($city);
     }
     Announce::Add_Announce($title,$descrip,$price,$citycheck,$categ,$userid);
+    header('Location: ../Consult.php');
   }
 }
 
