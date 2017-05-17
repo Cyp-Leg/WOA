@@ -37,7 +37,7 @@ class Announce
 
     public static function Get_All_Announces_By_City($cityId)
     {
-      require_once('Pdo.php'):
+      require_once('Pdo.php');
       $bdheroku = connexion();
 
       $req = $bdheroku->prepare('SELECT * FROM announce WHERE cityid= :cityId');
@@ -55,7 +55,7 @@ class Announce
 
     public static function Get_All_Announces_By_User($userId)
     {
-      require_once('Pdo.php'):
+      require_once('Pdo.php');
       $bdheroku = connexion();
 
       $req = $bdheroku->prepare('SELECT * FROM announce WHERE userid= :userId');
