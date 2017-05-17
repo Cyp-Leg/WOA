@@ -29,4 +29,18 @@ class City
 
     return $data;
   }
+
+  public static function Get_City_Name($cityId)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT cityname FROM City WHERE cityid= :cityid');
+    $req->bindParam(':cityid',$cityId);
+
+    $req->execute();
+    $data = $req->fetch();
+
+    return $data;
+  }
 } ?>

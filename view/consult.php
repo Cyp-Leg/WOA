@@ -34,7 +34,8 @@
           foreach($lesAnnonces as $row)
             {
               echo "<tr><td>".$row['announcetitle']."</td>";
-              echo "<td>".$row['announcecity']."</td>";
+              $cityname = City::Get_City_Name($row['cityid']);
+              echo "<td>".$cityname."</td>";
               echo "<td>".$row['announceprice']."</td></tr>";
             } ?>
           </tbody>

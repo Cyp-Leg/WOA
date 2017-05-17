@@ -32,9 +32,10 @@ else
   {
     if(empty($citychek))
     {
-      City::Add_City($city)
+      City::Add_City($city);
+      $citycheck=City::Get_City_By_Name($city);
     }
-    Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
+    Announce::Add_Announce($title,$descrip,$price,$citycheck,$categ,$userid);
   }
 }
 
