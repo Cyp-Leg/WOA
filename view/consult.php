@@ -35,7 +35,7 @@
             {
               echo "<tr><td>".$row['announcetitle']."</td>";
               $cityname = City::Get_City_Name($row['cityid']);
-              echo "<td>".$cityname."</td>";
+              echo "<td>".$cityname['cityname']."</td>";
               echo "<td>".$row['announceprice']."</td></tr>";
             } ?>
           </tbody>
