@@ -34,6 +34,9 @@
               	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
               	<tr><td><label for="annoucePrice">Prix : </label></td>
               	<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
+								<tr><td><label for="nick">Pseudo : </label></td>
+								<td><input type="text" name="nick" id="nick"></td>
+								<td class="descr">Pas encore enregistré? <a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a></td></tr>
               	<tr><td><label for="mail">Mail de contact : </label></td>
               	<td><input type="text" name="mail" id="mail"></td></tr>
               	<tr><td><input type="submit" value="Valider"></td></tr>

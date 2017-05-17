@@ -7,7 +7,7 @@ class Users
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
 	{
 		require_once('Pdo.php');
-		$bdheroku=connexion();
+		$bdheroku = connexion();
 
 
 		$req = $bdriasec->prepare("SELECT usersid FROM Users WHERE usersNick='".$usernick."'");
