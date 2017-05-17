@@ -63,3 +63,11 @@
 		<?php require ("view/footer.php");?>
 	</body>
 </html>
+
+<script src="jQuery.js"></script>
+<script src="materialize/js/materialize.js"></script>
+<script>
+$( document ).ready(function(){
+	$(".button-collapse").sideNav();
+})
+</script>
