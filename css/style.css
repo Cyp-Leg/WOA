@@ -17,7 +17,6 @@ footer {
 }
 nav {
 	background-color: #a4c5f9;
-	font-size:18;
 }
 footer.page-footer {
 	background-color: #a4c5f9;
@@ -46,7 +45,7 @@ i.amazing {
 	box-shadow: 2px 2px 7px grey;
 }
 nav ul a {
-	font-size: 1.3em;
+	font-size: 1.0em;
 }
 
 nav a.logosite{
