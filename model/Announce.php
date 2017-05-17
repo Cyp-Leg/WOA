@@ -71,5 +71,19 @@ class Announce
       return $result;
     }
 
-    //public static function Add_Announce
+    public static function Add_Announce($announceTitle,$announceDescrip,$announcePrice,$announceCity,$announceCateg,$announceUser)
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare('INSERT INTO Announce(announcetitle, announcedescrip,annouceprice,cityid,categoryid,userid) VALUES(:announcetitle, :announcedescrip, :announceprice, :announcecity, :announcecateg, :announceuser)');
+      $req->bindParam(':announcetitle',$announceTitle);
+      $req->bindParam(':announcedescrip',$announceDescrip);
+      $req->bindParam(':announceprice',$annoucePrice);
+      $req->bindParam(':announcecity',$announceCity);
+      $req->bindParam(':announcecateg',$announceCateg);
+      $req->bindParam(':announceuser',$announceUser);
+
+      $req->execute();
+    }
 } ?>

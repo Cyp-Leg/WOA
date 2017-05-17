@@ -27,18 +27,34 @@
     					</tr>
     				</thead>
     				<tbody>
-              <form action="deposit.php">
-                <tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
-              	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
+              <form class="col s12" method="post" action="controller/Controller_Add_Deposit">
+
+								<tr><td><label>Catégorie</label>
+									<div class="input-field col s12">
+    								<select>
+      								<option value="" disabled selected>Choisissez une catégorie</option>
+											<?php
+				  						foreach($lesCategories as $row)
+				  							{
+				  								echo "<option value =".$row['categoryid'].">".$row['categoryname']."</option>";
+				  							}
+				  					?>
+    								</select>
+  								</div>
+								</tr></td>
+								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
+              			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
-              	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
+              			<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
               	<tr><td><label for="annoucePrice">Prix : </label></td>
-              	<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
+              			<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
+								<tr><td><label for="annouceCity">Ville : </label></td>
+		              	<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 								<tr><td><label for="nick">Pseudo : </label></td>
-								<td><input type="text" name="nick" id="nick"></td>
-								<td class="descr">Pas encore enregistré? <a href="Inscription.php">Inscrivez-vous vite!</a></td></tr>
+										<td><input type="text" name="nick" id="nick"></td>
+										<td class="descr">Pas encore enregistré? <a href="Inscription.php">Inscrivez-vous vite!</a></td></tr>
               	<tr><td><label for="mail">Mail de contact : </label></td>
-              	<td><input type="text" name="mail" id="mail"></td></tr>
+              			<td><input type="text" name="mail" id="mail"></td></tr>
               	<tr><td><input type="submit" value="Valider"></td></tr>
               </form>
           </tbody>
