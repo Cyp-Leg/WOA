@@ -13,15 +13,12 @@ canvas
 }
 footer {
 	flex: 1 0 auto;
-	position: absolute;
-  bottom: 0;
 }
 nav {
 	background-color: #a4c5f9;
 }
 footer.page-footer {
 	background-color: #a4c5f9;
-	margin:0;
 }
 .rowSpe {
 	margin-left: 0px;
