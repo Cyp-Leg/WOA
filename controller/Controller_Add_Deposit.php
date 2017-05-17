@@ -27,7 +27,7 @@ else
   $citycheck=City::Get_City_By_Name($city);
 
   if(empty($userid)){
-    header('Location: ../Deposit.php');
+    header('Location: ../Deposit4.php');
     ?>
     <script type="text/javascript">alert('Pseudo inexistant');</script>
     <?php
