@@ -61,7 +61,7 @@ class Users
 
     $userNick=strtoupper($userNick);
 
-    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usernick ILIKE :userNick');
+    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usersnick= :userNick');
     $req->bindParam(':userNick',$userNick);
 
     $data = $req->fetch();
