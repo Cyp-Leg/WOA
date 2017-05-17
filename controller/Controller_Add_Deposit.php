@@ -1,5 +1,5 @@
 <?php
-require_once("model/Users");
+require_once("model/Users.php");
 
 $title=htmlspecialchars($_POST['announceTitle']);
 $descrip=htmlspecialchars($_POST['announceDescrip']);
