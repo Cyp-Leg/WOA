@@ -59,7 +59,6 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $userNick=strtoupper($userNick);
 
     $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usersnick= :userNick');
     $req->bindParam(':userNick',$userNick);
