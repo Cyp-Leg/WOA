@@ -1,5 +1,6 @@
 <?php
 require_once("../model/Users.php");
+require_once("../model/City.php");
 
 $title=htmlspecialchars($_POST['announceTitle']);
 $descrip=htmlspecialchars($_POST['announceDescrip']);
@@ -10,7 +11,7 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['category']);
 
 
-if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city))
+if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city) || empty($categ))
 {
   ?>
   <script type="text/javascript">alert('Merci de renseigner tous les champs!');</script>
