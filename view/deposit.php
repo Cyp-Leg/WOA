@@ -33,13 +33,15 @@
 								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
 								<tr><td><label>Catégorie</label></td>
+									<td>
 									<?php foreach($lesCategories as $row)
 										{
-											?><td><input name="announceCategory" type="radio" id="<?php echo $row['categoryid']?>" />
-												<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label></td>
+											?><input name="announceCategory" type="radio" id="<?php echo $row['categoryid']?>" />
+												<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>
 										<?php
 										}
 										?>
+									</td>
 								</tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
               			<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
