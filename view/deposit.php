@@ -31,7 +31,7 @@
 
 								<tr><td><label>Catégorie</label></td>
 									<td><div class="input-field col s12">
-    								<select name="category">
+    								<select name="category" id="category">
       								<option value="" disabled selected>Choisissez une catégorie</option>
 											<?php
 				  						foreach($lesCategories as $row)
