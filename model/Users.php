@@ -27,7 +27,6 @@ class Users
     $bdheroku=connexion();
 
 
-
     $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:firstname,:lastname,:nick,:mail,:gender)');
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
@@ -60,7 +59,9 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usernick= :userNick');
+    $userNick=strtoupper($userNick);
+
+    $req = $bdheroku->prepare('SELECT userid FROM Users WHERE usernick ILIKE :userNick');
     $req->bindParam(':userNick',$userNick);
 
     $data = $req->fetch();
