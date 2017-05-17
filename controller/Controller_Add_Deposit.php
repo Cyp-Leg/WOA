@@ -6,11 +6,11 @@ $descrip=htmlspecialchars($_POST['announceDescrip']);
 $price=htmlspecialchars($_POST['announcePrice']);
 $nick=htmlspecialchars($_POST['nick']);
 $mail=htmlspecialchars($_POST['mail']);
-$city=htmlspecialchars($_POST['city']);
+$city=htmlspecialchars($_POST['announceCity']);
+$categ=htmlspecialchars($_POST['category']);
 
 
-
-if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city) || empty($nick))
+if(empty($title) || empty($descrip) || empty($price) || empty($nick) || empty($mail) || empty($city))
 {
   ?>
   <script type="text/javascript">alert('Merci de renseigner tous les champs!');</script>

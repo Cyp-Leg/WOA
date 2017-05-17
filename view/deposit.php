@@ -31,7 +31,7 @@
 
 								<tr><td><label>Catégorie</label></td>
 									<td><div class="input-field col s12">
-    								<select>
+    								<select name="category">
       								<option value="" disabled selected>Choisissez une catégorie</option>
 											<?php
 				  						foreach($lesCategories as $row)
@@ -46,9 +46,9 @@
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
               	<tr><td><label for="announceDescrip">Description : </label></td>
               			<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
-              	<tr><td><label for="annoucePrice">Prix : </label></td>
+              	<tr><td><label for="announcePrice">Prix : </label></td>
               			<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
-								<tr><td><label for="annouceCity">Ville : </label></td>
+								<tr><td><label for="announceCity">Ville : </label></td>
 		              	<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 								<tr><td><label for="nick">Pseudo : </label></td>
 										<td><input type="text" name="nick" id="nick"></td>
