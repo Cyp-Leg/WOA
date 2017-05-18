@@ -18,20 +18,25 @@
 		<?php require ("view/header.php");?>
 		<div>
 			<h4 class="center-align">Inscription</h4>
+
 			<div class="row z-depth-4 blue-grey lighten-5">
+
 				<form class="col s12" method="post" action="/controller/Controller_Inscription.php">
+
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="firstname" name="firstname" type="text" class="validate">
 							<label for="firstname" data-error="wrong" data-success="right">Prénom</label>
 						</div>
 					</div>
+
   				<div class="row">
   					<div class="input-field col s9">
   						<input id="lastname" name="lastname" type="text" class="validate">
   						<label for="lastname" data-error="wrong" data-success="right">Nom</label>
   					</div>
   				</div>
+
           <div class="row">
             <p>
               <input name="gender" type="radio" id="homme" value="homme" />
@@ -40,31 +45,37 @@
             <p>
               <input name="gender" type="radio" id="femme" value="homme" />
               <label for="femme">Femme</label>
+						</p>
           </div>
+
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="nick" name="nick" type="text" class="validate">
 							<label for="nick" data-error="wrong" data-success="right">Pseudo</label>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="input-field col s12">
             <label for="password">Mot de passe</label>
               <input id="password" type="password" class="validate">
             </div>
 					</div>
+
 					<div class="row">
 						<div class="input-field col s12">
             <label for="password_check">Vérification du mot de passe</label>
-              <input id="password_check" type="password_check" class="validate">
+              <input id="password_check" type="password" class="validate">
             </div>
 					</div>
+
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="email" name="email" type="email" class="validate">
 							<label for="email" data-error="wrong" data-success="right">Email</label>
 						</div>
 					</div>
+
 					<div class="row">
 						<div class="input-field col s9">
 							<button class="btn waves-effect waves-light" id="submit" value="valider">Inscription
@@ -72,6 +83,7 @@
 							</button>
 						</div>
 					</div>
+
 				</form>
 			</div>
       <div class="container">
