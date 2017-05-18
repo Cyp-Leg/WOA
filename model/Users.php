@@ -115,6 +115,6 @@ class Users
 
     $data = $req->fetch();
 
-    return($data['userspassword'] == $userpw);
+    return($data['userspassword']);
   }
 } ?>
