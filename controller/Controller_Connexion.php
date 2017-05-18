@@ -17,9 +17,9 @@ else
 
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
 
-		setcookie("cookieperso", $cookiecode, time()+(60*60*24*30), "/");
+		setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
 
-		User::Set_User_Coockie_Code($mail,$cookiecode);
+		User::Set_User_Coockie_Code($mail,$cookie);
 		header("Location: ../Accueil.php");
   }
 
