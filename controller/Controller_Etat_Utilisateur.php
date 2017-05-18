@@ -30,5 +30,6 @@ function isAdmin(){
 
     return(!empty($user));
   }
+  else header("Location: ../Erreur.php?erreur=noob");
 }
  ?>
