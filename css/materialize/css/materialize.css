@@ -3352,8 +3352,7 @@ input[type=range] + .thumb {
 }
 
 .container {
-  margin-top: 10%;
-  margin-bottom: 30%;
+  margin: 0 auto;
   max-width: 1280px;
   width: 90%;
 }
