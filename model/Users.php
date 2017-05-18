@@ -12,7 +12,7 @@ class Users
 		$bdheroku = connexion();
 
 
-		$req = $bdriasec->prepare("SELECT usersid FROM Users WHERE userscookiecode='".$cookiecode."'");
+		$req = $bdheroku->prepare("SELECT usersid FROM Users WHERE userscookiecode='".$cookiecode."'");
 
 		$req->execute();
 		$data=$req->fetch();
