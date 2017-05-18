@@ -22,15 +22,20 @@
         <form class="col s12" method="POST" action="controller/Controller_Connexion.php">
           <div class="row">
             <div class="input-field col s12">
-            <label for="nick">Pseudo</label>
-              <input id="nick" name="nick" type="text" class="validate">
+            	<label for="nick">Pseudo</label>
+            	<input id="nick" name="nick" type="text" class="validate">
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-            <label for="password">Password</label>
+            	<label for="password">Password</label>
               <input id="password" name="password" type="password" class="validate">
             </div>
           </div>
-
-          <a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a>
+				</form>
+				<a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a>
+			</div>
+		</div>
+		<?php require ("view/footer.php");?>
+	</body>
+</html>
