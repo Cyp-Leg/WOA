@@ -30,10 +30,8 @@
 			</div>
 		</div>
 
-		<?php if(checkAdmin()){
-			?> <script>alert('T\'es admin gros');</script>
-			<?php } ?>
-			
+		<?php if(checkAdmin()){?> <a href="google.fr"> laaaa </a><?php } ?>
+
 		<?php require ("view/footer.php");?>
 	</body>
 </html>
