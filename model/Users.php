@@ -56,12 +56,12 @@ class Users
 		return $result;
   }
 
-  public static function checkAdmin($userid){
+  public static function checkAdmin($cookie){
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req->prepare('SELECT usersrole FROM Users WHERE usersid= :userid');
-    $req->bindParam(':userid',$userid);
+    $req->prepare('SELECT usersrole FROM Users WHERE userscookie= :cookie');
+    $req->bindParam(':cookie',$cookie);
 
     $req->execute();
 
