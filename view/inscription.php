@@ -19,7 +19,7 @@
 		<div>
 			<h4 class="center-align">Inscription</h4>
 
-			<div class="row z-depth-4 blue-grey lighten-5">
+			<div class="container row z-depth-4 blue-grey lighten-5">
 
 				<form class="col s12" method="post" action="/controller/Controller_Inscription.php">
 
