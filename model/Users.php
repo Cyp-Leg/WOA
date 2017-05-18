@@ -70,14 +70,14 @@ class Users
     return($data['usersrole'] == 1);
   }
 
-  public static function Set_User_Cookie($usersid,$usercookie)
+  public static function Set_User_Cookie($usersnick,$usercookie)
   {
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersid= :userid');
+    $req->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersnick= :nick');
     $req->bindParam(':cookie',$usercookie);
-    $req->bindParam(':userid',$usersid);
+    $req->bindParam(':nick',$usersnick);
 
     $req->execute();
   }

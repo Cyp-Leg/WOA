@@ -19,7 +19,7 @@ else
 
 		setcookie("cookieperso", $cookie, time()+(60*60*24*30), "/");
 
-		User::Set_User_Coockie_Code($mail,$cookie);
+		User::Set_User_Cookie_Code($nick,$cookie);
 		header("Location: ../Accueil.php");
   }
 
