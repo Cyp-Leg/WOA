@@ -3,7 +3,7 @@ class Users
 {
 
 
-  public static function Get_User_Id($ccookiecode)
+  public static function Get_User_Id($cookiecode)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
