@@ -22,5 +22,4 @@ function unloggedOnly(){
     header("Location: ../Accueil.php");
   }
 }
-
-} ?>
+ ?>
