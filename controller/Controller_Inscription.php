@@ -34,7 +34,7 @@ if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || emp
 else {
   //Users::Add_User($firstname,$lastname,$nick,$mail,$gender);
   header("Location: ../Accueil.php");
-//}
+}
 
 require_once('view/inscription.php');
 ?>
