@@ -112,9 +112,10 @@ class Users
 
     $req = $bdheroku->prepare("SELECT userspassword FROM Users WHERE usersnick= '".$usernick."'");
     //$req->bindParam(':usersnick',$usernick);
+    $req->execute();
 
     $data = $req->fetch();
 
-    return($data);
+    return($data['userspassword'] == $userpw);
   }
 } ?>

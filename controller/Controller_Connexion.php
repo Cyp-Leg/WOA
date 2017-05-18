@@ -13,8 +13,7 @@ else
 {
   $password=sha1(sha1($password));
 
-  $data=Users::Check_Password($nick,$password);
-  if($data['userspassword'] == $password){
+  if(Users::Check_Password($nick,$password)){
 
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
 
@@ -26,7 +25,7 @@ else
 
   else {
     $message="Mauvais mdp";
-    header("Location: ../Erreur.php?=".$data);
+    header("Location: ../Erreur.php?=".$password);
   }
 }
 
