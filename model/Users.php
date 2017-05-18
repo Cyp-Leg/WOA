@@ -110,7 +110,7 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
+    $req = $bdheroku->prepare("SELECT userspassword FROM Users WHERE usersnick= ':usersnick'");
     $req->bindParam(':usersnick',$usernick);
 
     $data = $req->fetch();
