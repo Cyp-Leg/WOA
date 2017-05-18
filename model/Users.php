@@ -105,7 +105,7 @@ class Users
     return $data['usersid'];
   }
 
-  public function Check_Password($usernick,$userpw)
+  public static function Check_Password($usernick,$userpw)
   {
     require_once('Pdo.php');
     $bdheroku = connexion();
