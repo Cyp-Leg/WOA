@@ -1,5 +1,5 @@
 <?php
-require_once("../model/Users.php");
+require_once("model/Users.php");
 
 $nick=htmlspecialchars($_POST['nick']);
 $password=htmlspecialchars($_POST['password']);
@@ -13,7 +13,7 @@ else
 {
   $password=sha1(sha1($password));
 
-  if(User::Check_Password($nick,$password)){
+  if(Users::Check_Password($nick,$password)){
 
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
 
