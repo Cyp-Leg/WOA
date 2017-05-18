@@ -98,7 +98,7 @@
   						foreach($lesUsers as $row)
   							{
   								echo "<tr><td>".$row['usersfirstname']."</td>";
-  								echo "<td>".$row['Userslastname']."</td>";
+  								echo "<td>".$row['userslastname']."</td>";
   								echo "<td>".$row['usersnick']."</td>";
   								echo "<td>".$row['usersmail']."</td></tr>";
   							}
