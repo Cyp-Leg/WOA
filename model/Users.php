@@ -1,7 +1,9 @@
 <?php
 class Users
 {
-  /*public static function Get_User_Id($usernick)
+
+  
+  public static function Get_User_Id($ccookiecode)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
 	//résultat : vérifie si un code cookie existe dans la base de données, et le cas échéant renvoie un int correspondant à l'id de l'utilisateur auquel appartient le code cookie
@@ -10,29 +12,31 @@ class Users
 		$bdheroku = connexion();
 
 
-		$req = $bdriasec->prepare("SELECT usersid FROM Users WHERE usersNick='".$usernick."'");
+		$req = $bdriasec->prepare("SELECT usersid FROM Users WHERE userscookiecode='".$cookiecode."'");
 
 		$req->execute();
 		$data=$req->fetch();
 
 		return $data["usersid"]; //Verifier si null
-	}*/
+	}
 
 
 
 
-  public static function Add_User($firstname,$lastname,$nick,$mail,$gender)
+  public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$cookieCode,$password)
   {
     require_once('Pdo.php');
     $bdheroku=connexion();
 
 
-    $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender) VALUES (:firstname,:lastname,:nick,:mail,:gender)');
+    $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender, userscookiecode, userspassword) VALUES (:firstname,:lastname,:nick,:mail,:gender, :cookiecode, :password)');
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
 		$req->bindParam(':nick',$nick);
 		$req->bindParam(':mail',$mail);
     $req->bindParam(':gender',$gender);
+    $req->bindParam(':cookiecode', $cookieCode);
+    $req->bindParam(':password',$password);
 
     $req->execute();
 

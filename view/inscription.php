@@ -33,20 +33,29 @@
   					</div>
   				</div>
           <div class="row">
+            <p>
+              <input name="gender" type="radio" id="homme" value="homme" />
+              <label for="homme">Homme</label>
+            </p>
+            <p>
+              <input name="gender" type="radio" id="femme" value="homme" />
+              <label for="femme">Femme</label>
+          </div>
+					<div class="row">
 						<div class="input-field col s9">
 							<input id="nick" name="nick" type="text" class="validate">
 							<label for="nick" data-error="wrong" data-success="right">Pseudo</label>
 						</div>
 					</div>
-          <div class="row">
-            <p>
-              <input name="gender" type="radio" id="homme" />
-              <label for="homme">Homme</label>
-            </p>
-            <p>
-              <input name="gender" type="radio" id="femme" />
-              <label for="femme">Femme</label>
-          </div>
+					<div class="row">
+						<div class="input-field col s12">
+            <label for="password">Mot de passe</label>
+              <input id="password" type="password" class="validate">
+            </div>
+						<div class="input-field col s12">
+            <label for="password_check">Vérification du mot de passe</label>
+              <input id="password_check" type="password_check" class="validate">
+            </div>
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="email" name="email" type="email" class="validate">
