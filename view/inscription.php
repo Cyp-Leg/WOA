@@ -91,17 +91,17 @@
   				<thead>
   					<tr>
   						<th>Liste des utilisateurs</th>
+							<th>Prénom</th>
+							<th>Nom</th>
+							<th>Pseudo</th>
+							<th>Mail</th>
   					</tr>
   				</thead>
   				<tbody>
-						<tr><td>Prénom</td>
-							<td>Nom</td>
-							<td>Pseudo</td>
-							<td>Mail</td>
   					<?php
   						foreach($lesUsers as $row)
   							{
-  								echo "<tr><td>".$row['usersfirstname']."</td>";
+  								echo "<tr><td></td><td>".$row['usersfirstname']."</td>";
   								echo "<td>".$row['userslastname']."</td>";
   								echo "<td>".$row['usersnick']."</td>";
   								echo "<td>".$row['usersmail']."</td></tr>";
