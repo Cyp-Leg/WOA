@@ -25,7 +25,7 @@ else
 
   else {
     $message="Mauvais mdp";
-    header("Location: ../Erreur.php?=".$nick);
+    header("Location: ../Erreur.php?=".$password);
   }
 }
 
