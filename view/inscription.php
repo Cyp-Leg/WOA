@@ -52,10 +52,13 @@
             <label for="password">Mot de passe</label>
               <input id="password" type="password" class="validate">
             </div>
+					</div>
+					<div class="row">
 						<div class="input-field col s12">
             <label for="password_check">Vérification du mot de passe</label>
               <input id="password_check" type="password_check" class="validate">
             </div>
+					</div>
 					<div class="row">
 						<div class="input-field col s9">
 							<input id="email" name="email" type="email" class="validate">
