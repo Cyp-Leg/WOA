@@ -10,7 +10,7 @@ $password = htmlspecialchars($_POST['password']);
 $password_check = htmlspecialchars($_POST['password_check']);
 
 if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender) || empty($password) || empty($password_check)) {
-		$messageErreur = "Vous n'avez pas remplis tous les champs ! Merci de completer les champs manquants ! ";
+		$messageErreur = 'Vous n\'avez pas remplis tous les champs';
 
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
@@ -20,7 +20,7 @@ if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || emp
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
 	elseif ($password != $password_check) {
-		$messageErreur = 'Les mots de passe saisies ne sont pas identiques ! ';
+		$messageErreur = 'Les mots de passe saisis ne sont pas identiques ! ';
 
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
