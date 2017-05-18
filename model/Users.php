@@ -60,7 +60,7 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req->prepare('SELECT usersrole FROM Users WHERE userscookie= :cookie');
+    $req = $bdheroku->prepare('SELECT usersrole FROM Users WHERE userscookie= :cookie');
     $req->bindParam(':cookie',$cookie);
 
     $req->execute();
@@ -70,12 +70,24 @@ class Users
     return($data['usersrole'] == 1);
   }
 
+  public static function Set_User_Cookie($usersid,$usercookie)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersid= :userid');
+    $req->bindParam(':cookie',$usercookie);
+    $req->bindParam(':userid',$usersid);
+
+    $req->execute();
+  }
+
   public static function checkLogin($userNick,$userPassword)
   {
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
+    $req = $bdheroku->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
     $req->bindParam(':usersnick',$userNick);
 
     $data = $req->fetch();
@@ -87,10 +99,22 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-
     $req = $bdheroku->prepare("SELECT usersid FROM Users WHERE usersnick=\'".$userNick."\'");
     $data = $req->fetch();
 
     return $data['usersid'];
+  }
+
+  public function Check_Password($usernick,$userpw)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
+    $req->bindParam(':usersnick',$usernick);
+
+    $data = $req->fetch();
+
+    return($data['userspassword'] == $userpw);
   }
 } ?>

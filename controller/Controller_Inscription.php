@@ -30,7 +30,7 @@ else {
 
   $password = sha1(sha1($password));
   $cookiecode=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
-  setcookie('cookieperso', $cookiecode, time()+60*60*30*12);
+  setcookie('cookieperso', $cookiecode, time()+(60*60*30), "/");
 
 
   Users::Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode);
