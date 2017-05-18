@@ -28,7 +28,7 @@
 					<?php if(checkAdmin()){
 						?> <script>alert('T\'es admin gros');</script>
 						<?php }
-					else ?><script>alert('Encore râté bâtard!');</script><?php } ?>
+					else ?><script>alert('Encore râté bâtard!');</script>
 					<p>A l'instar du célèbre site Leboncoin, Le Coin des étudiants est un site créé dans le but de faciliter les échanges entre étudiants. Ici les étudiants peuvent s'échanger ou vendre des objets utiles à leur vie de tous les jours, mais également rechercher et créer des événements dans leur ville, ce qui leur permet d'apprendre à connaître leur ville et ses étudiants.</p>
 				</div>
 			</div>
