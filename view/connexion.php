@@ -18,7 +18,7 @@
 		<?php require ("view/header.php");?>
 		<div>
 			<h4 class="center-align">Connexion</h4>
-      <div class="row">
+      <div class="container">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
