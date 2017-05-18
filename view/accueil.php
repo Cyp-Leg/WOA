@@ -29,6 +29,6 @@
 				</div>
 			</div>
 		</div>
-		<?php require ("view/footer.php");?>
 	</body>
+	<?php require ("view/footer.php");?>
 </html>
