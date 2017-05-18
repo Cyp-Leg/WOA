@@ -75,7 +75,7 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersnick= :nick');
+    $req = $bdheroku->prepare('UPDATE Users SET userscookiecode= :cookie WHERE usersnick= :nick');
     $req->bindParam(':cookie',$usercookie);
     $req->bindParam(':nick',$usersnick);
 
