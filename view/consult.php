@@ -19,27 +19,29 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-      <table class="bored highlight grey lighten-5">
-    		<thead>
-    			<tr>
-    				<th>Liste des annonces</th>
-    			</tr>
-    		</thead>
-    		<tbody>
-          <tr><th>Titre</th>
-              <th>Lieu</th>
-              <th>Prix</th>
-          </tr>
-          <?php
-          foreach($lesAnnonces as $row)
-            {
-              echo "<tr><td>".$row['announcetitle']."</td>";
-              $cityname = City::Get_City_Name($row['cityid']);
-              echo "<td>".$cityname['cityname']."</td>";
-              echo "<td>".$row['announceprice']."</td></tr>";
-            } ?>
-          </tbody>
-        </table>
+			<div class="general-container"
+	      <table class="bored highlight grey lighten-5">
+	    		<thead>
+	    			<tr>
+	    				<th>Liste des annonces</th>
+	    			</tr>
+	    		</thead>
+	    		<tbody>
+	          <tr><th>Titre</th>
+	              <th>Lieu</th>
+	              <th>Prix</th>
+	          </tr>
+	          <?php
+	          foreach($lesAnnonces as $row)
+	            {
+	              echo "<tr><td>".$row['announcetitle']."</td>";
+	              $cityname = City::Get_City_Name($row['cityid']);
+	              echo "<td>".$cityname['cityname']."</td>";
+	              echo "<td>".$row['announceprice']."</td></tr>";
+	            } ?>
+	          </tbody>
+	        </table>
+				</div>
       </div>
       <?php require ("view/footer.php");?>
   	</body>
