@@ -20,20 +20,18 @@ if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || emp
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
 	elseif ($password != $password_check) {
-		$messageErreur = 'Les mots de passe saisis ne sont pas identiques ! ';
+		$messageErreur = 'Les mots de passe saisis ne sont pas identiques !';
 
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
 	}
 
-/*if(empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender)){
-  ?>
-  <script type="text/javascript">alert('Veuillez remplir tous les champs!');</script>
-  <?php
-  header("Location: ../Inscription.php");
-}*/
 else {
-  //Users::Add_User($firstname,$lastname,$nick,$mail,$gender);
-  header("Location: ../Accueil.php");
+  $password = sha1(sha1($password));
+  $cookiecode=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
+
+
+  Users::Add_User($firstname,$lastname,$nick,$mail,$gender,$cookiecode,$password);
+  header("Location: ../Erreur.php?erreur=Compte créé avec succès!");
 }
 
 require_once('view/inscription.php');
