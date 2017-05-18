@@ -19,7 +19,7 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-			<div class="general-container"
+			<div class="general-container">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
