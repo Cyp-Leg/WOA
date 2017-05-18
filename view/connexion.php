@@ -19,17 +19,17 @@
 		<div>
 			<h4 class="center-align">Connexion</h4>
       <div class="container">
-        <form class="col s12">
+        <form class="col s12" method="POST" action="controller/Controller_Connexion.php">
           <div class="row">
             <div class="input-field col s12">
-            <label for="email">Email</label>
-              <input id="email" type="email" class="validate">
+            <label for="nick">Pseudo</label>
+              <input id="nick" name="nick" type="text" class="validate">
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
             <label for="password">Password</label>
-              <input id="password" type="password" class="validate">
+              <input id="password" name="password" type="password" class="validate">
             </div>
           </div>
 

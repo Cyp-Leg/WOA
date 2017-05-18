@@ -56,6 +56,19 @@ class Users
 		return $result;
   }
 
+
+  public static function checkLogin($userNick,$userPassword)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req->prepare('SELECT userspassword FROM Users WHERE usersnick= :usersnick');
+    $req->bindParam(':usersnick',$userNick);
+
+    $data = $req->fetch();
+    return($data['userspassword']==$userPassword);
+  }
+
   public static function Get_Userid_By_Nick($userNick)
   {
     require_once('Pdo.php');
