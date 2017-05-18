@@ -1,5 +1,5 @@
 <?php
-require_once("model/Users.php");
+require_once("../model/Users.php");
 
 $nick=htmlspecialchars($_POST['nick']);
 $password=htmlspecialchars($_POST['password']);
