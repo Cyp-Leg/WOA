@@ -2,5 +2,5 @@
 setcookie("cookieperso","",0, "/");
 echo "Vous êtes déconnecté!";
 
-header("Location: ../Test.php");
+header("Location: ../Connexion.php");
 ?>
