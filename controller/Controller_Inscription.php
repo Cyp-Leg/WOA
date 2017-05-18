@@ -9,7 +9,7 @@ $gender = htmlspecialchars($_POST['gender']);
 $password = htmlspecialchars($_POST['password']);
 $password_check = htmlspecialchars($_POST['password_check']);
 
-if (empty($firstname) || empty($lastname) || empty($nick) ||  empty($mail) || empty($gender)  || empty($password) || empty($password_check)) {
+if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || empty($gender) || empty($password) || empty($password_check)) {
 		$messageErreur = "Vous n'avez pas remplis tous les champs ! Merci de completer les champs manquants ! ";
 
 		header("Location: ../Erreur.php?erreur=".$messageErreur);
