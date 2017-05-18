@@ -20,9 +20,9 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
 		<br>
-		<div class="general-container">
+		<div class="container">
 			<br>
-			<div class="row z-depth-4 blue-grey lighten-5">
+			<div class="row z-depth-4 blue-grey lighten-5 general-container">
 				<div class="input-field col s12">
 					<h4>Qu'est-ce que le coin des étudiants?</h4>
 					<p>A l'instar du célèbre site Leboncoin, Le Coin des étudiants est un site créé dans le but de faciliter les échanges entre étudiants. Ici les étudiants peuvent s'échanger ou vendre des objets utiles à leur vie de tous les jours, mais également rechercher et créer des événements dans leur ville, ce qui leur permet d'apprendre à connaître leur ville et ses étudiants.</p>
