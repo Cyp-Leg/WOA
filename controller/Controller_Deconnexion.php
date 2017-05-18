@@ -1,4 +1,6 @@
 <?php
-setcookie("codeconnexion","", time() , "/");
+setcookie("codeconnexion","",0, "/");
+echo "Vous êtes déconnecté!";
+
 header("Location: ../Connexion.php");
 ?>
