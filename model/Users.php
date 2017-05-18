@@ -2,7 +2,7 @@
 class Users
 {
 
-  
+
   public static function Get_User_Id($ccookiecode)
 	//User_Cookie_Code => User_Id
 	//données : $userCookieCode string correspondant à un code cookie
@@ -21,21 +21,19 @@ class Users
 	}
 
 
-
-
-  public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$cookieCode,$password)
+  public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode)
   {
     require_once('Pdo.php');
-    $bdheroku=connexion();
+    $bdheroku = connexion();
 
 
-    $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender, userscookiecode, userspassword) VALUES (:firstname,:lastname,:nick,:mail,:gender, :cookiecode, :password)');
+    $req = $bdheroku->prepare('INSERT INTO Users(usersfirstname, userslastname, usersnick, usersmail, usersgender, userscookiecode, userspassword) VALUES (:firstname,:lastname,:nick,:mail,:gender,:cookiecode,:password)');
     $req->bindParam(':firstname',$firstname);
 		$req->bindParam(':lastname',$lastname);
 		$req->bindParam(':nick',$nick);
 		$req->bindParam(':mail',$mail);
     $req->bindParam(':gender',$gender);
-    $req->bindParam(':cookiecode', $cookieCode);
+    $req->bindParam(':cookiecode',$cookiecode);
     $req->bindParam(':password',$password);
 
     $req->execute();

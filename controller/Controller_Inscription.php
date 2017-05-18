@@ -26,12 +26,15 @@ if (empty($firstname) || empty($lastname) || empty($nick) || empty($mail) || emp
 	}
 
 else {
+
+
   $password = sha1(sha1($password));
   $cookiecode=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
+  setcookie('cookieperso', $cookiecode, time()+60*60*30*12);
 
 
-  Users::Add_User($firstname,$lastname,$nick,$mail,$gender,$cookiecode,$password);
-  header("Location: ../Erreur.php?erreur=Compte créé avec succès!");
+  Users::Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode);
+  header("Location: ../Accueil.php");
 }
 
 require_once('view/inscription.php');
