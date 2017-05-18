@@ -32,6 +32,11 @@
               <input id="password" name="password" type="password" class="validate">
             </div>
           </div>
+					<div class="input-field col s9">
+						<button class="btn waves-effect waves-light" id="submit" value="valider">Connexion
+							<i class="material-icons right">send</i>
+						</button>
+					</div>
 				</form>
 				<a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a>
 			</div>
