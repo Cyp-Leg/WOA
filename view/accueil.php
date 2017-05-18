@@ -20,7 +20,7 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
 		<br>
-		<div class="general-container">
+		<div class="container">
 			<br>
 			<div class="row z-depth-4 blue-grey lighten-5">
 				<div class="input-field col s12">
