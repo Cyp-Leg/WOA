@@ -56,6 +56,19 @@ class Users
 		return $result;
   }
 
+  public static function checkAdmin($userid){
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req->prepare('SELECT usersrole FROM Users WHERE usersid= :userid');
+    $req->bindParam(':userid',$userid);
+
+    $req->execute();
+
+    $data = $req->fetch();
+
+    return($data['usersrole'] == 1);
+  }
 
   public static function checkLogin($userNick,$userPassword)
   {

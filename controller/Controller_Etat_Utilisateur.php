@@ -22,4 +22,13 @@ function unloggedOnly(){
     header("Location: ../Accueil.php");
   }
 }
+
+function isAdmin(){
+  if(isset($_COOKIE['cookieperso'])){
+    $cookie=$_COOKIE['cookieperso'];
+    $users=Users::CheckAdmin($cookie);
+
+    return(!empty())
+  }
+}
  ?>
