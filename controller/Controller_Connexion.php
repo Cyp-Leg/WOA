@@ -13,7 +13,8 @@ else
 {
   $password=sha1(sha1($password));
 
-  if(Users::Check_Password($nick,$password)){
+  $data=Users::Check_Password($nick,$password);
+  if($data){
 
     $cookie=substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);
 
