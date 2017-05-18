@@ -20,7 +20,7 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
 		<br>
-		<div class="container">
+		<div class="general-container">
 			<br>
 			<div class="row z-depth-4 blue-grey lighten-5">
 				<div class="input-field col s12">
@@ -29,6 +29,6 @@
 				</div>
 			</div>
 		</div>
+		<?php require ("view/footer.php");?
 	</body>
-	<?php require ("view/footer.php");?>
 </html>
