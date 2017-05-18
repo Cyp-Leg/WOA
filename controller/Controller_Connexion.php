@@ -22,8 +22,11 @@ else
 		User::Set_User_Coockie_Code($mail,$cookiecode);
 		header("Location: ../Accueil.php");
   }
-  $message="Mauvais mdp";
-  else header("Location: ../Erreur.php?=".$message);
+
+  else {
+    $message="Mauvais mdp";
+    header("Location: ../Erreur.php?=".$message);
+  }
 }
 
 ?>
