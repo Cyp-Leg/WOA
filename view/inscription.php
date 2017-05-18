@@ -94,6 +94,10 @@
   					</tr>
   				</thead>
   				<tbody>
+						<tr><td>Prénom</td>
+							<td>Nom</td>
+							<td>Pseudo</td>
+							<td>Mail</td>
   					<?php
   						foreach($lesUsers as $row)
   							{
