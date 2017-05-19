@@ -42,7 +42,7 @@ else
       $city=$city['cityname'];
     }
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
-    $lasterr=pg_last_error($dbconn);
+    $lasterr=pg_last_error($bdheroku);
     header('Location: ../Erreur.php?erreur='.$lasterr);
   }
 }
