@@ -60,8 +60,8 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT usersrole FROM Users WHERE userscookie= :cookie');
-    $req->bindParam(':cookie',$cookie);
+    $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE userscookie= '".$cookie."'");
+    //$req->bindParam(':cookie',$cookie);
 
     $req->execute();
 
