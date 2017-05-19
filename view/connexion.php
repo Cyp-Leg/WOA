@@ -40,6 +40,7 @@
 								<i class="material-icons right">send</i></td>
 							</button>
 							<td><a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a></td></tr>
+						</table>
 					</div>
 				</form>
 			</div>
