@@ -2,6 +2,7 @@
 require_once("../model/Users.php");
 require_once("../model/City.php");
 //require_once("../controller/Controller_Etat_Utilisateur.php");
+require_once("../model/Announce.php");
 
 $title=htmlspecialchars($_POST['announceTitle']);
 $descrip=htmlspecialchars($_POST['announceDescrip']);
