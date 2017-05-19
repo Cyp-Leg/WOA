@@ -24,7 +24,7 @@ else if(empty($categ)){
 else
 {
   $userid=Users::Get_User_Id($cookie);
-  $city=City::Get_City_By_Name($city);
+  $citycheck=City::Get_City_By_Name($city);
 
   if(empty($userid)){
     $message = "Pseudo non reconnu :".$userid;
@@ -35,7 +35,7 @@ else
   }
   else
   {
-    if(empty($city))
+    if(empty($citycheck))
     {
       City::Add_City($city);
       $city=City::Get_City_By_Name($city);
