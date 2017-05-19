@@ -68,6 +68,6 @@ div.general-container{
 	color: red;
 }
 
-input{
-	background:white;
+input[type="text"]{
+	background-color:#ffffff;
 }
