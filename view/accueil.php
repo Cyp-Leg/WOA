@@ -30,8 +30,6 @@
 			</div>
 		</div>
 
-		<?php if(isAdmin()){?> <a href="google.fr"> laaaa </a><?php }
-		else echo "bite";?>
 
 		<?php require ("view/footer.php");?>
 	</body>
