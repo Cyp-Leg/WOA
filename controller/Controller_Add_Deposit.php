@@ -11,8 +11,10 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
+header("Location: view/test.php");
 
-if(empty($title) || empty($descrip) || empty($price) || empty($city))
+
+/*if(empty($title) || empty($descrip) || empty($price) || empty($city))
 {
   $message="Merci de remplir tous les champs obligatoires!";
   header("Location: ../Erreur.php?erreur=".$message);
@@ -43,6 +45,6 @@ else
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     header('Location: ../Consult.php');
   }
-}
+}*/
 
 ?>
