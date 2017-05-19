@@ -29,10 +29,10 @@
     				<tbody>
               <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php">
 
-
-								<tr><td><label for="announceTitle">Titre de l'annonce : </label></td>
+								<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
-								<tr><td><label>Catégorie</label></td>
+
+								<tr><td><label><div class="oblig">*</div>Catégorie</label></td>
 									<td>
 									<?php foreach($lesCategories as $row)
 										{
@@ -43,18 +43,25 @@
 										?>
 									</td>
 								</tr>
-              	<tr><td><label for="announceDescrip">Description : </label></td>
+
+              	<tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
               			<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
-              	<tr><td><label for="announcePrice">Prix : </label></td>
+
+              	<tr><td><label for="announcePrice"><div class="oblig">*</div>Prix : </label></td>
               			<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
-								<tr><td><label for="announceCity">Ville : </label></td>
+
+								<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
 		              	<td><input type="text" name="announceCity" id="announceCity"></td></tr>
-								<tr><td><label for="nick">Pseudo : </label></td>
-										<td><input type="text" name="nick" id="nick"></td>
-										<td class="descr">Pas encore enregistré? <a href="Inscription.php">Inscrivez-vous vite!</a></td></tr>
-              	<tr><td><label for="mail">Mail de contact : </label></td>
-              			<td><input type="text" name="mail" id="mail"></td></tr>
-              	<tr><td><input type="submit" value="Valider"></td></tr>
+
+								<tr><td><label for="announcePic">(optionnel) Photographie/affiche : </label></td>
+										<td><div class="file-path-wrapper">
+        									<input name="announcePic" class="file-path validate" type="text">
+      									</div>
+										</td>
+								</tr>
+
+								<tr><td><input type="submit" value="Valider"></td></tr>
+
               </form>
           </tbody>
         </table>
