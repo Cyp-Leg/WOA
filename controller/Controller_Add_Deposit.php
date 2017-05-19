@@ -39,7 +39,7 @@ else
     {
       City::Add_City($city);
       $city=City::Get_City_By_Name($city);
-      header("Location: ../Erreur.php?erreur=".$city);
+      $city=$city['cityname'];
     }
   //  Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
   //  header('Location: ../Consult.php');
