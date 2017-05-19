@@ -76,13 +76,13 @@ class Announce
       require_once('Pdo.php');
       $bdheroku = connexion();
 
-      $req = $bdheroku->prepare('INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES(:announcetitle, :announcedescrip, :announceprice, :announcecity, :announcecateg, :announceuser)');
-      $req->bindParam(':announcetitle',$announceTitle);
+      $req = $bdheroku->prepare("INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$announceTitle."','".$announceDescrip."',".$announcePrice.",".$announceCity.",".$announceCateg.",".$announceUser.")");
+      /*$req->bindParam(':announcetitle',$announceTitle);
       $req->bindParam(':announcedescrip',$announceDescrip);
       $req->bindParam(':announceprice',$annoucePrice);
       $req->bindParam(':announcecity',$announceCity);
       $req->bindParam(':announcecateg',$announceCateg);
-      $req->bindParam(':announceuser',$announceUser);
+      $req->bindParam(':announceuser',$announceUser);*/
 
       $req->execute();
     }
