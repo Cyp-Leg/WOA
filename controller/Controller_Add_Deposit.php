@@ -41,8 +41,8 @@ else
       $city=City::Get_City_By_Name($city);
       $city=$city['cityname'];
     }
-  //  Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
-  //  header('Location: ../Consult.php');
+    Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
+    header('Location: ../Consult.php');
   }
 }
 
