@@ -8,7 +8,7 @@
 			<li><a href="Consult.php">Consulter les annonces</a></li>
 			<?php if(isOnline()){ ?><li><a href="Personnal_events.php">Mes événements</a></li><?php } ?>
 			<?php if(isAdmin()){ ?><li><a href="Administrateur.php">Administrateur</a></li><?php } ?>
-		  <?php is(!isOnline()){ ?><li><a href="Connexion.php">Connexion</a></li><?php } ?>
+		  <?php if(!isOnline()){ ?><li><a href="Connexion.php">Connexion</a></li><?php } ?>
 			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
 		</ul>
 		<ul class="side-nav left-aligned" id="mobile-demo">
