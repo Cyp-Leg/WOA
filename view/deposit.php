@@ -36,7 +36,7 @@
 									<td>
 									<?php foreach($lesCategories as $row)
 										{
-											?><input name="announceCategory" type="radio" id="<?php echo $row['categoryid']?>" />
+											?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="radio" id="<?php echo $row['categoryid']?>" />
 												<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>
 										<?php
 										}
