@@ -42,7 +42,8 @@ else
       $city=$city['cityname'];
     }
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
-    header('Location: ../Consult.php');
+    $lasterr=pg_last_error($dbconn);
+    header('Location: ../Erreur.php?erreur='.$lasterr);
   }
 }
 
