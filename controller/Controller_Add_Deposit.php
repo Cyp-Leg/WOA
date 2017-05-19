@@ -11,7 +11,7 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
-header("Location: view/test.php");
+header("Location: ../view/test.php");
 
 
 /*if(empty($title) || empty($descrip) || empty($price) || empty($city))
