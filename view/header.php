@@ -9,7 +9,7 @@
 			<?php if(isLogged()){ ?><li><a href="Personnal_events.php">Mes événements</a></li><?php } ?>
 			<?php if(isAdmin()){ ?><li><a href="Administrateur.php">Administrateur</a></li><?php } ?>
 		  <?php if(!isLogged()){ ?><li><a href="Connexion.php">Connexion</a></li><?php } ?>
-			<li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li>
+			<?php if(isLogged()){ ?><li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li><?php } ?>
 		</ul>
 		<ul class="side-nav left-aligned" id="mobile-demo">
 			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accaaaaaueil</a></li>
