@@ -42,10 +42,10 @@ else
     }
     $city=City::Get_City_By_Name($city);
     $city=$city['cityid'];
-    $message="INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$title."','".$descrip."',".$price.",'".$city."',".$categ.",".$userid.")";
-    header("Location: ../Erreur.php?erreur=".$message);
-    /*Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
-    header('Location: ../Consult.php');*/
+    /*$message="INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$title."','".$descrip."',".$price.",'".$city."',".$categ.",".$userid.")";
+    header("Location: ../Erreur.php?erreur=".$message);*/
+    Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
+    header('Location: ../Consult.php');
   }
 }
 
