@@ -18,7 +18,7 @@ $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
 $nom = $userid."_".$time.".".$ext;
 $dir="../medias/annpics/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$nom);
-
+/*
 
 if(empty($title) || empty($descrip) || empty($price) || empty($city))
 {
@@ -59,7 +59,7 @@ else
     /*Photo::Add_Photo($nom,$annid);*/
 
   //  header('Location: ../Consult.php');
-  }
-}
+  //}
+header("Location: ../view/test.php")
 
 ?>
