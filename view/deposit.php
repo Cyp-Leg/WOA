@@ -64,6 +64,7 @@
 											</div>
 										</div></td></tr>
 
+											<tr><td><input type="submit" value="Valider"></tr></td>
               </form>
           </tbody>
         </table>
