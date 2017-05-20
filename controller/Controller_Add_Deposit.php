@@ -51,11 +51,11 @@ else
     }
     $city=City::Get_City_By_Name($city);
     $city=$city['cityid'];
-    /*$message="INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$title."','".$descrip."',".$price.",'".$city."',".$categ.",".$userid.")";
-    header("Location: ../Erreur.php?erreur=".$message);*/
-    Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
+    $message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
+    header("Location: ../Erreur.php?erreur=".$message);
+    /*Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
-    Photo::Add_Photo($nom,$annid);
+    Photo::Add_Photo($nom,$annid);*/
 
     header('Location: ../Consult.php');
   }
