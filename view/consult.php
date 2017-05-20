@@ -38,7 +38,6 @@
 								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
 								if(empty($photoname)){$photoname="errpic.png";}
 								echo "<tr><td><img src=\"medias/annpics/".$photoname."\" class=\"annpic\" /></td>";
-								echo "<td>Chemin de la photo : ".$photoname;
 	              echo "<td>".$row['announcetitle']."</td>";
 	              $cityname = City::Get_City_Name($row['cityid']);
 	              echo "<td>".$cityname['cityname']."</td>";
