@@ -57,7 +57,7 @@
 												<div class="file-field input-field">
 		 											<div class="btn">
 			 											<span>Importer...</span>
-														<input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+														<!--input type="hidden" name="MAX_FILE_SIZE" value="10485760" /-->
 			 											<input type="file" name="announcePic" id="announcePic" />
 		 											</div>
 	 											</div></td>
