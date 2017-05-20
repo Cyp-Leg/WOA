@@ -54,11 +54,11 @@ else
     $city=$city['cityid'];
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
-    $message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
-    header("Location: ../Erreur.php?erreur=".$message);
-    /*Photo::Add_Photo($nom,$annid);*/
+    /*$message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
+    header("Location: ../Erreur.php?erreur=".$message);*/
+    Photo::Add_Photo($nom,$annid);
 
-  //  header('Location: ../Consult.php');
+    header('Location: ../Consult.php');
   }
 }
 
