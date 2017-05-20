@@ -57,7 +57,7 @@ else
     $annid=Announce::Get_Last_Announce_Id();
     Photo::Add_Photo($nom,$annid);*/
 
-    header('Location: ../Consult.php');
+  //  header('Location: ../Consult.php');
   }
 }
 
