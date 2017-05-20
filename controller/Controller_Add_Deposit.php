@@ -23,6 +23,7 @@ else if(empty($categ)){
 }
 else
 {
+  $descrip = nl2br( $descrip );
   $city=strtoupper($city);
   $userid=Users::Get_User_Id($cookie);
   $citycheck=City::Get_City_By_Name($city);
