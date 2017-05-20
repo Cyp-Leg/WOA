@@ -53,7 +53,7 @@
 								<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
 		              	<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 
-								<tr><td><!--<label for="announcePic">(optionnel) Photographie/affiche (max. 10 Mo) : </label>
+								<tr><td><label for="announcePic">(optionnel) Photographie/affiche (max. 10 Mo) : </label>
 										<div class="file-field input-field">
 											<div class="btn">
 												<span>Importer...</span>
@@ -62,12 +62,7 @@
 											<div class="file-path-wrapper">
 												<input class="file-path validate" type="text">
 											</div>
-										</div>--><label for="mon_fichier">Fichier (tous formats | max. 1 Mo) :</label><br />
-
-     												 <input type="file" name="mon_fichier" id="mon_fichier" /><br /></td>
-									</tr>
-
-								<tr><td><input type="submit" value="Valider"></td></tr>
+										</div></td></tr>
 
               </form>
           </tbody>
