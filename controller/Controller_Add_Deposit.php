@@ -12,9 +12,10 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
+$userid = Users::Get_User_Id($cookie);
 $time=time();
 $ext=strrchr($_FILE['announcePid']['name'],".");
-$nom = $userid."_".$time.$ext;
+$nom = $userid."_".$time.".".$ext;
 $dir="../medias/annpics/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$nom);
 
