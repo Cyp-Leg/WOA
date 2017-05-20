@@ -12,8 +12,9 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
-
-$nom = md5(uniqid(rand(), true));
+$time=time();
+$ext=strrchr($_FILE['announcePid']['name'],".");
+$nom = $userid."_".$time.$ext;
 $dir="../medias/annpics/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$nom);
 
@@ -55,7 +56,7 @@ else
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
     Photo::Add_Photo($nom,$annid);
-    
+
     header('Location: ../Consult.php');
   }
 }
