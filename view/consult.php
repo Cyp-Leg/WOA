@@ -1,3 +1,7 @@
+<?php
+
+require_once("model/Photo.php");
+?>
 <!doctype html>
 <html lang="fr">
 	<head>
