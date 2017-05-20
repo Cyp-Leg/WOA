@@ -13,7 +13,7 @@ while($element = readdir($dir)) {
 
 closedir($dir);
 
-echo "Liste des fichiers/documents accessibles dans '$dir_nom' : \n\n";
+echo "Liste des fichiers/documents accessibles dans '$dir_info' : \n\n";
 	echo "\t\t<ul>\n";
 		foreach($fichier as $lien) {
 			echo "\t\t\t<li><a href=\"$dir_nom/$lien \">$lien</a></li>\n";
