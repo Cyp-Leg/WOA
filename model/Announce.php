@@ -97,6 +97,6 @@ class Announce
 
       $data = $req->fetch();
 
-      return $data['announceid'];
+      return $data;
     }
 } ?>
