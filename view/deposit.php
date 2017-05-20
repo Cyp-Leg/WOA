@@ -27,7 +27,7 @@
     					</tr>
     				</thead>
     				<tbody>
-              <form class="col s12" method="post" action="../view/test.php" enctype="multipart/form-data">
+              <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
 
 								<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'annonce : </label></td>
               			<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
