@@ -23,7 +23,7 @@ else if(empty($categ)){
 }
 else
 {
-  $descrip = pg_escape_string($descip);
+  $descrip = pg_escape_string($descrip);
   $city=strtoupper($city);
   $userid=Users::Get_User_Id($cookie);
   $citycheck=City::Get_City_By_Name($city);
