@@ -97,6 +97,6 @@ class Announce
 
       $data = $req->fetch();
 
-      return $data['MAX(annouceid)'];
+      return $data[0];
     }
 } ?>
