@@ -21,7 +21,7 @@ class Photo
     $req = $bdheroku->prepare("SELECT photoname FROM Photo WHERE announceid= :annid");
     $req->bindParam(':annid',$annid);
 
-    $req->exeute();
+    $req->execute();
 
     $data = $req->fetch();
 
