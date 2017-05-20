@@ -23,6 +23,7 @@ else if(empty($categ)){
 }
 else
 {
+  $city=strtoupper($city);
   $userid=Users::Get_User_Id($cookie);
   $citycheck=City::Get_City_By_Name($city);
 
@@ -41,7 +42,7 @@ else
       $city=City::Get_City_By_Name($city);
       $city=$city['cityname'];
     }
-     $message="INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$title."','".$descrip."',".$price.",".$city.",".$categ.",".$userid.")";
+     $message="INSERT INTO Announce(announcetitle, announcedescrip,announceprice,cityid,categoryid,usersid) VALUES('".$title."','".$descrip."',".$price.",'".$city."',".$categ.",".$userid.")";
      header("Location: ../Erreur.php?erreur=".$message);
     /*Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     header('Location: ../Consult.php');*/
