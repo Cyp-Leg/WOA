@@ -14,7 +14,7 @@ $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 $userid = Users::Get_User_Id($cookie);
 $time=time();
-$ext=strrchr($_FILE['announcePid']['name'],".");
+$ext=strrchr($_FILE['announcePic']['name'],".");
 $nom = $userid."_".$time.".".$ext;
 $dir="../medias/annpics/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$nom);
@@ -52,11 +52,11 @@ else
     }
     $city=City::Get_City_By_Name($city);
     $city=$city['cityid'];
+    Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
+    $annid=Announce::Get_Last_Announce_Id();
     $message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
     header("Location: ../Erreur.php?erreur=".$message);
-    /*Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
-    $annid=Announce::Get_Last_Announce_Id();
-    Photo::Add_Photo($nom,$annid);*/
+    /*Photo::Add_Photo($nom,$annid);*/
 
   //  header('Location: ../Consult.php');
   }
