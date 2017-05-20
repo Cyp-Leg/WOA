@@ -27,14 +27,17 @@
 	    			</tr>
 	    		</thead>
 	    		<tbody>
-	          <tr><th>Titre</th>
+	          <tr><th>Photo</th>
+								<th>Titre</th>
 	              <th>Lieu</th>
 	              <th>Prix</th>
 	          </tr>
 	          <?php
 	          foreach($lesAnnonces as $row)
 	            {
-	              echo "<tr><td>".$row['announcetitle']."</td>";
+								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
+								echo "<tr><td><img src=\"medias/annpics/\"".$photoname." /></td>"
+	              echo "<td>".$row['announcetitle']."</td>";
 	              $cityname = City::Get_City_Name($row['cityid']);
 	              echo "<td>".$cityname['cityname']."</td>";
 	              echo "<td>".$row['announceprice']."</td></tr>";

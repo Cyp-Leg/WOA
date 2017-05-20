@@ -86,4 +86,17 @@ class Announce
 
       $req->execute();
     }
+
+    public static function Get_Last_Announce_Id()
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare("SELECT MAX(announceid) AS max_id FROM Announce");
+      $req->execute();
+
+      $data = $req->fetch();
+
+      return $data['announceid'];
+    }
 } ?>
