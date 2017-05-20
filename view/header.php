@@ -1,7 +1,7 @@
 <nav>
 	<div class="nav-wrapper blue lighten-4">
 		<!--<a href="/Accueil.php" class="logosite"><img src="medias/logosite.png"></a>-->
-		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">llll</i></a>
+		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="Accueil.php">Accueil</a></li>
 			<li><a href="Deposit.php">Désposer une annonce</a></li>
@@ -12,7 +12,7 @@
 			<?php if(isLogged()){ ?><li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li><?php } ?>
 		</ul>
 		<ul class="side-nav left-aligned" id="mobile-demo">
-			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accaaaaaueil</a></li>
+			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Personnal_events.php"><i class="large material-icons">class</i>Mes événements</a></li>
