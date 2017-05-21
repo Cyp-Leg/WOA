@@ -16,8 +16,8 @@ $userid = Users::Get_User_Id($cookie);
 $time=time();
 $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
 $nom = $userid."_".$time.".".$ext;
-if(!file_exists("../medias/annpics")){mkdir("../medias/annpics/");}
-$dir="../medias/annpics/{$nom}";
+//if(!file_exists("../medias/annpics")){mkdir("../medias/avatars/");}
+$dir="../medias/avatars/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
 
 
@@ -39,7 +39,7 @@ else
   $citycheck=City::Get_City_By_Name($city);
 
   if(empty($userid)){
-    $message = "Pseudo non reconnu :".$userid;
+    $message = "Vous devez être connecté pour poster une annonce!".$userid;
     header("Location: ../Erreur.php?erreur=".$message);
     ?>
     <script type="text/javascript">alert('Pseudo inexistant');</script>
