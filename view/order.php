@@ -20,8 +20,6 @@
 		</div><
     <div class="container">
       <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
-      <?php echo $userid;
-      echo $usersmail;?>
     </div>
     <!--div>
 			<a href="Validate.php?prod=<?php echo $annprop['announceid'];?>" class="btn waves-effect waves-light" id="submit" value="valider">Commander
