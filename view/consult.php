@@ -36,7 +36,7 @@
 	          foreach($lesAnnonces as $row)
 	            {
 								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
-								if( empty($photoname) || !file_exists("medias/annpics/{$photoname}") )
+								if( empty($photoname) || !(file_exists("medias/annpics/{$photoname}")) )
 								{
 									$photoname="errpic.png";
 								}
