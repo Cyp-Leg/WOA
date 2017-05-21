@@ -29,10 +29,8 @@
       <div class="ann-caract">
         <ul>
           <?php
-            $cat = Category::Get_Category_Name($annprop['categoryid']);
             echo "<li>Catégorie : ".$cat."</li>";
             echo "<li>Prix : ".$annprop['announceprice']."€ </li>";
-            $city = City::Get_City_Name($annprop['cityid']);
             echo "<li>".$city."</li>";
           ?>
         </ul>
