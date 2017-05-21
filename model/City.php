@@ -41,6 +41,6 @@ class City
     $req->execute();
     $data = $req->fetch();
 
-    return $data;
+    return $data['cityname'];
   }
 } ?>

@@ -40,7 +40,7 @@
 								echo "<tr><td><img src=\"medias/annpics/".$photoname."\" class=\"annpic\" /></td>";
 	              echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
 	              $cityname = City::Get_City_Name($row['cityid']);
-	              echo "<td>".$cityname['cityname']."</td>";
+	              echo "<td>".$cityname."</td>";
 	              echo "<td>".$row['announceprice']."</td></tr>";
 	            } ?>
 	          </tbody>
