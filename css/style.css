@@ -77,10 +77,10 @@ img.annpic{
 	height:50px;
 }
 
-.left-photo{
+img.left-photo{
 	margin-left:5%;
-	width:150px;
-	height:150px;
+	width:350px;
+	height:auto;
 }
 
 .ann-carac{
