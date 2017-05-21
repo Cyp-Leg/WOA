@@ -20,7 +20,7 @@
 		</div>
 
     <div class="container">
-      <div>
+      <div class="annpic">
         <?php
         if(empty($photoname)){$photoname="errpic.png";}
         echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
