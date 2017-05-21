@@ -30,8 +30,8 @@
         <ul>
           <?php
             echo "<li>Catégorie : ".$cat."</li>";
-            echo "<li>Prix : ".$annprop['announceprice']."€ </li>";
-            echo "<li>".$city."</li>";
+            echo "<li>Prix : ".$annprop['announceprice']." € </li>";
+            echo "<li>Ville : ".$city."</li>";
           ?>
         </ul>
       </div>
