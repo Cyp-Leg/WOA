@@ -23,7 +23,7 @@
       <div class="left-photo">
       	<?php
         	if(empty($photoname)){$photoname="errpic.png";}
-        	echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
+        	echo "<img src=\"medias/avatars/".$photoname."\" class=\"left-photo\"/>";
       	?>
       </div>
       <div class="ann-caract">
