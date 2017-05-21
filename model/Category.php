@@ -26,7 +26,8 @@ class Category
     $req->execute();
 
     $data = $req->fetch();
-    return $data;
+
+    return $data['categoryname'];
   }
 }
 ?>
