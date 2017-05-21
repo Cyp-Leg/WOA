@@ -36,7 +36,14 @@
         </ul>
       </div>
       <div class="ann-descrip">
-        <?php echo $annprop['announcedescrip']; ?>
+				<table>
+					<thead>
+						<th>Description du produit</th>
+					</thead>
+					<tbody>
+        		<tr><td><?php echo $annprop['announcedescrip']; ?></td></tr>
+					</tbody>
+				</table>
       </div>
     </div>
     <?php require("view/footer.php"); ?>
