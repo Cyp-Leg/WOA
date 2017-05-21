@@ -7,8 +7,8 @@
   require_once("controller/Controller_Etat_Utilisateur.php");
 
   $annid = $_GET['ann'];
-  $annprop = Announce::Get_Announce($ann);
-  $photoname = Photo::Get_Photo_By_Annid($ann);
+  $annprop = Announce::Get_Announce($annid);
+  $photoname = Photo::Get_Photo_By_Annid($annid);
   $cat = Category::Get_Category_Name($annprop['categoryid']);
   $city = City::Get_City_Name($annprop['cityid']);
 
