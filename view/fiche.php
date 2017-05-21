@@ -19,21 +19,21 @@
 			<h4 class="center-align"><?php echo $annprop['announcetitle']; ?></h4>
 		</div>
 
+    <div class="ann-caract">
+      <ul>
+        <?php
+          echo "<li>Catégorie : ".$cat."</li>";
+          echo "<li>Prix : ".$annprop['announceprice']." € </li>";
+          echo "<li>Ville : ".$city."</li>";
+        ?>
+      </ul>
+    </div>
     <div class="container">
       <div class="annpic">
         <?php
         if(empty($photoname)){$photoname="errpic.png";}
         echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
         ?>
-      </div>
-      <div class="ann-caract">
-        <ul>
-          <?php
-            echo "<li>Catégorie : ".$cat."</li>";
-            echo "<li>Prix : ".$annprop['announceprice']." € </li>";
-            echo "<li>Ville : ".$city."</li>";
-          ?>
-        </ul>
       </div>
       <div class="ann-descrip">
         <?php echo $annprop['announcedescrip']; ?>
