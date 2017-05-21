@@ -26,8 +26,8 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare("SELECT usersmail FROM Users WHERE usersmail= :usrmail");
-    $req->bindParam(':usrmail',$userid);
+    $req = $bdheroku->prepare("SELECT usersmail FROM Users WHERE usersid= :userid");
+    $req->bindParam(':userid',$userid);
     $req->execute();
 
     $data = $req->fetch();
