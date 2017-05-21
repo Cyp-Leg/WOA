@@ -16,7 +16,7 @@ class Category
     return $result;
   }
 
-  public function Get_Category_Name($categid)
+  public static function Get_Category_Name($categid)
   {
     require_once('Pdo.php');
     $bdheroku = connexion();
