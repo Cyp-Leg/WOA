@@ -20,10 +20,10 @@
 		</div>
 
     <div class="container">
-      <div class="left-photo">
+      <div>
         <?php
         if(empty($photoname)){$photoname="errpic.png";}
-        echo "<img src=\"medias/annpics/".$photoname."\" class=\"annpic\" />";
+        echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
         ?>
       </div>
       <div class="ann-caract">
