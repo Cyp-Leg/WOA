@@ -16,7 +16,6 @@ $userid = Users::Get_User_Id($cookie);
 $time=time();
 $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
 $nom = $userid."_".$time.".".$ext;
-mkdir("../medias/annpics");
 $dir="../medias/annpics/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
 
