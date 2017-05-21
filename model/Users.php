@@ -21,6 +21,21 @@ class Users
 	}
 
 
+  public static function Get_Users_Mail($userid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare("SELECT usersmail FROM Users WHERE usersmail= :usrmail");
+    $req->bindParam(':usrmail',$userid);
+    $req->execute();
+
+    $data = $req->fetch();
+
+    return $data['usersmail'];
+  }
+
+
   public static function Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode)
   {
     require_once('Pdo.php');

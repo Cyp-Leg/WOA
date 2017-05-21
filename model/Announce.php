@@ -17,6 +17,20 @@ class Announce
       return $result;
     }
 
+    public static function Get_Announce_User($annid)
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare("SELECT usersid FROM Announce WHERE announceid= :annid");
+      $req->bindParam(':annid', $annid);
+      $req->execute();
+
+      $data = $req->fetch();
+
+      return $data['usersid'];
+    }
+
     public static function Get_All_Announces_By_Category($categoryId)
     {
       require_once('Pdo.php');
