@@ -20,7 +20,7 @@
 		</div><
     <div class="container">
       <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
-      <?php echo $usersid;
+      <?php echo $userid;
       echo $usersmail;?>
     </div>
     <!--div>
