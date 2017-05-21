@@ -36,7 +36,10 @@
 	          foreach($lesAnnonces as $row)
 	            {
 								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
-								if(empty($photoname) || !file_exists("medias/annpics/{$photoname}")){$photoname="errpic.png";}
+								if( empty($photoname) || !file_exists("medias/annpics/{$photoname}") )
+								{
+									$photoname="errpic.png";
+								}
 								echo "<tr><td><img src=\"medias/annpics/".$photoname."\" class=\"annpic\" /></td>";
 	              echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
 	              $cityname = City::Get_City_Name($row['cityid']);
