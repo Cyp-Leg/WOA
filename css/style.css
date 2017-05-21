@@ -78,7 +78,7 @@ img.annpic{
 }
 
 img.left-photo{
-	margin-left:5%;
+	float:left;
 	width:350px;
 	height:auto;
 }
