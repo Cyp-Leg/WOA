@@ -15,5 +15,18 @@ class Category
     }
     return $result;
   }
+
+  public function Get_Category_Name($categid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare("SELECT categoryname FROM category WHERE categoryid= :categid");
+    $req->bindParam(':categid', $categid);
+    $req->execute();
+
+    $data = $req->fetch();
+    return $data;
+  }
 }
 ?>

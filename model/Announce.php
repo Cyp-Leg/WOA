@@ -87,6 +87,20 @@ class Announce
       $req->execute();
     }
 
+    public static function Get_Announce($announceid)
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare("SELECT * FROM Announce WHERE announceid= :announceid");
+      $req->bindParam(':announceid',$announceid);
+      $req->execute();
+
+      $data = $req->fetch();
+
+      return $data;
+    }
+
     public static function Get_Last_Announce_Id()
     {
       require_once('Pdo.php');
