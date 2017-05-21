@@ -19,11 +19,12 @@
 			<h4 class="center-align"><?php echo $annprop['announcetitle']; ?></h4>
 		</div>
 
-    <div class="container">ss="annpic">
-      <?php
-        if(empty($photoname)){$photoname="errpic.png";}
-        echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
-      ?>
+    <div class="container">
+      <div class="annpic">
+      	<?php
+        	if(empty($photoname)){$photoname="errpic.png";}
+        	echo "<img src=\"medias/annpics/".$photoname."\" class=\"left-photo\"/>";
+      	?>
       </div>
       <div class="ann-caract">
         <ul>
