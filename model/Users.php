@@ -75,7 +75,7 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE usersid= :userid");
+    $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE usersid= :usersid");
     $req->bindParam(':usersid',$userid);
 
     $req->execute();
