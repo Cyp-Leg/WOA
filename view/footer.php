@@ -1,5 +1,5 @@
 <br>
-<footer class="page-footer blue lighten-4">
+<footer class="page-footer greyperso">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">

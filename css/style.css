@@ -16,10 +16,10 @@ footer {
 	margin-top:80%;
 }
 nav {
-	background-color: ##0e1521;
+	background-color: #a4c5f9;
 }
 footer.page-footer {
-	background-color: ##0e1521;
+	background-color: #a4c5f9;
 	padding-bottom: 0;
 }
 .rowSpe {
@@ -90,4 +90,8 @@ img.left-photo{
 
 .ann-descrip{
 	margin-top:20%;
+}
+
+.greyperso{
+	background-color:#0e1521;
 }
