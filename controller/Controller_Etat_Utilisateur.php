@@ -29,7 +29,11 @@ function isAdmin(){
     $userid=Users::Get_User_Id($cookie);
     $role=Users::Get_Users_Role($userid);
 
-    return($role===1);
+    if($role===1){
+      return true;
+    }
+    else return false;
   }
+  else return false;
 }
  ?>
