@@ -12,7 +12,7 @@
     $msg='Merci de remplir tous les champs!';
     header('Location: Erreur.php?erreur='.$msg);
   }
-  else Orders::Add_Order($date,$userid,$announceid,$quantity));
+  else Orders::Add_Order($date,$userid,$announceid,$quantity);
 
 
   $message='Commande validée!';
