@@ -21,3 +21,4 @@
     <div>
       <p> Votre commande a bien été passée! </p>
       <?php echo $userid; ?>
+      <?php echo $quantity; ?>
