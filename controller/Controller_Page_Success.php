@@ -2,7 +2,7 @@
 require("controller/Controller_Etat_Utilisateur.php");
 require("model/Orders.php");
 require("model/Announce.php");
-require("model/Users.php");
+//require("model/Users.php");
 
 $message=htmlspecialchars($_GET['code']);
 $usermail=htmlspecialchars($_POST['usermail']);
