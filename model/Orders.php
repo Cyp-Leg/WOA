@@ -15,7 +15,7 @@ class Orders
     $req->execute();
   }
 
-  public static function Get_Last_Order($userid);
+  public static function Get_Last_Order($userid)
   {
     require_once('Pdo.php');
     $bdheroku = connexion();
