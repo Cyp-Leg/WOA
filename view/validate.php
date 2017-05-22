@@ -19,5 +19,5 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div>
-      <p>
-        <?php echo "date : ".$date;?>
+      <p> Votre commande a bien été passée! </p>
+      <?php echo $userid; ?>
