@@ -19,32 +19,34 @@
 		<div>
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
-		<div class="general-container">
-      <table class="bored highlight grey lighten-5">
-        <thead>
-          <tr>
-            <th>Vos commandes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><th>Numéro de commande</th>
-              <th>Date</th>
-              <th>Titre de l'annonce</th>
-              <th>Vendeur</th>
-          </tr>
-          <?php
-          foreach($lesOrders as $row)
-          {
-            $announceid=Orders::Get_Announce_From_Order($row['ordersid']);
-            $announce=Announce::Get_Announce($announceid);
-            $seller=Users::Get_Users_Mail($announce['usersid']);
-            echo "<tr><td>".$row['ordersid']."</td>";
-            echo "<td>".$row['ordersdate']."</td>";
-            echo "<td>".$announce['announcetitle']."</td>";
-            echo "<td>".$seller."</td></tr>";
-          }?>
-        </tbody>
-      </table>
+    <div class="container">
+  		<div class="general-container">
+        <table class="bored highlight grey lighten-5">
+          <thead>
+            <tr>
+              <th>Vos commandes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th>Numéro de commande</th>
+                <th>Date</th>
+                <th>Titre de l'annonce</th>
+                <th>Vendeur</th>
+            </tr>
+            <?php
+            foreach($lesOrders as $row)
+            {
+              $announceid=Orders::Get_Announce_From_Order($row['ordersid']);
+              $announce=Announce::Get_Announce($announceid);
+              $seller=Users::Get_Users_Mail($announce['usersid']);
+              echo "<tr><td>".$row['ordersid']."</td>";
+              echo "<td>".$row['ordersdate']."</td>";
+              echo "<td><a href=\"Fiche.php?ann=".$announce['announceid']."\">".$announce['announcetitle']."</a></td>";
+              echo "<td>".$seller."</td></tr>";
+            }?>
+          </tbody>
+        </table>
+      </div>
     </div>
     <?php require ("view/footer.php");?>
   </body>
