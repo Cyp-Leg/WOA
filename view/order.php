@@ -31,6 +31,7 @@
 	    		<i class="material-icons right">shopping_cart</i>
 				</a>
 	    </div>
+		</form>
     <?php require("view/footer.php"); ?>
   </body>
 </html>
