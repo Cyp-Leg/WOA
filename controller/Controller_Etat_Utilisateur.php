@@ -26,7 +26,8 @@ function unloggedOnly(){
 function isAdmin(){
   if(isset($_COOKIE['cookieperso'])){
     $cookie=$_COOKIE['cookieperso'];
-    $user=Users::CheckAdmin($cookie);
+    $userid=Users::Get_User_Id($cookie);
+    $role=Users::Get_Users_Role($userid);
 
     return(!empty($user));
   }

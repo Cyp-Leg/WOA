@@ -71,18 +71,18 @@ class Users
 		return $result;
   }
 
-  public static function checkAdmin($cookie){
+  public static function Get_Users_Role($userid){
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE userscookie= '".$cookie."'");
-    //$req->bindParam(':cookie',$cookie);
+    $req = $bdheroku->prepare("SELECT usersrole FROM Users WHERE usersid= :userid");
+    $req->bindParam(':usersid',$userid);
 
     $req->execute();
 
     $data = $req->fetch();
 
-    return($data['usersrole'] == 1);
+    return($data['usersrole']);
   }
 
   public static function Set_User_Cookie($usersnick,$usercookie)
