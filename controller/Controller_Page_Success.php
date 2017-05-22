@@ -9,7 +9,7 @@ $usermail=htmlspecialchars($_POST['usermail']);
 
 $userid=Users::Get_User_Id($_COOKIE['cookieperso']);
 $orderid=Orders::Get_Last_Order($userid);
-$annid=Announce::Get_Announce_From_Order($orderid);
+$annid=Orders::Get_Announce_From_Order($orderid);
 $seller=Announce::Get_Announce_User($annid);
 $mail=Users::Get_Users_Mail($seller);
 
