@@ -29,8 +29,9 @@
 				<input type="text" name="prodQuantity" id="prodQuantity" />
 				<input type="hidden" name="userid" id="userid" value="<?php echo $userid; ?>" />
 				<input type="hidden" name="announceid" id="announceid" value="<?php echo $annid; ?>" />
-				<a href="Validate.php?prod=<?php echo $annid;?>" class="btn waves-effect waves-light" id="submit" value="valider">Valider la commande
-	    		<i class="material-icons right">shopping_cart</i>
+				<button class="btn waves-effect waves-light" id="submit" value="valider">Valider la commande
+				<i class="material-icons right">shopping_cart</i></td>
+			</button>
 				</a>
 	    </div>
 
