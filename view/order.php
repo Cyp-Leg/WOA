@@ -21,8 +21,10 @@
     <div class="container">
       <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
     </div>
+
 		<form action="Validate.php" method="POST">
-	    <div>
+
+		  <div>
 				<label for="prodQuantity">Quantité désirée : </label>
 				<input type="text" name="prodQuantity" id="prodQuantity" />
 				<input type="hidden" name="userid" id="userid" value="<?php echo $userid; ?>" />
@@ -31,7 +33,9 @@
 	    		<i class="material-icons right">shopping_cart</i>
 				</a>
 	    </div>
+
 		</form>
+
     <?php require("view/footer.php"); ?>
   </body>
 </html>

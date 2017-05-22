@@ -22,3 +22,8 @@
       <p> Votre commande a bien été passée! </p>
       <?php echo $userid; ?>
       <?php echo $quantity; ?>
+		</div>
+
+		<?php require("view/footer.php"); ?>
+	</body>
+</html>
