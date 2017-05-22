@@ -79,6 +79,7 @@ img.annpic{
 
 img.left-photo{
 	float:left;
+	margin-top:5%;
 	width:350px;
 	height:auto;
 }
