@@ -42,4 +42,21 @@ class Orders
 
     return $data['announceid'];
   }
+
+  public static function Get_User_Orders($userid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Orders WHERE usersid= :usersid');
+    $req->bindParam(':usersid',$userid);
+    $req->execute();
+
+    while($data = $req->fetch())
+    {
+      $result[] = $data;
+    }
+
+    return $result;
+  }
 } ?>

@@ -5,7 +5,7 @@
 			<li><a href="Accueil.php">Accueil</a></li>
 			<li><a href="Deposit.php">Désposer une annonce</a></li>
 			<li><a href="Consult.php">Consulter les annonces</a></li>
-			<?php if(isLogged()){ ?><li><a href="Personnal_events.php">Mes événements</a></li><?php } ?>
+			<?php if(isLogged()){ ?><li><a href="Personnal_orders.php">Mes commandes</a></li><?php } ?>
 			<?php if(isAdmin()){ ?><li><a href="Administrateur.php">Administrateur</a></li><?php } ?>
 		  <?php if(!isLogged()){ ?><li><a href="Connexion.php">Connexion</a></li><?php } ?>
 			<?php if(isLogged()){ ?><li><a title="Déconnexion" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i></a></li><?php } ?>
@@ -14,7 +14,7 @@
 			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
 			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
-			<li><a class="waves-effect waves-light btn" href="Personnal_events.php"><i class="large material-icons">class</i>Mes événements</a></li>
+			<li><a class="waves-effect waves-light btn" href="Personnal_orders.php"><i class="large material-icons">class</i>Mes commandes</a></li>
 			<li><a class="waves-effect waves-light btn" href="Administrateur.php"><i class="large material-icons">supervisor_account</i>Administrateur</a></li>
 			<li><a class="waves-effect waves-light btn" href="Connexion.php"><i class="large material-icons">input</i>Connexion</a></li>
 			<li><a class="waves-effect waves-light btn" href="controller/Controller_Deconnexion.php"><i class="large material-icons">power_settings_new</i>Déconnexion</a></li>
