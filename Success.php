@@ -1,4 +1,5 @@
 <?php
+require("controller/Controller_Etat_Utilisateur.php")
 $message=htmlspecialchars($_GET['code']);
 ?>
 
