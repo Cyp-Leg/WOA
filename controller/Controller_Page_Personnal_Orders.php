@@ -1,6 +1,6 @@
 <?php
 require('controller/Controller_Etat_Utilisateur.php');
-require('model/Users.php');
+//require('model/Users.php');
 require('model/Announce.php');
 require('model/Orders.php');
 
