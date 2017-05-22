@@ -19,25 +19,11 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-      <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
+		    <?php echo $message;
+        echo "Contactez le vendeur pour réaliser le paiement : ";
+        echo $mail;
+        ?>
     </div>
-
-		<form action="Validate.php" method="POST" enctype="multipart/form-data">
-
-		  <div>
-				<label for="prodQuantity">Quantité désirée : </label>
-				<input type="text" name="prodQuantity" id="prodQuantity" />
-				<input type="hidden" name="userid" id="userid" value="<?php echo $userid; ?>" />
-				<input type="hidden" name="announceid" id="announceid" value="<?php echo $annid; ?>" />
-				<input type="hidden" name="usersmail" id="usersmail" value="<?php echo $usersmail; ?>" />
-				<button class="btn waves-effect waves-light" id="submit" value="valider">Valider la commande
-				<i class="material-icons right">shopping_cart</i></td>
-			</button>
-				</a>
-	    </div>
-
-		</form>
-
-    <?php require("view/footer.php"); ?>
-  </body>
-</html>
+      <?php require ("view/footer.php");?>
+  	</body>
+  </html>
