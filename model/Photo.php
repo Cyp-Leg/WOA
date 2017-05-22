@@ -2,6 +2,18 @@
 
 class Photo
 {
+
+  public static function Delete_Photo_From_Announce($announceid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare("DELETE FROM Photo WHERE announceid= :annid");
+    $req->bindParam(':annid',$announceid);
+
+    $req->execute();
+  }
+
   public static function Add_Photo($photoname,$annid){
       require_once('Pdo.php');
       $bdheroku = connexion();
