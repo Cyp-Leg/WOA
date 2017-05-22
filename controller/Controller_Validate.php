@@ -8,7 +8,11 @@
   $quantity=htmlspecialchars($_POST['prodQuantity']);
   $date=date('Y\-m\-d');
 
-  Orders::Add_Order($date,$userid,$announceid,$quantity));
+  if(empty($userid) || empty($announceid) || empty($quantity) || empty($date)){
+    $msg='Merci de remplir tous les champs!';
+    header('Location: Erreur.php?erreur='.$msg);
+  }
+  else Orders::Add_Order($date,$userid,$announceid,$quantity));
 
 
   $message='Commande validée!';
