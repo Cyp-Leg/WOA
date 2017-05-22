@@ -17,20 +17,7 @@
 		<?php require ("view/header.php");?>
 		<div>
 			<h4 class="center-align">Le Coin des étudiants</h4>
-		</div><
-    <div class="container">
-      <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
-    </div>
-		<form action="Validate.php" method="POST">
-	    <div>
-				<label for="prodQuantity">Quantité désirée : </label>
-				<input type="text" name="prodQuantity" id="prodQuantity" />
-				<input type="hidden" name="userid" id="userid" value="<?php echo $userid; ?>" />
-				<input type="hidden" name="announceid" id="announceid" value="<?php echo $annid; ?>" />
-				<a href="Validate.php?prod=<?php echo $annprop['announceid'];?>" class="btn waves-effect waves-light" id="submit" value="valider">Valider la commande
-	    		<i class="material-icons right">shopping_cart</i>
-				</a>
-	    </div>
-    <?php require("view/footer.php"); ?>
-  </body>
-</html>
+		</div>
+    <div>
+      <p>
+        <?php echo "date : ".$date;?>
