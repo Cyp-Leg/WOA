@@ -97,5 +97,9 @@ img.left-photo{
 }
 
 footer.greyperso{
-	background-color:#162135
+	background-color:#162135;
+}
+
+.command{
+	margin-bottom:10%;
 }

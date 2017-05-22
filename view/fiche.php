@@ -35,7 +35,7 @@
           ?>
         </ul>
       </div>
-			<div>
+			<div class="command">
 				<a href="Order.php?prod=<?php echo $annprop['announceid'];?>" class="btn waves-effect waves-light" id="submit" value="valider">Commander
       		<i class="material-icons right">shopping_cart</i>
 				</a>
