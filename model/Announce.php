@@ -127,4 +127,14 @@ class Announce
 
       return $data[0];
     }
+
+    public static function Delete_Announce($annid)
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare("DELETE FROM Announce WHERE announceid= :annid");
+      $req->bindParam(':annid',$annid);
+      $req->execute();
+    }
 } ?>

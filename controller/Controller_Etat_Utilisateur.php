@@ -36,4 +36,11 @@ function isAdmin(){
   }
   else return false;
 }
+
+function adminOnly(){
+  if(!isAdmin())
+  {
+    header("Location: ../Erreur.php?err=Vous n'avez pas accès à cette page!");
+  }
+}
  ?>
