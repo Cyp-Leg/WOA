@@ -17,12 +17,12 @@
 		<?php require ("view/header.php");?>
 		<div>
 			<h4 class="center-align">Le Coin des étudiants</h4>
-		</div><
+		</div>
     <div class="container">
       <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
     </div>
 
-		<form action="Validate.php" method="POST" enctype="multipart/form-data">
+		<form action="controller/Controller_Validate.php" method="POST" enctype="multipart/form-data">
 
 		  <div>
 				<label for="prodQuantity">Quantité désirée : </label>
