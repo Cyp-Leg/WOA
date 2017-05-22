@@ -19,10 +19,8 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-		    <?php echo $message;
-        echo "Contactez le vendeur pour réaliser le paiement : ";
-        echo $mail;
-        ?>
+		    <?php echo $message;?>
+        <p>Contactez le vendeur pour réaliser le paiement : <a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a></p>
     </div>
       <?php require ("view/footer.php");?>
   	</body>
