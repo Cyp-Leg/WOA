@@ -6,7 +6,7 @@ require_once("../model/Orders.php");
 $annid=htmlspecialchars($_GET['annid']);
 
 Photo::Delete_Photo_From_Announce($annid);
-Orders::Delete
+Orders::Delete_Order_From_Announce($annid);
 Announce::Delete_Announce($annid);
 
 header("Location: ../Administrateur.php");
