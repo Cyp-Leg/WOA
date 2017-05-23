@@ -63,7 +63,7 @@
             <?php
             foreach($lesNotifs as $row)
             {
-							echo "<tr><td>".$row['notiftext']."</td></tr>";
+							echo "<tr><td>".$row['notiftext']."</td>";
               echo "<td>".$row['notifdate']."</td></tr>";
             }?>
           </tbody>
