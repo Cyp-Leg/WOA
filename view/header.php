@@ -13,7 +13,7 @@
 		<ul class="side-nav left-aligned" id="mobile-demo">
 			<li><a class="waves-effect waves-light btn" href="Accueil.php"><i class="large material-icons">store</i>Accueil</a></li>
 			<li><a class="waves-effect waves-light btn" href="Deposit.php"><i class="large material-icons">play_circle_outline</i>Désposer une annonce</a></li>
-			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Consulter une annonce</a></li>
+			<li><a class="waves-effect waves-light btn" href="Consult.php"><i class="large material-icons">replay</i>Voir les annonces</a></li>
 			<?php if(isLogged()){ ?><li><a class="waves-effect waves-light btn" href="Personnal_orders.php"><i class="large material-icons">class</i>Mes commandes</a></li><?php } ?>
 			<?php if(isAdmin()){ ?><li><a class="waves-effect waves-light btn" href="Administrateur.php"><i class="large material-icons">supervisor_account</i>Administrateur</a></li><?php } ?>
 			<?php if(!isLogged()){ ?><li><a class="waves-effect waves-light btn" href="Connexion.php"><i class="large material-icons">input</i>Connexion</a></li><?php } ?>
