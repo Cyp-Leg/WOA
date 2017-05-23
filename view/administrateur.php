@@ -27,7 +27,7 @@
 	    				<th>Liste des annonces</th>
 	    			</tr>
 	    		</thead>
-	    		<tbody>
+					<tbody>
 	          <tr><th>Photo</th>
 								<th>Titre</th>
 	              <th>Lieu</th>
@@ -45,7 +45,10 @@
 	              echo "<td>".$row['announceprice']."</td></tr>";
                 echo "<td> <a href=\"controller/Controller_Suppression_Announce.php?annid=".$row['announceid']."\">Supprimer </a> </td></tr>";
 	            } ?>
-	          </tbody>
-	        </table>
-				</div>
-      </div>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<?php require ("view/footer.php");?>
+	</body>
+</html>

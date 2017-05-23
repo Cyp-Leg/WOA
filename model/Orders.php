@@ -59,4 +59,16 @@ class Orders
 
     return $result;
   }
+
+  public static function Delete_Order_From_Announce($annid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('DELETE FROM Orders WHERE announceid= :annid');
+    $req->bindParam(':annid',$annid);
+
+    $req->execute();
+  }
+
 } ?>
