@@ -57,8 +57,8 @@
             </tr>
           </thead>
           <tbody>
-						<tr><th>Date</th>
-                <th>Intitulé</th>
+						<tr><th>Intitulé</th>
+                <th>Date</th>
             </tr>
             <?php
             foreach($lesNotifs as $row)
