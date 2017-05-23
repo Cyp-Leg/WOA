@@ -46,6 +46,10 @@
             }?>
           </tbody>
         </table>
+      </div>
+    </div>
+		<div class="container">
+			<div class="general-container">
 				<table class="bored highlight grey lighten-5">
           <thead>
             <tr>
@@ -64,8 +68,8 @@
             }?>
           </tbody>
         </table>
-      </div>
-    </div>
+			</div>
+		</div>
     <?php require ("view/footer.php");?>
   </body>
 </html>
