@@ -20,7 +20,11 @@ $nom = $userid."_".$time.".".$ext;
 $dir="../medias/avatars/{$nom}";
 move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
 
-
+if(gettype($price)!="double" && gettype($price)!="integer")
+{
+  $message="Merci d'indiquer un prix correct!";
+  header("Location: ../Erreur.php?erreur=".$message);
+}
 if(empty($title) || empty($descrip) || empty($price) || empty($city))
 {
   $message="Merci de remplir tous les champs obligatoires!";
