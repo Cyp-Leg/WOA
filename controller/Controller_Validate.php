@@ -1,6 +1,8 @@
 <?php
   require('model/Orders.php');
   require('model/Users.php');
+  require('model/Notification.php');
+  require('model/Announce.php');
   require('controller/Controller_Etat_Utilisateur.php');
 
   $userid=Users::Get_User_Id($_COOKIE['cookieperso']);
@@ -12,10 +14,18 @@
     $msg='Merci de remplir tous les champs!';
     header('Location: Erreur.php?erreur='.$msg);
   }
-  else Orders::Add_Order($date,$userid,$announceid,$quantity);
+  else
+  {
+    Orders::Add_Order($date,$userid,$announceid,$quantity);
+
+    $msg='Un client a commandé votre produit!';
+    $sellerid=Announce::Get_Announce_User($announceid);
+
+    Notification::Add_Notification($msg,$sellerid,$date);
 
 
-  $message='Commande validée!';
-  header('Location: Success.php?code='.$message);
+      $message='Commande validée!';
+      header('Location: Success.php?code='.$message);
+    }
 
 ?>

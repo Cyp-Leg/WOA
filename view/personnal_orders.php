@@ -46,6 +46,24 @@
             }?>
           </tbody>
         </table>
+				<table class="bored highlight grey lighten-5">
+          <thead>
+            <tr>
+              <th>Vos notifications</th>
+            </tr>
+          </thead>
+          <tbody>
+						<tr><th>Date</th>
+                <th>Intitulé</th>
+            </tr>
+            <?php
+            foreach($lesNotifs as $row)
+            {
+							echo "<tr><td>".$row['notiftext']."</td></tr>";
+              echo "<td>".$row['notifdate']."</td></tr>";
+            }?>
+          </tbody>
+        </table>
       </div>
     </div>
     <?php require ("view/footer.php");?>
