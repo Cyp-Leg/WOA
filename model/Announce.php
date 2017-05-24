@@ -137,4 +137,34 @@ class Announce
       $req->bindParam(':annid',$annid);
       $req->execute();
     }
+
+    public static function Get_All_Announces_From_Product()
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare('SELECT * FROM Announces WHERE announceid IN (SELECT announceid FROM Product)');
+      $req->execute();
+
+      while($data = $req->fetch())
+      {
+        $result[]=$data;
+      }
+      return $result;
+    }
+
+    public static function Get_All_Announces_From_Events()
+    {
+      require_once('Pdo.php');
+      $bdheroku = connexion();
+
+      $req = $bdheroku->prepare('SELECT * FROM Announces WHERE announceid IN(SELECT announceid FROM Events)');
+      $req->execute();
+
+      while($data=$req->fetch())
+      {
+        $result[]=$data;
+      }
+      return $result;
+    }
 } ?>

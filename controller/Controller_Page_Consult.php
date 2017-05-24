@@ -7,8 +7,8 @@ require_once("model/Product.php");
 require_once("model/Events.php");
 
 $lesAnnonces = Announce::Get_All_Announces();
-$lesProduits = Product::Get_All_Products();
-$lesEvents = Event::Get_All_Events();
+$lesProduits = Announce::Get_All_Announces_From_Products();
+$lesEvents = Announce::Get_All_Announces_From_Events();
 
 require_once("view/consult.php");
 ?>

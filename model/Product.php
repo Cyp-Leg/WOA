@@ -36,6 +36,6 @@ class Product
     {
       $result[]=$data;
     }
-    return $result
+    return $result;
   }
 } ?>
