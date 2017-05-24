@@ -37,6 +37,6 @@ class Events
     {
       $result[]=$data;
     }
-    return $result
+    return $result;
   }
 } ?>
