@@ -107,10 +107,14 @@ footer.greyperso{
 }
 
 .event{
+	width: 80%;
+	margin-left: 10%;
 	margin-top:25%;
 	margin-bottom: 10%;
 }
 
 .product{
+	width: 80%;
+	margin-left: 10%;
 	margin-bottom:10%;
 }
