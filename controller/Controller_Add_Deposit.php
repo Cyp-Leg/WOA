@@ -37,10 +37,6 @@ if(empty($title) || empty($descrip) || empty($price) || empty($city))
   $message="Merci de remplir tous les champs obligatoires!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-else if(empty($categ)){
-  $message="Merci de sélectionner une catégorie!";
-  header("Location: ../Erreur.php?erreur=".$message);
-}
 else if(!is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
