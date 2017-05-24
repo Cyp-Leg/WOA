@@ -34,23 +34,17 @@
     		<tbody>
           <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
 
-						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'annonce : </label></td>
+						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'évenement : </label></td>
               	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
-
-						<tr><td><label><div class="oblig">*</div>Catégorie</label></td>
-							<td>
-							<?php foreach($lesCategories as $row)
-								{
-									?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="radio" id="<?php echo $row['categoryid']?>" />
-										<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>
-							<?php
-								}
-							?>
-							</td>
-						</tr>
 
             <tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
               	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
+
+						<tr><td><label for="eventdate"><div class="oblig">*</div>Date de l'événement : </label></td>
+		            <td><textarea name="eventdate" id="eventdate"></textarea></td></tr>
+
+						<tr><td><label for="eventplaces"><div class="oblig">*</div>Nombre de places : </label></td>
+		            <td><textarea name="eventplaces" id="eventplaces"></textarea></td></tr>
 
             <tr><td><label for="announcePrice"><div class="oblig">*</div>Prix : </label></td>
             		<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
@@ -69,8 +63,10 @@
 										</div>
 									</div></td></tr>
 
-										<tr><td><input type="submit" value="Valider"></tr></td>
-            </form>
+						<input type="hidden" name="anntype" id="anntype" value="event" />
+
+						<tr><td><input type="submit" value="Valider"></tr></td>
+          </form>
         </tbody>
       </table>
 		</div>
@@ -112,6 +108,9 @@
 						<tr><td><label for="announcePrice"><div class="oblig">*</div>Prix : </label></td>
 								<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
 
+						<tr><td><label for="quantity"><div class="oblig">*</div>Quantité à vendre : </label></td>
+								<td><input type="text" name="quantity" id="quantity"></td></tr>
+
 						<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
 								<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 
@@ -126,8 +125,10 @@
 										</div>
 									</div></td></tr>
 
-										<tr><td><input type="submit" value="Valider"></tr></td>
-						</form>
+						<input type="hidden" name="anntype" id="anntype" value="product" />
+
+						<tr><td><input type="submit" value="Valider"></tr></td>
+					</form>
 				</tbody>
 			</table>
 		</div>

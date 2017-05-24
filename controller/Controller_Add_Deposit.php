@@ -4,12 +4,19 @@ require_once("../model/City.php");
 //require_once("../controller/Controller_Etat_Utilisateur.php");
 require_once("../model/Announce.php");
 require_once("../model/Photo.php");
+require_once("../model/Events.php");
+require_once("../model/Product.php");
+
 
 $title=htmlspecialchars($_POST['announceTitle']);
 $descrip=htmlspecialchars($_POST['announceDescrip']);
 $price=htmlspecialchars($_POST['announcePrice']);
 $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
+$quantity=htmlspecialchars($_POST['quantity']);
+$eventplaces=htmlspecialchars($_POST['eventplaces']);
+$eventdate=htmlspecialchars($_POST['eventdate']);
+$anntype=htmlspecialchars($_POST['anntype']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 
@@ -51,9 +58,6 @@ else
   if(empty($userid)){
     $message = "Vous devez être connecté pour poster une annonce!".$userid;
     header("Location: ../Erreur.php?erreur=".$message);
-    ?>
-    <script type="text/javascript">alert('Pseudo inexistant');</script>
-    <?php
   }
   else
   {
@@ -65,9 +69,16 @@ else
     $city=$city['cityid'];
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
-    /*$message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
-    header("Location: ../Erreur.php?erreur=".$message);*/
     Photo::Add_Photo($nom,$annid);
+
+    if($anntype=="event")
+    {
+      Events::Add_Event($eventdate,$eventplaces,$annid);
+    }
+    else if($anntype=="product")
+    {
+      Product::Add_Product($quantity,$annid);
+    }
 
     header('Location: ../Consult.php');
   }
