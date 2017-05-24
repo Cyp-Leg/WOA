@@ -84,7 +84,7 @@
 					</div>
 
 
-			<div class="general-container" id="other">
+			<div class="general-container" id="other" style="display: none;">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
