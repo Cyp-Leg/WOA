@@ -32,7 +32,7 @@
     			</tr>
     		</thead>
     		<tbody>
-          <form class="col s12" method="post" action="view/test.php" enctype="multipart/form-data">
+          <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
 
 						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'évenement : </label></td>
               	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
@@ -40,7 +40,7 @@
             <tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
               	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
 
-						<tr><td><label for="eventdate"><div class="oblig">*</div>Date de l'événement (format AAAA-MM-JJ)0: </label></td>
+						<tr><td><label for="eventdate"><div class="oblig">*</div>Date de l'événement (format AAAA-MM-JJ) : </label></td>
 		            <td><textarea name="eventdate" id="eventdate"></textarea></td></tr>
 
 						<tr><td><label for="eventplaces"><div class="oblig">*</div>Nombre de places : </label></td>

@@ -63,6 +63,10 @@ else
     }
     $city=City::Get_City_By_Name($city);
     $city=$city['cityid'];
+    if($anntype=="event")
+    {
+      $categ="event";
+    }
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
     Photo::Add_Photo($nom,$annid);
