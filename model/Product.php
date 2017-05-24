@@ -23,4 +23,19 @@ class Product
 
     $req->execute();
   }
+
+  public static function Get_All_Products()
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Products');
+    $req->execute();
+
+    while($data=$req->fetch())
+    {
+      $result[]=$data;
+    }
+    return $result
+  }
 } ?>

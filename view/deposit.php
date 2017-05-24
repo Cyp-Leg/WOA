@@ -19,7 +19,7 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
 		<br>
-		<div class="container"
+		<div class="container">
 			<div class="event">
 				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
 			</div>

@@ -19,11 +19,75 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-			<div class="general-container">
+			<p>Filtrer par :
+				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a>
+				<br />
+				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Produits</a>
+				<br />
+				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Produits</a>
+
+				<div class="general-container" id="event" style="display: none;">
+		      <table class="bored highlight grey lighten-5">
+		    		<thead>
+		    			<tr>
+		    				<th>Tous les événements</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		          <tr><th>Photo</th>
+									<th>Titre</th>
+		              <th>Lieu</th>
+		              <th>Prix</th>
+		          </tr>
+		          <?php
+		          foreach($lesEvents as $row)
+		          {
+								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
+								if(empty($photoname)){$photoname="errpic.png";}
+								echo "<tr><td><img src=\"medias/avatars/".$photoname."\" class=\"annpic\" /></td>";
+								echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
+								$cityname = City::Get_City_Name($row['cityid']);
+								echo "<td>".$cityname."</td>";
+								echo "<td>".$row['announceprice']."</td></tr>";
+		           } ?>
+		         </tbody>
+		       </table>
+				</div>
+
+				<div class="general-container" id="product" style="display: none;">
+		      <table class="bored highlight grey lighten-5">
+		    		<thead>
+		    			<tr>
+		    				<th>Tous les produits</th>
+		    			</tr>
+		    		</thead>
+		    		<tbody>
+		          <tr><th>Photo</th>
+									<th>Titre</th>
+		              <th>Lieu</th>
+		              <th>Prix</th>
+		          </tr>
+		          <?php
+		          foreach($lesProduits as $row)
+		            {
+									$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
+									if(empty($photoname)){$photoname="errpic.png";}
+									echo "<tr><td><img src=\"medias/avatars/".$photoname."\" class=\"annpic\" /></td>";
+		              echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
+		              $cityname = City::Get_City_Name($row['cityid']);
+		              echo "<td>".$cityname."</td>";
+		              echo "<td>".$row['announceprice']."</td></tr>";
+		            } ?>
+		          </tbody>
+		        </table>
+					</div>
+
+
+			<div class="general-container" id="other">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
-	    				<th>Liste des annonces</th>
+	    				<th>Toutes les annonces</th>
 	    			</tr>
 	    		</thead>
 	    		<tbody>

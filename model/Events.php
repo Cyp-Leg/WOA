@@ -24,4 +24,19 @@ class Events
 
     $req->execute();
   }
+
+  public static function Get_All_Events()
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Events');
+    $req->execute();
+
+    while($data=$req->fetch())
+    {
+      $result[]=$data;
+    }
+    return $result
+  }
 } ?>
