@@ -30,6 +30,7 @@
             <tr><th>Numéro de commande</th>
                 <th>Date</th>
                 <th>Titre de l'annonce</th>
+								<th>Quantité commandée</th>
                 <th>Vendeur</th>
             </tr>
             <?php
@@ -41,6 +42,7 @@
               echo "<tr><td>".$row['ordersid']."</td>";
               echo "<td>".$row['ordersdate']."</td>";
               echo "<td><a href=\"Fiche.php?ann=".$announce['announceid']."\">".$announce['announcetitle']."</a></td>";
+							echo "<td>".$row['quantity']."</td>";
               echo "<td>".$seller."</td></tr>";
             }?>
           </tbody>
