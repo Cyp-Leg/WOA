@@ -65,7 +65,7 @@ else
     $city=$city['cityid'];
     if($anntype=="event")
     {
-      $categ="event";
+      $categ=$anntype;
     }
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
