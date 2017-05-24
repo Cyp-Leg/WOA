@@ -22,7 +22,7 @@
 		<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
 		<a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
 
-		<div class="container" id="event" display="none">
+		<div class="container" id="event" style="display: none;">
     	<table class="bored highlight grey lighten-5">
     		<thead>
     			<tr>
@@ -73,7 +73,7 @@
       </table>
 		</div>
 
-		<div class="container" id="product" display="none">
+		<div class="container" id="product" style="display: none;">
 			<table class="bored highlight grey lighten-5">
 				<thead>
 					<tr>
