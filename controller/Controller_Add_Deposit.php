@@ -12,8 +12,12 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
-$message=is_numeric($price);
-header("Location: ../Erreur.php?erreur=".$message);
+if(!is_numeric($price))
+{
+  $message="C'est pas un nombre";
+  header("Location: ../Erreur.php?erreur=".$message);
+}
+else header("Location: ../Erreur.php?erreur=bitch");
 /*$userid = Users::Get_User_Id($cookie);
 $time=time();
 if(isset($_FILES['announcePic']))
