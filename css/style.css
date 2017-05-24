@@ -108,14 +108,15 @@ footer.greyperso{
 
 .event{
 	margin-top:25%;
+	margin-left:10;
 }
 
 .product{
+	margin-left:10;
 	margin-top:10%;
 	margin-bottom:10%;
 }
 
 #evenement, #produit{
-	align: center;
 	width: 80%;
 }
