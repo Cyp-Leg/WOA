@@ -12,14 +12,10 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
-if(!is_numeric($price))
-{
-  $message="C'est pas un nombre";
-  header("Location: ../Erreur.php?erreur=".$message);
-}
-else header("Location: ../Erreur.php?erreur=bitch");
-/*$userid = Users::Get_User_Id($cookie);
+
+$userid = Users::Get_User_Id($cookie);
 $time=time();
+
 if(isset($_FILES['announcePic']))
 {
   $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
@@ -28,11 +24,7 @@ if(isset($_FILES['announcePic']))
   move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
 }
 
-if(!is_numeric($price))
-{
-  $message="Merci d'indiquer un prix correct!";
-  header("Location: ../Erreur.php?erreur=".$message);
-}
+
 if(empty($title) || empty($descrip) || empty($price) || empty($city))
 {
   $message="Merci de remplir tous les champs obligatoires!";
@@ -42,6 +34,12 @@ else if(empty($categ)){
   $message="Merci de sélectionner une catégorie!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
+else if(!is_numeric($price))
+{
+  $message="Merci d'indiquer un prix correct!";
+  header("Location: ../Erreur.php?erreur=".$message);
+}
+
 else
 {
   $descrip = pg_escape_string($descrip);
@@ -69,10 +67,10 @@ else
     $annid=Announce::Get_Last_Announce_Id();
     /*$message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
     header("Location: ../Erreur.php?erreur=".$message);*/
-    /*Photo::Add_Photo($nom,$annid);
+    Photo::Add_Photo($nom,$annid);
 
-    header('Location: ../Consult.php');*/
-  /*}
+    header('Location: ../Consult.php');
+  }
 }
-*/
+
 ?>
