@@ -37,6 +37,18 @@
 						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'évenement : </label></td>
               	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
 
+						<tr><td><label><div class="oblig">*</div>Catégorie</label></td>
+							<td>
+							<?php foreach($lesCategoriesEvent as $row)
+								{
+									?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="radio" id="<?php echo $row['categoryid']?>" />
+										<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>
+							<?php
+								}
+							?>
+							</td>
+						</tr>
+
             <tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
               	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
 
@@ -92,7 +104,7 @@
 
 						<tr><td><label><div class="oblig">*</div>Catégorie</label></td>
 							<td>
-							<?php foreach($lesCategories as $row)
+							<?php foreach($lesCategoriesProduit as $row)
 								{
 									?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="radio" id="<?php echo $row['categoryid']?>" />
 										<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>

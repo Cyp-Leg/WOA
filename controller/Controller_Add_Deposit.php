@@ -37,6 +37,10 @@ if(empty($title) || empty($descrip) || empty($price) || empty($city))
   $message="Merci de remplir tous les champs obligatoires!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
+else if(empty($categ)){
+  $message="Merci de sélectionner une catégorie!";
+  header("Location: ../Erreur.php?erreur=".$message);
+}
 else if(!is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
@@ -63,10 +67,6 @@ else
     }
     $city=City::Get_City_By_Name($city);
     $city=$city['cityid'];
-    if($anntype=="event")
-    {
-      $categ=$anntype;
-    }
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
     Photo::Add_Photo($nom,$annid);

@@ -6,7 +6,8 @@ loggedOnly();
 $cookie=htmlspecialchars($_POST['cookieperso']);
 $userid=Users::Get_User_Id($cookie);
 
-$lesCategories=Category::Get_All_Categories();
+$lesCategoriesProduit=Category::Get_Product_Categories();
+$lesCategoriesEvent=Category::Get_Event_Categories();
 
 require("view/deposit.php");
 ?>

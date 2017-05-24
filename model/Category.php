@@ -29,5 +29,35 @@ class Category
 
     return $data['categoryname'];
   }
+
+  public static function Get_Product_Categories()
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid<8');
+    $req->execute();
+
+    while($data=$req->fetch())
+    {
+      $result[]=$data;
+    }
+    return $result;
+  }
+
+  public static function Get_Event_Categories()
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid>7');
+    $req->execute();
+
+    while($data=$req->fetch())
+    {
+      $result[]=$data;
+    }
+    return $result;
+  }
 }
 ?>
