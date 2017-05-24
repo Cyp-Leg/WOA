@@ -14,13 +14,15 @@ $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 $userid = Users::Get_User_Id($cookie);
 $time=time();
-$ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
-$nom = $userid."_".$time.".".$ext;
-//if(!file_exists("../medias/annpics")){mkdir("../medias/avatars/");}
-$dir="../medias/avatars/{$nom}";
-move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
+if(isset($_FILES['announcePic']))
+{
+  $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
+  $nom = $userid."_".$time.".".$ext;
+  $dir="../medias/avatars/{$nom}";
+  move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
+}
 
-if(gettype($price)!="double" && gettype($price)!="integer")
+if(is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
