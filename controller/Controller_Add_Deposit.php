@@ -22,7 +22,7 @@ if(isset($_FILES['announcePic']))
   move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
 }
 
-if(is_numeric($price))
+if(!is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
