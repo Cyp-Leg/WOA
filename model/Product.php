@@ -6,7 +6,7 @@ class Product
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('INSERT INTO Product VALUES(:quantity, :annid'));
+    $req = $bdheroku->prepare('INSERT INTO Product VALUES(:quantity, :annid)');
     $req->bindParam(':quantity',$quantity);
     $req->bindParam(':annid',$annid);
 
