@@ -1,5 +1,5 @@
 <?php
-var_dump($_FILES);
+var_dump($_POST);
 
 $dir_info='../medias/annpics';
 $dir=opendir($dir_info) or die('Erreur : le dossier n\'existe pas.');
