@@ -6,5 +6,6 @@
 	<script src="../css/materialize/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="icon" type="image/png" href="medias/favicon.ico" />
+	<script src="../css/hider.js"></script>
 
 </html>
