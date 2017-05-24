@@ -116,5 +116,6 @@ footer.greyperso{
 }
 
 #evenement, #produit{
+	align: center;
 	width: 80%;
 }

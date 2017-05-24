@@ -24,11 +24,6 @@
 				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
 			</div>
 		</div>
-		<div class="container">
-			<div class="product">
-				<a class="waves-effect waves-light btn" id="produit" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
-			</div>
-		</div>
 		<div class="container" id="event" style="display: none;">
     	<table class="bored highlight grey lighten-5">
     		<thead>
@@ -80,6 +75,12 @@
       </table>
 		</div>
 
+
+		<div class="container">
+			<div class="product">
+				<a class="waves-effect waves-light btn" id="produit" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
+			</div>
+		</div>
 		<div class="container" id="product" style="display: none;">
 			<table class="bored highlight grey lighten-5">
 				<thead>
