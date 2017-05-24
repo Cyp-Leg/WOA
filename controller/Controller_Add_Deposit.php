@@ -68,7 +68,7 @@ else
     /*Photo::Add_Photo($nom,$annid);
 
     header('Location: ../Consult.php');*/
-  }
+  /*}
 }
-
+*/
 ?>
