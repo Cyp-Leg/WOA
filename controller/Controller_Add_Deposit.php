@@ -12,7 +12,9 @@ $city=htmlspecialchars($_POST['announceCity']);
 $categ=htmlspecialchars($_POST['announceCategory']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
-$userid = Users::Get_User_Id($cookie);
+$message=is_numeric($price);
+header("Location: ../Erreur.php?erreur=".$message);
+/*$userid = Users::Get_User_Id($cookie);
 $time=time();
 if(isset($_FILES['announcePic']))
 {
@@ -63,9 +65,9 @@ else
     $annid=Announce::Get_Last_Announce_Id();
     /*$message="INSERT INTO photo(photoname,announceid) VALUES($nom,$annid)";
     header("Location: ../Erreur.php?erreur=".$message);*/
-    Photo::Add_Photo($nom,$annid);
+    /*Photo::Add_Photo($nom,$annid);
 
-    header('Location: ../Consult.php');
+    header('Location: ../Consult.php');*/
   }
 }
 
