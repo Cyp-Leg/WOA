@@ -20,9 +20,17 @@ Sinon dans le cas que je t'avais envoyé avant tu mets juste l'id dans le bouton
 
 
 function afficherEvenement(){
-  document.getElementById("event").style.display = "block";
+  if(document.getElementById("event").style.display == "none")
+  {
+    document.getElementById("event").style.display = "block";
+  }
+  else document.getElementById("event").style.display = "none";
 }
 
 function afficherProduit(){
-  document.getElementById("product").style.display = "block";
+  if(document.getElementById("product").style.display == "none")
+  {
+    document.getElementById("product").style.display = "block";
+  }
+  else document.getElementById("product").style.display = "none";
 }
