@@ -31,6 +31,7 @@
             <tr><th>Numéro de commande</th>
                 <th>Date</th>
                 <th>Titre de l'annonce</th>
+								<th>Quantité commandée</th>
                 <th>Vendeur</th>
             </tr>
             <?php
