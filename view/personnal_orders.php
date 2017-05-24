@@ -20,6 +20,7 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
+  		<div class="general-container">
         <table class="bored highlight grey lighten-5">
           <thead>
             <tr>
@@ -30,7 +31,6 @@
             <tr><th>Numéro de commande</th>
                 <th>Date</th>
                 <th>Titre de l'annonce</th>
-								<th>Quantité commandée</th>
                 <th>Vendeur</th>
             </tr>
             <?php
@@ -47,6 +47,7 @@
             }?>
           </tbody>
         </table>
+      </div>
     </div>
 		<div class="container">
 				<table class="bored highlight grey lighten-5">
