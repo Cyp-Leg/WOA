@@ -19,8 +19,8 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
 		<br>
-		<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
-		<a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
+		<a class="waves-effect waves-light btn event" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
+		<a class="waves-effect waves-light btn product" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
 
 		<div class="container" id="event" style="display: none;">
     	<table class="bored highlight grey lighten-5">
