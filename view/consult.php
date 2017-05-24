@@ -23,9 +23,9 @@
 				<br />
 				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a>
 				<br />
-				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Produits</a>
+				<a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a>
 				<br />
-				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Toutes les annonces</a>
+				<a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a>
 
 				<div class="general-container" id="event" style="display: none;">
 		      <table class="bored highlight grey lighten-5">
