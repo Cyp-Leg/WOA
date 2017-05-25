@@ -111,8 +111,8 @@
 							<?php
 								}
 							?>
-							<input name="announceCategory" value="tata" type="radio" id="55" />
-							<label for="55">tata</label>
+							<input name="announceCategory" value="17" type="radio" id="17" />
+							<label for="17">Autre</label>
 							</td>
 						</tr>
 
