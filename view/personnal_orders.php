@@ -59,7 +59,6 @@
           </thead>
           <tbody>
 						<tr><th>Intitulé</th>
-								<th>Mail du client</th>
                 <th>Date</th>
             </tr>
             <?php

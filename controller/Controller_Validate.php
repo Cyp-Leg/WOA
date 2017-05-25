@@ -20,7 +20,7 @@
   {
     Orders::Add_Order($date,$userid,$announceid,$quantity);
 
-    $msg='Un client a commandé votre produit! Mail : '.$usermail;
+    $msg='Un client a commandé votre produit! Mail : <a href="mailto:'.$usersmail.'">'.$usermail.'</a>';
     $sellerid=Announce::Get_Announce_User($announceid);
 
     Notification::Add_Notification($msg,$date,$announceid,$sellerid);
