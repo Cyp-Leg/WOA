@@ -67,7 +67,7 @@
             {
 							$announcetitle=Announce::Get_Announce_Title($row['announceid']);
 							echo "<tr><td>".$row['notiftext']."</td>";
-							echo "<td>".$announcetitle."</td>";
+							echo "<td><a href=\"Fiche.php?ann=".$announce['announceid']."\">".$announcetitle."</a></td>";
               echo "<td>".$row['notifdate']."</td></tr>";
             }?>
           </tbody>
