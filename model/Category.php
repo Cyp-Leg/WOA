@@ -35,7 +35,7 @@ class Category
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid<8 OR categoryid=17');
+    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid<8 OR categoryid=18');
     $req->execute();
 
     while($data=$req->fetch())
@@ -50,7 +50,7 @@ class Category
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid>7');
+    $req = $bdheroku->prepare('SELECT * FROM Category WHERE categoryid>7 AND categoryid!=18');
     $req->execute();
 
     while($data=$req->fetch())

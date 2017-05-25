@@ -111,8 +111,6 @@
 							<?php
 								}
 							?>
-							<input name="announceCategory" value="55" type="radio" id="55" />
-							<label for="55">Tata</label>
 							</td>
 						</tr>
 
