@@ -22,8 +22,8 @@
     <div class="container">
       <div class="left-photo">
       	<?php
-        	if(empty($photoname)){$photoname="errpic.png";}
-        	echo "<img src=\"medias/avatars/".$photoname."\" class=\"left-photo\"/>";
+        	if(empty($photoname)){$photoname="medias/avatarserrpic.png";}
+        	echo "<img src=\"".$photoname."\" class=\"left-photo\"/>";
       	?>
       </div>
       <div class="ann-caract">
