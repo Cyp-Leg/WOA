@@ -18,7 +18,7 @@ class Product
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('DELETE FROM Product WHERE annid= : annid');
+    $req = $bdheroku->prepare('DELETE FROM Product WHERE announceid= : annid');
     $req->bindParam(':annid',$annid);
 
     $req->execute();
