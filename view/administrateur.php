@@ -24,7 +24,7 @@
 				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherTout();"><i class="material-icons right">call_received</i>Annonces</a>
 			</div>
 		</div>
-    <div class="container" id="other">
+    <div class="container" id="other" style="display: none;">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 
-		<div class="container" id="users">
+		<div class="container" id="users" style="display: none;">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
@@ -77,7 +77,7 @@
 	            {
 	              echo "<td>".$row['usersid']."</td>";
 	              echo "<td>".$row['userslastname']."</td>";
-	              echo "<td>".$row['usersfirstname']."</td></tr>";
+	              echo "<td>".$row['usersfirstname']."</td>";
                 echo "<td>".$row['usersmail']."</td></tr>";
 	            } ?>
 					</tbody>
