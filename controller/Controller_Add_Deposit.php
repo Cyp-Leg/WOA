@@ -17,19 +17,20 @@ $quantity=htmlspecialchars($_POST['quantity']);
 $eventplaces=htmlspecialchars($_POST['eventplaces']);
 $eventdate=htmlspecialchars($_POST['eventdate']);
 $anntype=htmlspecialchars($_POST['anntype']);
+$announcePic=htmlspecialchars($_POST['announcePic']);
 $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 
 $userid = Users::Get_User_Id($cookie);
 $time=time();
 
-if(isset($_FILES['announcePic']))
+/*if(isset($_FILES['announcePic']))
 {
   $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
   $nom = $userid."_".$time.".".$ext;
   $dir="../medias/avatars/{$nom}";
   move_uploaded_file($_FILES['announcePic']['tmp_name'],$dir);
-}
+}*/
 
 
 if(empty($title) || empty($descrip) || empty($price) || empty($city))

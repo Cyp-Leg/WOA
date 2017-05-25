@@ -128,15 +128,16 @@
 						<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
 								<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 
-						<tr><td><label for="announcePic">(optionnel) Photographie/affiche (max. 10 Mo) : </label>
-									<div class="file-field input-field">
+						<tr><td><label for="announcePic">(optionnel) Lien vers photographie/affiche (max. 10 Mo) : </label>
+									<!--<div class="file-field input-field">
 										<div class="btn">
 											<span>Importer...</span>
 											<input type="file" name="announcePic">
 										</div>
 										<div class="file-path-wrapper">
 											<input class="file-path validate" type="text">
-										</div>
+										</div>-->
+										<td><input type="text" name="announcePic" id="announcePic" placeholder="Hébergez votre image gratuitement (Hostingpics.com, casimage.net, etc..) et déposez le lien vers l'image ici (exemple : https://img15.hostingpics.net/pics/exemple.jpg)"></td></tr>
 									</div></td></tr>
 
 						<input type="hidden" name="anntype" id="anntype" value="product" />
