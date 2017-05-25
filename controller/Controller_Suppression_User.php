@@ -13,16 +13,17 @@ $lesAnnonces=Announce::Get_All_Announces_By_User($userid);
 
 foreach($lesAnnonces as $row)
 {
-  $annid=$row['announceid'];
+  echo $row['announceid'];
+  /*$annid=$row['announceid'];
   Photo::Delete_Photo_From_Announce($annid);
   Orders::Delete_Order_From_Announce($annid);
   Product::Delete_Product($annid);
   Events::Delete_Event($annid);
-  Announce::Delete_Announce($annid);
+  Announce::Delete_Announce($annid);*/
 }
 
 Users::Delete_User($userid);
 
 
-header("Location: ../Administrateur.php");
+//header("Location: ../Administrateur.php");
 ?>
