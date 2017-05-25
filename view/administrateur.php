@@ -19,11 +19,13 @@
 		<div>
 			<h4 class="center-align">Espace administrateur</h4>
 		</div>
+
 		<div class="container">
-			<div class="event">
-				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherTout();"><i class="material-icons right">call_received</i>Annonces</a>
+			<div>
+				<a class="waves-effect waves-light btn" id="anntab" onclick="afficherTout();"><i class="material-icons right">call_received</i>Annonces</a>
 			</div>
 		</div>
+
     <div class="container" id="other" style="display: none;">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
@@ -53,9 +55,10 @@
 				</table>
 		</div>
 
+
 		<div class="container">
-			<div class="product">
-				<a class="waves-effect waves-light btn" id="user" onclick="afficherUsers();"><i class="material-icons right">call_received</i>Utilisateurs</a>
+			<div>
+				<a class="waves-effect waves-light btn" id="usertab" onclick="afficherUsers();"><i class="material-icons right">call_received</i>Utilisateurs</a>
 			</div>
 		</div>
 
