@@ -106,11 +106,13 @@
 							<td>
 							<?php foreach($lesCategoriesProduit as $row)
 								{
-									?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="checkbox" id="<?php echo $row['categoryid']?>" />
+									?><input name="announceCategory" value="<?php echo $row['categoryid']?>" type="radio" id="<?php echo $row['categoryid']?>" />
 										<label for="<?php echo $row['categoryid']?>"><?php echo $row['categoryname']?></label>
 							<?php
 								}
 							?>
+							<input name="announceCategory" value="tata" type="radio" id="55" />
+							<label for="55">tata</label>
 							</td>
 						</tr>
 
