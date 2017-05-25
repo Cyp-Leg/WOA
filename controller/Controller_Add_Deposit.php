@@ -33,7 +33,7 @@ $time=time();
 }*/
 
 
-if(empty($title) || empty($descrip) || empty($price) || empty($city))
+if(empty($title) || empty($descrip) || empty($city))
 {
   $message="Merci de remplir tous les champs obligatoires!";
   header("Location: ../Erreur.php?erreur=".$message);
