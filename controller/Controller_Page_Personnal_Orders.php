@@ -7,6 +7,8 @@ require('model/Orders.php');
 
 $userid=Users::Get_User_Id($_COOKIE['cookieperso']);
 $lesOrders=Orders::Get_User_Orders($userid);
+
 $lesNotifs=Notification::Get_Users_Notification($userid);
+
 require_once('view/personnal_orders.php');
 ?>

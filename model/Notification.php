@@ -18,7 +18,7 @@ class Notification
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('SELECT * FROM Notification WHERE usersid= :usersid');
+    $req = $bdheroku->prepare('SELECT * FROM Notification WHERE announceid IN (SELECT announceid FROM Announce WHERE usersid= :usersid)');
     $req->bindParam(':usersid',$userid);
     $req->execute();
 
