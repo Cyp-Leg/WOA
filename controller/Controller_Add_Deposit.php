@@ -42,7 +42,7 @@ else if(empty($categ)){
   $message="Merci de sélectionner une catégorie!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-if(empty($price))
+else if(empty($price))
 {
   $price=0;
 }
