@@ -136,7 +136,7 @@
 											<input class="file-path validate" type="text">
 										</div>-->
 										<td><input type="text" name="announcePic" id="announcePic" placeholder="Hébergez votre image gratuitement (Hostingpics.com, casimage.net, etc..) et déposez le lien vers l'image ici (exemple : https://img15.hostingpics.net/pics/exemple.jpg)"></td></tr>
-									</div></td></tr>
+									</div></td><td><button type="button" onclick="explaination();">Besoin d'aide?<button></tr>
 
 						<input type="hidden" name="anntype" id="anntype" value="product" />
 

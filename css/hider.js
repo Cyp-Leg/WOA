@@ -27,3 +27,8 @@ function afficherTout(){
   document.getElementById("event").style.display = "none";
   document.getElementById("product").style.display = "none";
 }
+
+
+function explaination(){
+  alert('Hébergez votre image gratuitement (Hostingpics.com, casimage.net, etc..) et déposez le lien vers l\'image ici (exemple : https://img15.hostingpics.net/pics/exemple.jpg)');
+}
