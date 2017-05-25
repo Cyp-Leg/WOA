@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<title>Accueil LCDE</title>
+		<title>Espace administrateur</title>
 		<meta name="Content-Type" content="UTF-8">
 		<meta name="Content-Language" content="fr">
 		<meta name="Description" content="Lieu d\'échange entre étudiants">
