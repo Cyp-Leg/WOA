@@ -112,7 +112,7 @@
 								}
 							?>
 							<input name="announceCategory" value="17" type="radio" id="17" />
-							<label for="17">Autre</label>
+							<label for="17">Autres</label>
 							</td>
 						</tr>
 
