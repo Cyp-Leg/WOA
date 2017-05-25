@@ -22,7 +22,7 @@ foreach($lesAnnonces as $row)
   Announce::Delete_Announce($annid);*/
 }
 
-Users::Delete_User($userid);
+//Users::Delete_User($userid);
 
 
 //header("Location: ../Administrateur.php");
