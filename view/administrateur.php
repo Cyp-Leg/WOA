@@ -19,8 +19,12 @@
 		<div>
 			<h4 class="center-align">Espace administrateur</h4>
 		</div>
-    <div class="container">
-			<div class="general-container">
+		<div class="container">
+			<div class="event">
+				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherTout();"><i class="material-icons right">call_received</i>Annonces</a>
+			</div>
+		</div>
+    <div class="container" id="other">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
@@ -47,7 +51,37 @@
 	            } ?>
 					</tbody>
 				</table>
+		</div>
+
+		<div class="container">
+			<div class="product">
+				<a class="waves-effect waves-light btn" id="user" onclick="afficherUsers();"><i class="material-icons right">call_received</i>Utilisateurs</a>
 			</div>
+		</div>
+
+		<div class="container" id="users">
+	      <table class="bored highlight grey lighten-5">
+	    		<thead>
+	    			<tr>
+	    				<th>Liste des Utilisateurs</th>
+	    			</tr>
+	    		</thead>
+					<tbody>
+	          <tr><th>Id</th>
+								<th>Nom</th>
+	              <th>Prénom</th>
+	              <th>Mail</th>
+	          </tr>
+	          <?php
+	          foreach($lesUsers as $row)
+	            {
+	              echo "<td>".$row['usersid']."</td>";
+	              echo "<td>".$row['userslastname']."</td>";
+	              echo "<td>".$row['usersfirstname']."</td></tr>";
+                echo "<td>".$row['usersmail']."</td></tr>";
+	            } ?>
+					</tbody>
+				</table>
 		</div>
 		<?php require ("view/footer.php");?>
 	</body>

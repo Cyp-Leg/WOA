@@ -26,6 +26,16 @@ function afficherTout(){
   else document.getElementById("other").style.display = "none";
   document.getElementById("event").style.display = "none";
   document.getElementById("product").style.display = "none";
+  document.getElementById("user").style.display = "none";
+}
+
+function afficherUsers(){
+  if(document.getElementById("user").style.display == "none")
+  {
+    document.getElementById("user").style.display = "block";
+  }
+  else document.getElementById("user").style.display = "none";
+  document.getElementById("other").style.display = "none";
 }
 
 
