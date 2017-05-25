@@ -173,7 +173,7 @@ class Announce
       require_once('Pdo.php');
       $bdheroku = connexion();
 
-      $req = $bdheroky->prepare('SELECT announcetitle FROM Announce WHERE announceid= :annid');
+      $req = $bdheroku->prepare('SELECT announcetitle FROM Announce WHERE announceid= :annid');
       $req->bindParam(':annid',$annid);
 
       $req->execute();
