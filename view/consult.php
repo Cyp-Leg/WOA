@@ -27,7 +27,8 @@
 							<td><a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a></td>
 
 							<td><a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a></td></tr>
-
+						</tbody>
+					</table>
 				<div class="general-container" id="event" style="display: none;">
 		      <table class="bored highlight grey lighten-5">
 		    		<thead>
