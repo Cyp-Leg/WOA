@@ -126,7 +126,7 @@
 						<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
 								<td><input type="text" name="announceCity" id="announceCity"></td></tr>
 
-						<tr><td><label for="announcePic">(optionnel) Lien vers photographie/affiche (max. 10 Mo) : </label>
+						<tr><td><label for="announcePic">(optionnel) Lien vers photographie/affiche (max. 10 Mo) : <p class="help" onclick="explaination();">Besoin d'aide?</p></label>
 									<!--<div class="file-field input-field">
 										<div class="btn">
 											<span>Importer...</span>
@@ -136,7 +136,7 @@
 											<input class="file-path validate" type="text">
 										</div>-->
 										<td><input type="text" name="announcePic" id="announcePic" placeholder="URL"></td></tr>
-									</div></td><td><button type="button" onclick="explaination();">Besoin d'aide?<button></tr>
+									</div></td></tr>
 
 						<input type="hidden" name="anntype" id="anntype" value="product" />
 
