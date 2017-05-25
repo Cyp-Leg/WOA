@@ -58,7 +58,7 @@
 						<tr><td><label for="eventplaces"><div class="oblig">*</div>Nombre de places : </label></td>
 		            <td><textarea name="eventplaces" id="eventplaces"></textarea></td></tr>
 
-            <tr><td><label for="announcePrice"><div class="oblig">*</div>Prix : </label></td>
+            <tr><td><label for="announcePrice">Prix : </label></td>
             		<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
 
 						<tr><td><label for="announceCity"><div class="oblig">*</div>Ville : </label></td>
@@ -118,7 +118,7 @@
 						<tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
 								<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
 
-						<tr><td><label for="announcePrice"><div class="oblig">*</div>Prix : </label></td>
+						<tr><td><label for="announcePrice">Prix : </label></td>
 								<td><input type="text" name="announcePrice" id="announcePrice"></td></tr>
 
 						<tr><td><label for="quantity"><div class="oblig">*</div>Quantité à vendre : </label></td>

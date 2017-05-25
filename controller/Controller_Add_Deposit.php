@@ -33,7 +33,7 @@ $time=time();
 }*/
 
 
-if(empty($title) || empty($descrip) || empty($price) || empty($city))
+if(empty($title) || empty($descrip) || empty($city))
 {
   $message="Merci de remplir tous les champs obligatoires!";
   header("Location: ../Erreur.php?erreur=".$message);
@@ -41,6 +41,10 @@ if(empty($title) || empty($descrip) || empty($price) || empty($city))
 else if(empty($categ)){
   $message="Merci de sélectionner une catégorie!";
   header("Location: ../Erreur.php?erreur=".$message);
+}
+if(empty($price))
+{
+  $price=0;
 }
 else if(!is_numeric($price))
 {
