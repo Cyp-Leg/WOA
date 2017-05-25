@@ -133,4 +133,15 @@ class Users
 
     return($data['userspassword'] == $userpw);
   }
+
+  public static function Delete_User($userid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('DELETE FROM Users WHERE usersid= :usersid');
+    $req->bindParam(':usersid',$userid);
+
+    $req->execute();
+  }
 } ?>

@@ -1,0 +1,17 @@
+<?php
+require_once("../model/Announce.php");
+require_once("../model/Photo.php");
+require_once("../model/Orders.php");
+require_once("../model/Users.php");
+//require_once("../controller/Controller_Etat_Utilisateur.php");
+$userid=htmlspecialchars($_GET['userid']);
+
+$annid=Announce::Get_All_Announces_By_User($userid);
+
+Photo::Delete_Photo_From_Announce($annid);
+Orders::Delete_Order_From_Announce($annid);
+Announce::Delete_Announce($annid);
+Users::Delete_User($userid);
+
+header("Location: ../Administrateur.php");
+?>

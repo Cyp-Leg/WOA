@@ -48,7 +48,7 @@
 	              echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
 	              $cityname = City::Get_City_Name($row['cityid']);
 	              echo "<td>".$cityname."</td>";
-	              echo "<td>".$row['announceprice']."</td></tr>";
+	              echo "<td>".$row['announceprice']."</td>";
                 echo "<td> <a href=\"controller/Controller_Suppression_Announce.php?annid=".$row['announceid']."\">Supprimer </a> </td></tr>";
 	            } ?>
 					</tbody>
@@ -81,7 +81,8 @@
 	              echo "<td>".$row['usersid']."</td>";
 	              echo "<td>".$row['userslastname']."</td>";
 	              echo "<td>".$row['usersfirstname']."</td>";
-                echo "<td>".$row['usersmail']."</td></tr>";
+                echo "<td>".$row['usersmail']."</td>";
+								echo "<td> <a href=\"controller/Controller_Suppression_User.php?userid=".$row['usersid']."\">Supprimer </a> </td></tr>";
 	            } ?>
 					</tbody>
 				</table>
