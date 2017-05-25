@@ -71,4 +71,19 @@ class Orders
     $req->execute();
   }
 
+  public static function Get_Last_Order($userid,$annid)
+  {
+    require_once('Pdo.php');
+    $bdheroku = connexion();
+
+    $req = $bdheroku->prepare('SELECT * FROM order WHERE userid= :userid AND announceid= :annid');
+    $req->bindParam(':userid',$userid);
+    $req->bindParam(':annid',$annid);
+
+    $req->execute();
+
+    $data = $req->fetch();
+
+    return $data;
+  }
 } ?>

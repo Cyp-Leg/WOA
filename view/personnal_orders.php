@@ -59,12 +59,15 @@
           </thead>
           <tbody>
 						<tr><th>Intitulé</th>
+								<th>Annonce</th>
                 <th>Date</th>
             </tr>
             <?php
             foreach($lesNotifs as $row)
             {
+							$announcetitle=Announce::Get_Announce_Title($row['announceid']);
 							echo "<tr><td>".$row['notiftext']."</td>";
+							echo "<td>".$announcetitle."</td>";
               echo "<td>".$row['notifdate']."</td></tr>";
             }?>
           </tbody>
