@@ -44,7 +44,7 @@ else if(empty($categ)){
 }
 else if(empty($price))
 {
-  $price=0;
+  $price=00;
 }
 else if(!is_numeric($price))
 {
