@@ -143,7 +143,7 @@ class Announce
       require_once('Pdo.php');
       $bdheroku = connexion();
 
-      $req = $bdheroku->prepare('SELECT * FROM Announces WHERE announceid IN (SELECT announceid FROM Product)');
+      $req = $bdheroku->prepare('SELECT * FROM Announce WHERE announceid IN (SELECT announceid FROM Product)');
       $req->execute();
 
       while($data = $req->fetch())
@@ -158,7 +158,7 @@ class Announce
       require_once('Pdo.php');
       $bdheroku = connexion();
 
-      $req = $bdheroku->prepare('SELECT * FROM Announces WHERE announceid IN(SELECT announceid FROM Events)');
+      $req = $bdheroku->prepare('SELECT * FROM Announce WHERE announceid IN(SELECT announceid FROM Events)');
       $req->execute();
 
       while($data=$req->fetch())
