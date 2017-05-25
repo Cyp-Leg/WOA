@@ -62,7 +62,7 @@
 			</div>
 		</div>
 
-		<div class="container" id="users" style="display: none;">
+		<div class="container" id="user" style="display: none;">
 	      <table class="bored highlight grey lighten-5">
 	    		<thead>
 	    			<tr>
