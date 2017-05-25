@@ -24,7 +24,7 @@
 
 		<form action="Validate.php" method="POST" enctype="multipart/form-data">
 
-		  <div>
+		  <div class="container">
 				<label for="prodQuantity">Quantité désirée : </label>
 				<input type="text" name="prodQuantity" id="prodQuantity" />
 				<input type="hidden" name="userid" id="userid" value="<?php echo $userid; ?>" />
