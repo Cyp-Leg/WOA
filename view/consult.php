@@ -46,7 +46,10 @@
 		          foreach($lesEvents as $row)
 		          {
 								$photoname = Photo::Get_Photo_By_Annid($row['announceid']);
+
 								if(empty($photoname)){$photoname="medias/avatars/errpic.png";}
+
+								echo $photoname;
 								echo "<tr><td><img src=\"".$photoname."\" class=\"annpic\" alt=\"Photographie du produit\"/></td>";
 								echo "<td><a href=\"Fiche.php?ann=".$row['announceid']."\">".$row['announcetitle']."</a></td>";
 								$cityname = City::Get_City_Name($row['cityid']);
