@@ -1,14 +1,15 @@
 <?php
 class Notification
 {
-  public static function Add_Notification($msg,$userid,$date){
+  public static function Add_Notification($msg,$date,$annid,$userid){
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->prepare('INSERT INTO Notification (notiftext,usersid,notifdate) VALUES(:notiftext,:userid,:notifdate)');
+    $req = $bdheroku->prepare('INSERT INTO Notification (notiftext,notifdate,announceid,usersid) VALUES(:notiftext,:notifdate,:annid,:userid)');
     $req->bindParam(':notiftext',$msg);
-    $req->bindParam(':userid',$userid);
     $req->bindParam(':notifdate',$date);
+    $req->bindParam(':annid',$annid);
+    $req->bindParam(':userid',$userid);
 
     $req->execute();
   }

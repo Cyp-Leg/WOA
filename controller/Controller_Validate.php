@@ -10,6 +10,8 @@
   $quantity=htmlspecialchars($_POST['prodQuantity']);
   $date=date('Y\-m\-d');
 
+  $usermail=Users::Get_Users_Mail($userid);
+
   if(empty($userid) || empty($announceid) || empty($quantity) || empty($date)){
     $msg='Merci de remplir tous les champs!';
     header('Location: Erreur.php?erreur='.$msg);
@@ -18,10 +20,10 @@
   {
     Orders::Add_Order($date,$userid,$announceid,$quantity);
 
-    $msg='Un client a commandé votre produit!';
+    $msg='Un client a commandé votre produit! Mail : '.$usermail;
     $sellerid=Announce::Get_Announce_User($announceid);
 
-    Notification::Add_Notification($msg,$sellerid,$date);
+    Notification::Add_Notification($msg,$date,$announceid,$sellerid);
 
 
       $message='Commande validée!';
