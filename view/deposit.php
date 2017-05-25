@@ -21,7 +21,7 @@
 		<br>
 		<div class="container">
 			<div class="event">
-				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherEvenement();"><i class="material-icons right">cloud</i>Evenement</a>
+				<a class="waves-effect waves-light btn" id="evenement" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenement</a>
 			</div>
 		</div>
 		<div class="container" id="event" style="display: none;">
@@ -86,7 +86,7 @@
 
 		<div class="container">
 			<div class="product">
-				<a class="waves-effect waves-light btn" id="produit" onclick="afficherProduit();"><i class="material-icons right">cloud</i>Produit</a>
+				<a class="waves-effect waves-light btn" id="produit" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produit</a>
 			</div>
 		</div>
 		<div class="container" id="product" style="display: none;">
@@ -111,6 +111,8 @@
 							<?php
 								}
 							?>
+								<input name="announceCategory" value="17" type="radio" id="17" />
+								<label for="17">Autre</label>
 							</td>
 						</tr>
 
