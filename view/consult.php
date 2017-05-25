@@ -20,11 +20,13 @@
 		</div>
     <div class="container">
 			<p>Filtrer par : </p>
-			<ul>
-				<li><a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a></li>
-				<li><a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a></li>
-				<li><a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a></li>
-			</ul>
+				<table>
+					<tbody>
+						<tr><td><a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a></td>
+
+							<td><a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a></td>
+
+							<td><a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a></td></tr>
 
 				<div class="general-container" id="event" style="display: none;">
 		      <table class="bored highlight grey lighten-5">
