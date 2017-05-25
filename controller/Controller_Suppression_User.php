@@ -14,6 +14,8 @@ foreach($lesAnnonces as $row)
   $annid=$row['announceid'];
   Photo::Delete_Photo_From_Announce($annid);
   Orders::Delete_Order_From_Announce($annid);
+  Product::Delete_Product($annid);
+  Events::Delete_Event($annid);
   Announce::Delete_Announce($annid);
 }
 
