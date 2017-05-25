@@ -19,11 +19,11 @@ function afficherProduit(){
 }
 
 function afficherTout(){
-  if(doument.getElementById("other").style.diplay == "none")
+  if(doument.getElementById("other").style.display == "none")
   {
-    doument.getElementById("other").style.diplay = "block";
+    doument.getElementById("other").style.display = "block";
   }
-  else doument.getElementById("other").style.diplay = "none";
+  else doument.getElementById("other").style.display = "none";
   document.getElementById("event").style.display = "none";
   document.getElementById("product").style.display = "none";
 }
