@@ -70,7 +70,7 @@ else
     $city=$city['cityid'];
     Announce::Add_Announce($title,$descrip,$price,$city,$categ,$userid);
     $annid=Announce::Get_Last_Announce_Id();
-    Photo::Add_Photo($nom,$annid);
+    Photo::Add_Photo($announcePic,$annid);
 
     if($anntype=="event")
     {
