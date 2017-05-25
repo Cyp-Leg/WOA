@@ -19,13 +19,12 @@
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
     <div class="container">
-			<p>Filtrer par :
-				<br />
-				<a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a>
-				<br />
-				<a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a>
-				<br />
-				<a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a>
+			<p>Filtrer par : </p>
+			<ul>
+				<li><a class="waves-effect waves-light btn" onclick="afficherEvenement();"><i class="material-icons right">call_received</i>Evenements</a></li>
+				<li><a class="waves-effect waves-light btn" onclick="afficherProduit();"><i class="material-icons right">call_received</i>Produits</a></li>
+				<li><a class="waves-effect waves-light btn" onclick="afficherTout();"><i class="material-icons right">call_received</i>Toutes les annonces</a></li>
+			</ul>
 
 				<div class="general-container" id="event" style="display: none;">
 		      <table class="bored highlight grey lighten-5">
