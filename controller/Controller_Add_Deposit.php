@@ -50,11 +50,11 @@ else if(!is_numeric($price))
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-else if(isset($eventdate) && !checkdate($datecheck['month'], $datecheck['day'], $datecheck['year']))
+/*else if(isset($eventdate) && !checkdate($datecheck['month'], $datecheck['day'], $datecheck['year']))
 {
     $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
     header("Location: ../Erreur.php?erreur=".$message);
-}
+}*/
 else
 {
   $descrip = pg_escape_string($descrip);
