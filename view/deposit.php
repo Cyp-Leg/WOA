@@ -52,7 +52,7 @@
             <tr><td><label for="announceDescrip"><div class="oblig">*</div>Description : </label></td>
               	<td><textarea name="announceDescrip" id="announceDescrip"></textarea></td></tr>
 
-						<tr><td><label for="eventdate"><div class="oblig">*</div>Date de l'événement (format AAAA-MM-JJ) : </label></td>
+						<tr><td><label for="eventdate"><div class="oblig">*</div>Date de l'événement (format JJ-MM-AAAA) : </label></td>
 		            <td><textarea name="eventdate" id="eventdate"></textarea></td></tr>
 
 						<tr><td><label for="eventplaces"><div class="oblig">*</div>Nombre de places : </label></td>
