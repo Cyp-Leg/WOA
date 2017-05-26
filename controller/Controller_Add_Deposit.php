@@ -52,7 +52,7 @@ else if(!is_numeric($price))
 }
 else
 {
-  if($anntype=='event' && empty($eventdate))
+  if($anntype=='event' && !empty($eventdate))
   {
     $message="Merci d'entrer une date pour votre événement!";
     header("Location: ../Erreur.php?erreur=".$message);
