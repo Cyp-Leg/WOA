@@ -43,7 +43,7 @@ else if(empty($categ)){
   $message="Merci de sélectionner une catégorie!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-else if($price!={} && !is_numeric($price))
+else if(isset($_POST['announcePrice']) && !is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
