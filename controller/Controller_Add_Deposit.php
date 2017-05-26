@@ -29,7 +29,7 @@ if(isset($_POST['eventdate']))
   $datecheck = date_parse_from_format('Y\-m\-d',$eventdate);
   if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
     $message="Format de date incorrect : respectez AAAA-MM-JJ!";
-    header("Location: ../Erreur.php?erreur="$message);
+    header("Location: ../Erreur.php?erreur=".$message);
   }
 }
 
