@@ -53,9 +53,9 @@ else if(!is_numeric($price))
 else if(isset($eventdate))
 {
   $datecheck=date_parse_from_format("Y\-m\-d", $date);
-  if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
+    if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
     $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
-    header("Location: ../Erreur.php?erreur=".$message.$datecheck['month'].$datecheck['day'].$datecheck['year']);
+    header("Location: ../Erreur.php?erreur=".$datecheck['month'].$datecheck['day'].$datecheck['year']);
   }
 }
 else
