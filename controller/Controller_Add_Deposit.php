@@ -59,6 +59,7 @@ else
       $message="Date invalide, merci de respecter le format JJ-MM-AAAA!";
       header("Location: ../Erreur.php?erreur=".$message);
     }
+    else $eventdate=$datecheck['year']."-".$datecheck['month']."-".$datecheck['day'];
   }
   $descrip = pg_escape_string($descrip);
   $price = str_replace(",",".",$price);
