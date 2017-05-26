@@ -22,7 +22,7 @@
     <div class="container">
       <div class="left-photo">
       	<?php
-        	if(empty($photoname)){$photoname="medias/avatarserrpic.png";}
+        	if(empty($photoname)){$photoname="medias/avatars/errpic.png";}
         	echo "<img src=\"".$photoname."\" class=\"left-photo\"/>";
       	?>
       </div>
