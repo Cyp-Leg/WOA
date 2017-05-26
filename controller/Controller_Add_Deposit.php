@@ -64,6 +64,11 @@ else
       $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
       header("Location: ../Erreur.php?erreur=".$message);
     }
+    else
+    {
+      $message="test";
+      header("Location: ../Erreur.php?erreur=".$message);
+    }
   }
   $descrip = pg_escape_string($descrip);
   $price = str_replace(",",".",$price);
