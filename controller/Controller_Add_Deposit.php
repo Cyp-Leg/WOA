@@ -24,7 +24,10 @@ $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 $userid = Users::Get_User_Id($cookie);
 $time=time();
 
-/*if(isset($_FILES['announcePic']))
+
+/* Renommer l'image upload et la stocker si le serveur le permettait
+
+if(isset($_FILES['announcePic']))
 {
   $ext=substr(strrchr($_FILES['announcePic']['name'],'.'),1);
   $nom = $userid."_".$time.".".$ext;
@@ -47,7 +50,14 @@ else if(!is_numeric($price))
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-
+else if(isset($eventdate))
+{
+  $datecheck=date_parse_from_format("Y\-m\-d", $date);
+  if (!checkdate($date['year'], $date['month'], $date['day'])) {
+    $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
+    header("Location: ../Erreur.php?erreur=".$message);
+}
+}
 else
 {
   $descrip = pg_escape_string($descrip);
