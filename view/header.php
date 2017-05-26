@@ -1,5 +1,6 @@
 <nav>
 	<div class="nav-wrapper greyperso">
+		<a href="/Accueil.php" class="brand-logo right">LCDE</a>
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="Accueil.php">Accueil</a></li>
