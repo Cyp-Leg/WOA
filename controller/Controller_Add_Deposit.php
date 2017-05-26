@@ -31,6 +31,7 @@ if(isset($_POST['eventdate']))
     $message="Format de date incorrect : respectez AAAA-MM-JJ!";
     header("Location: ../Erreur.php?erreur="$message);
   }
+}
 
 /*if(isset($_FILES['announcePic']))
 {
