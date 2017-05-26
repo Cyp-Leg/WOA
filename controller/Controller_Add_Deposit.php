@@ -52,7 +52,7 @@ else if(!is_numeric($price))
 }
 else
 {
-  if(!empty($eventdate))
+  if(isset($_POST['eventdate']))
   {
     $datecheck=date_parse_from_format("Y\-m\-d", $eventdate);
     if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
