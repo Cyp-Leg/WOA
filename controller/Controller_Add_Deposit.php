@@ -23,7 +23,7 @@ $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 $userid = Users::Get_User_Id($cookie);
 $time=time();
-
+$datecheck=date_parse_from_format("Y\-m\-d", $eventdate);
 
 /* Renommer l'image upload et la stocker si le serveur le permettait
 
@@ -50,26 +50,13 @@ else if(!is_numeric($price))
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
+else if(isset($eventdate) && !checkdate($datecheck['month'], $datecheck['day'], $datecheck['year']))
+{
+    $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
+    header("Location: ../Erreur.php?erreur=".$message);
+}
 else
 {
-  if(isset($eventdate))
-  {
-    $message="Merci d'entrer une date pour votre événement!";
-    header("Location: ../Erreur.php?erreur=".$message);
-  }
-  else if(!isset($eventdate))
-  {
-    $datecheck=date_parse_from_format("Y\-m\-d", $eventdate);
-    if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
-      $message="Date invalide, merci de respecter le format AAAA-MM-JJ!";
-      header("Location: ../Erreur.php?erreur=".$message);
-    }
-    else
-    {
-      $message="test";
-      header("Location: ../Erreur.php?erreur=".$message);
-    }
-  }
   $descrip = pg_escape_string($descrip);
   $price = str_replace(",",".",$price);
   $city=strtoupper($city);
