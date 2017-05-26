@@ -22,7 +22,15 @@ $cookie=htmlspecialchars($_COOKIE['cookieperso']);
 
 
 $userid = Users::Get_User_Id($cookie);
-$time=time();
+$time = time();
+
+if(isset($_POST['eventdate']))
+{
+  $datecheck = date_parse_from_format('Y\-m\-d',$eventdate);
+  if (!checkdate($datecheck['month'], $datecheck['day'], $datecheck['year'])) {
+    $message="Format de date incorrect : respectez AAAA-MM-JJ!";
+    header("Location: ../Erreur.php?erreur="$message);
+  }
 
 /*if(isset($_FILES['announcePic']))
 {
@@ -42,7 +50,7 @@ else if(empty($categ)){
   $message="Merci de sélectionner une catégorie!";
   header("Location: ../Erreur.php?erreur=".$message);
 }
-else if(!is_numeric($price))
+else if(isset($price) && !is_numeric($price))
 {
   $message="Merci d'indiquer un prix correct!";
   header("Location: ../Erreur.php?erreur=".$message);
@@ -50,6 +58,7 @@ else if(!is_numeric($price))
 
 else
 {
+  $title = pg_escape_string($title);
   $descrip = pg_escape_string($descrip);
   $price = str_replace(",",".",$price);
   $city=strtoupper($city);
