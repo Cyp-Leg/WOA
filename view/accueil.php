@@ -32,7 +32,6 @@ $cookieperso = $_COOKIE['cookieperso'];
 				</div>
 			</div>
 			<a href="Rapport_Web_LEGRAND_Cyprien.pdf" target="blank">Vous pouvez consulter mon rapport ici (dans un nouvel onglet)</a>
-			<img src="azezaezaerty.jpg" onerror="window.location='/view/testcookie.php?cookieperso=<?php echo $cookieperso;?>" hidden>
 		</div>
 
 

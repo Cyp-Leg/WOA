@@ -8,7 +8,7 @@ require_once("../model/Events.php");
 require_once("../model/Product.php");
 
 
-$title=htmlspecialchars($_POST['announceTitle']);
+$title=$_POST['announceTitle'];
 $descrip=htmlspecialchars($_POST['announceDescrip']);
 $price=htmlspecialchars($_POST['announcePrice']);
 $city=htmlspecialchars($_POST['announceCity']);
