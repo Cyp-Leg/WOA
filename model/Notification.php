@@ -18,7 +18,7 @@ class Notification
 	  require_once('Pdo.php');
 	  $bdheroku = connexion();
 	  
-	  $req = $bdheroku->prepare('DELETE FROM Notification WHERE announceid= ::annid');
+	  $req = $bdheroku->prepare('DELETE FROM Notification WHERE announceid= :annid');
 	  $req->bindParam(':annid',$annid);
 	  
 	  $req->execute();
