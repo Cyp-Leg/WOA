@@ -13,6 +13,16 @@ class Notification
 
     $req->execute();
   }
+  
+  public static function Delete_Notification_From_Announce($annid){
+	  require_once('Pdo.php');
+	  $bdheroku = connexion();
+	  
+	  $req = $bdheroku->prepare('DELETE FROM Notification WHERE announceid= ::annid');
+	  $req->bindParam(':annid',$annid);
+	  
+	  $req->execute();
+  }
 
   public static function Get_Users_Notification($userid){
     require_once('Pdo.php');
