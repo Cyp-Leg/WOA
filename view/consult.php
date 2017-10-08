@@ -39,10 +39,9 @@
 		    		<tbody>
 		          <tr><th>Photo</th>
 									<th>Titre</th>
-		              <th>Lieu</th>
+		              <th>Lieu</th>				  
 		              <th>Prix</th>
 		          </tr>
-				  <script> alert('ALERTE!'); </script>
 		          <?php
 		          foreach($lesEvents as $row)
 		          {
