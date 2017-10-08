@@ -28,7 +28,7 @@ $cookieperso = $_COOKIE['cookieperso'];
 			<div class="row z-depth-4 blue-grey lighten-5 general-container">
 				<div class="input-field col s12">
 					<h4>Qu'est-ce que le coin des étudiants?</h4>
-					<p>FAIL ! Cookie :</p>
+					<p>FAIL ! Cookie : <?php echo $cookieperso?></p>
 				</div>
 			</div>
 			<a href="Rapport_Web_LEGRAND_Cyprien.pdf" target="blank">Vous pouvez consulter mon rapport ici (dans un nouvel onglet)</a>
