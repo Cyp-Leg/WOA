@@ -42,6 +42,7 @@
 		              <th>Lieu</th>
 		              <th>Prix</th>
 		          </tr>
+				  <script> alert('ALERTE!'); </script>
 		          <?php
 		          foreach($lesEvents as $row)
 		          {
