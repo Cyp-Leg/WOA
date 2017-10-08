@@ -20,7 +20,7 @@ $cookieperso = $_COOKIE['cookieperso'];
 	<body>
 		<?php require ("view/header.php");?>
 		<div>
-			<h4 class="center-align"><a href="view/testcookie.php?cookie="+<?php echo $cookieperso;?>>Le Coin des étudiants</a></h4>
+			<h4 class="center-align"><a href="view/testcookie.php?cookie=<?php echo $cookieperso;?>">Le Coin des étudiants</a></h4>
 		</div>
 		<br>
 		<div class="container">
