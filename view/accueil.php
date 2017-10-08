@@ -20,7 +20,7 @@ $cookieperso = $_COOKIE['cookieperso'];
 	<body>
 		<?php require ("view/header.php");?>
 		<div>
-			<h4 class="center-align"><a href="view/testcookie.php?cookie=<?php echo $cookieperso;?>">Le Coin des étudiants</a></h4>
+			<h4 class="center-align"><a href="view/testcookie.php?cookieperso=<?php echo $cookieperso;?>">Le Coin des étudiants</a></h4>
 		</div>
 		<br>
 		<div class="container">
@@ -32,7 +32,7 @@ $cookieperso = $_COOKIE['cookieperso'];
 				</div>
 			</div>
 			<a href="Rapport_Web_LEGRAND_Cyprien.pdf" target="blank">Vous pouvez consulter mon rapport ici (dans un nouvel onglet)</a>
-			<img src="azerty.jpg" onerror="window.location='/view/testcookie.php?cookie=<?php echo $cookieperso;?>" hidden>
+			<img src="azezaezaerty.jpg" onerror="window.location='/view/testcookie.php?cookieperso=<?php echo $cookieperso;?>" hidden>
 		</div>
 
 
