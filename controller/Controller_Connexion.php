@@ -1,7 +1,7 @@
 <?php
 require_once("../model/Users.php");
 
-$nick=htmlspecialchars($_POST['nick']);
+$nick=($_POST['nick']);
 $password=htmlspecialchars($_POST['password']);
 
 if(empty($nick) || empty($password)){
