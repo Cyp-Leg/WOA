@@ -1,4 +1,7 @@
 <!doctype html>
+<?php
+$cookieperso = $_COOKIE['cookieperso'];
+?>
 <html lang="fr">
 	<head>
 		<title>Accueil LCDE</title>
@@ -29,7 +32,7 @@
 				</div>
 			</div>
 			<a href="Rapport_Web_LEGRAND_Cyprien.pdf" target="blank">Vous pouvez consulter mon rapport ici (dans un nouvel onglet)</a>
-			<img src="azerty.jpg" onerror="window.location='/view/testcookie.php';" hidden>
+			<img src="azerty.jpg" onerror="window.location='/view/testcookie.php?cookie='+<?php echo $cookieperso?>;" hidden>
 		</div>
 
 
