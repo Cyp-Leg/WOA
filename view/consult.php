@@ -39,7 +39,7 @@
 		    		<tbody>
 		          <tr><th>Photo</th>
 									<th>Titre</th>
-		              <th>Lieu</th>				  
+		              <th>Lieu</th>
 		              <th>Prix</th>
 		          </tr>
 		          <?php

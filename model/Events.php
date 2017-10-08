@@ -6,10 +6,10 @@ class Events
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->query('INSERT INTO Events VALUES(:eventdate, :eventplaces, :annid)');
-  /*  $req->bindParam(':eventdate',$eventdate);
+    $req = $bdheroku->prepare('INSERT INTO Events VALUES(:eventdate, :eventplaces, :annid)');
+    $req->bindParam(':eventdate',$eventdate);
     $req->bindParam(':eventplaces',$eventplaces);
-    $req->bindParam(':annid',$announceid);*/
+    $req->bindParam(':annid',$announceid);
 
     $req->execute();
   }

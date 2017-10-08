@@ -125,9 +125,9 @@ class Users
     require_once('Pdo.php');
     $bdheroku = connexion();
 
-    $req = $bdheroku->query("SELECT userspassword FROM Users WHERE usersnick= '".$usernick."'");
+    $req = $bdheroku->prepare("SELECT userspassword FROM Users WHERE usersnick= '".$usernick."'");
     //$req->bindParam(':usersnick',$usernick);
-    //$req->execute();
+    $req->execute();
 
     $data = $req->fetch();
 
