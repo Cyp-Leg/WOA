@@ -2,3 +2,4 @@ Options +FollowSymlinks -MultiViews
 RewriteEngine on
 
 RewriteRule ^deposit$ /Deposit.php
+RewriteRule ^connexion$ /Connexion.php
