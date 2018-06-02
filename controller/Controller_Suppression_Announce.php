@@ -15,5 +15,5 @@ Product::Delete_Product($annid);
 Events::Delete_Event($annid);
 Announce::Delete_Announce($annid);
 
-header("Location: ../Administrateur.php");
+header("Location: /administrateur");
 ?>

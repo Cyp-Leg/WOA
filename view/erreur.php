@@ -11,10 +11,10 @@
 		<meta name="Author" content="CyprienLegrand">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		 <?php include ("css/css_config.php") ?>
+		 <?php include ("/css/css_config.php") ?>
 	</head>
 	<body>
-		<?php require ("view/header.php");?>
+		<?php require ("/view/header.php");?>
 		<div>
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>

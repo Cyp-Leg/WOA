@@ -1,5 +1,5 @@
 <?php
-require_once ("../model/Users.php");
+require_once ("/model/Users.php");
 
 $firstname = htmlspecialchars($_POST['firstname']);
 $lastname = htmlspecialchars($_POST['lastname']);
@@ -34,8 +34,8 @@ else {
 
 
   Users::Add_User($firstname,$lastname,$nick,$mail,$gender,$password,$cookiecode);
-  header("Location: ../Accueil.php");
+  header("Location: /accueil");
 }
 
-require_once('view/inscription.php');
+require_once('/view/inscription.php');
 ?>

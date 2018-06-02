@@ -12,7 +12,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 		<?php include ("css/css_config.php") ?>
-	  <link rel="icon" href="medias/favicon.ico" />
+	  <link rel="icon" href="/medias/favicon.ico" />
 	</head>
 	<body>
 		<?php require ("view/header.php");?>
@@ -49,7 +49,7 @@
 	              $cityname = City::Get_City_Name($row['cityid']);
 	              echo "<td>".$cityname."</td>";
 	              echo "<td>".$row['announceprice']."</td>";
-                echo "<td> <a href=\"controller/Controller_Suppression_Announce.php?annid=".$row['announceid']."\">Supprimer </a> </td></tr>";
+                echo "<td> <a href=\"/controller/Controller_Suppression_Announce.php?annid=".$row['announceid']."\">Supprimer </a> </td></tr>";
 	            } ?>
 					</tbody>
 				</table>
@@ -82,7 +82,7 @@
 	              echo "<td>".$row['userslastname']."</td>";
 	              echo "<td>".$row['usersfirstname']."</td>";
                 echo "<td>".$row['usersmail']."</td>";
-								echo "<td> <a href=\"controller/Controller_Suppression_User.php?userid=".$row['usersid']."\">Supprimer </a> </td></tr>";
+								echo "<td> <a href=\"/controller/Controller_Suppression_User.php?userid=".$row['usersid']."\">Supprimer </a> </td></tr>";
 	            } ?>
 					</tbody>
 				</table>

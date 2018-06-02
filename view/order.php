@@ -22,7 +22,7 @@
       <a href="mailto:<?php echo $usersmail; ?>">Contacter le vendeur</a>
     </div>
 
-		<form action="Validate.php" method="POST" enctype="multipart/form-data">
+		<form action="/valider" method="POST" enctype="multipart/form-data">
 
 		  <div class="container">
 				<label for="prodQuantity">Quantité désirée : </label>

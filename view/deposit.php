@@ -11,10 +11,10 @@
 		<meta name="Author" content="CyprienLegrand">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		 <?php include ("css/css_config.php") ?>
+		 <?php include ("/css/css_config.php") ?>
 	</head>
 	<body>
-		<?php require ("view/header.php");?>
+		<?php require ("/view/header.php");?>
 		<div>
 			<h4 class="center-align">Le Coin des étudiants</h4>
 		</div>
@@ -32,7 +32,7 @@
     			</tr>
     		</thead>
     		<tbody>
-          <form class="col s12" method="post" action="controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
+          <form class="col s12" method="post" action="/controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
 
 						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'évenement : </label></td>
               	<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>
@@ -98,7 +98,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					<form class="col s12" method="post" action="controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
+					<form class="col s12" method="post" action="/controller/Controller_Add_Deposit.php" enctype="multipart/form-data">
 
 						<tr><td><label for="announceTitle"><div class="oblig">*</div>Titre de l'annonce : </label></td>
 								<td><input type="text" name="announceTitle" id="announceTitle"></td></tr>

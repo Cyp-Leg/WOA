@@ -11,7 +11,7 @@
 		<meta name="Author" content="CyprienLegrand">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		<link rel="icon" href="medias/favicon.ico" />
+		<link rel="icon" href="/medias/favicon.ico" />
 		 <?php include ("css/css_config.php") ?>
 	</head>
 	<body>
@@ -19,7 +19,7 @@
 		<div>
 			<h4 class="center-align">Connexion</h4>
       <div class="container">
-        <form class="col s12" method="POST" action="controller/Controller_Connexion.php">
+        <form class="col s12" method="POST" action="/controller/Controller_Connexion.php">
           <div class="row">
             <div class="input-field col s12">
             	<label for="nick">Pseudo</label>
@@ -39,7 +39,7 @@
 								<button class="btn waves-effect waves-light" id="submit" value="valider">Connexion
 								<i class="material-icons right">send</i></td>
 							</button>
-							<td><a class="waves-effect waves-light btn" href="Inscription.php"><i class="material-icons left">library_add</i>Inscription</a></td></tr>
+							<td><a class="waves-effect waves-light btn" href="/inscription"><i class="material-icons left">library_add</i>Inscription</a></td></tr>
 						</table>
 					</div>
 				</form>

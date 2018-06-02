@@ -24,5 +24,5 @@ foreach($lesAnnonces as $row)
 Users::Delete_User($userid);
 
 
-header("Location: ../Administrateur.php");
+header("Location: /administrateur");
 ?>

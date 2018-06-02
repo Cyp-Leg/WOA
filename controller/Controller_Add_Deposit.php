@@ -1,11 +1,11 @@
 <?php
-require_once("../model/Users.php");
-require_once("../model/City.php");
+require_once("/model/Users.php");
+require_once("/model/City.php");
 //require_once("../controller/Controller_Etat_Utilisateur.php");
-require_once("../model/Announce.php");
-require_once("../model/Photo.php");
-require_once("../model/Events.php");
-require_once("../model/Product.php");
+require_once("/model/Announce.php");
+require_once("/model/Photo.php");
+require_once("/model/Events.php");
+require_once("/model/Product.php");
 
 
 $title=$_POST['announceTitle'];
@@ -83,7 +83,7 @@ else
       Product::Add_Product($quantity,$annid);
     }
 
-    header('Location: ../Consult.php');
+    header('Location: /annonces');
   }
 }
 

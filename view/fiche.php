@@ -11,7 +11,7 @@
 		<meta name="Author" content="CyprienLegrand">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-		 <?php include ("/css_config.php"); ?>
+		 <?php include ("css_config.php"); ?>
 	</head>
 	<body>
 		<?php require ("view/header.php");?>
@@ -36,7 +36,7 @@
         </ul>
       </div>
 			<div class="command">
-				<a href="/Order.php?prod=<?php echo $annprop['announceid'];?>" class="btn waves-effect waves-light" id="submit" value="valider">Commander
+				<a href="/commander/<?php echo $annprop['announceid'];?>" class="btn waves-effect waves-light" id="submit" value="valider">Commander
       		<i class="material-icons right">shopping_cart</i>
 				</a>
 			</div>
