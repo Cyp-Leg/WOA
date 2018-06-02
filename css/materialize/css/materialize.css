@@ -4022,6 +4022,7 @@ nav.nav-extended {
 
 nav.nav-extended .nav-wrapper {
   height: auto;
+  padding-left: 15px;
 }
 
 nav a {
