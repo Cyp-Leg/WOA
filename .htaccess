@@ -13,5 +13,5 @@ RewriteRule ^annonces$ /Consult.php
 RewriteRule ^administrateur /Administrateur.php
 RewriteRule ^inscription /Inscription.php
 RewriteRule ^mescommandes$ /Personnal_orders.php
-RewriteRule ^succes$ /Success.php
-RewriteRule ^valide$ /Validate.php
+RewriteRule ^succes/(.)*$ /Success.php?code=
+RewriteRule ^valider$ /Validate.php

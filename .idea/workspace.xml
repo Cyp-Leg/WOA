@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb34ed5a-e0fc-46ab-ad9d-bfdc2b458d5e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/css/materialize/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/materialize/css/materialize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Controller_Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Controller_Validate.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,63 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Controller_Test_errpic.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/Controller_Test_errpic.php">
+      <file leaf-file-name="Controller_Validate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/Controller_Validate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/inscription.php">
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-952" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/order.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="37" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css_config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/css_config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="53" column="4" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="materialize.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/materialize/css/materialize.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="4024" column="13" lean-forward="true" selection-start-line="4024" selection-start-column="13" selection-end-line="4024" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -87,11 +44,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fiche.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Fiche.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="Controller_Page_Fiche.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/Controller_Page_Fiche.php">
           <provider selected="true" editor-type-id="text-editor" />
@@ -102,6 +54,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>href</find>
+      <find>nav-wrapper</find>
       <find>logos</find>
     </findStrings>
   </component>
@@ -123,12 +76,13 @@
         <option value="$PROJECT_DIR$/view/consult.php" />
         <option value="$PROJECT_DIR$/view/connexion.php" />
         <option value="$PROJECT_DIR$/view/order.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/view/deposit.php" />
         <option value="$PROJECT_DIR$/view/fiche.php" />
         <option value="$PROJECT_DIR$/view/header.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/materialize/css/materialize.css" />
+        <option value="$PROJECT_DIR$/controller/Controller_Validate.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
       </list>
     </option>
   </component>
@@ -198,19 +152,6 @@
               <item name="materialize" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="WOA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WOA" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="materialize" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="materialize.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="WOA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WOA" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -246,12 +187,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527974907262</updated>
-      <workItem from="1527974908731" duration="7014000" />
+      <workItem from="1527974908731" duration="7318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7014000" />
+    <option name="totallyTimeSpent" value="7318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -307,9 +248,6 @@
           <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/Controller_Validate.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller_Inscription.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -378,13 +316,6 @@
     <entry file="file://$PROJECT_DIR$/view/success.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/view/deposit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -412,6 +343,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/view/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/materialize/css/materialize.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/materialize/css/materialize.min.css.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/materialize/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="4018" column="18" lean-forward="true" selection-start-line="4018" selection-start-column="18" selection-end-line="4018" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/css_config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -419,22 +378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/Controller_Test_errpic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/view/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -445,10 +392,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/materialize/css/materialize.css">
+    <entry file="file://$PROJECT_DIR$/controller/Controller_Validate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="4024" column="13" lean-forward="true" selection-start-line="4024" selection-start-column="13" selection-end-line="4024" selection-end-column="13" />
+        <state relative-caret-position="493">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
