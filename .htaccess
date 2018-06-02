@@ -7,3 +7,4 @@ Rewriterule ^(.*)$ /index.php/ [L]
 RewriteRule ^deposit$ /Deposit.php
 RewriteRule ^connexion$ /Connexion.php [L]
 RewriteRule ^annonce/(.*)$ /Fiche.php?ann=$1 [QSA]
+RewriteRule ^commande/(.*)$ /Order.php?prod=$1 [QSA]
