@@ -10,7 +10,7 @@ RewriteRule ^annonce/(.*)$ /Fiche.php?ann=$1 [QSA]
 RewriteRule ^commander/(.*)$ /Order.php?prod=$1 [QSA]
 RewriteRule ^accueil$ /Accueil.php
 RewriteRule ^annonces$ /Consult.php
-RewriteRule ^administration$ /Administrateur.php
+RewriteRule ^administrateur /Administrateur.php
 RewriteRule ^inscription /Inscription.php
 RewriteRule ^mescommandes$ /Personnal_orders.php
 RewriteRule ^succes$ /Success.php
