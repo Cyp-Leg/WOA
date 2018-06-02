@@ -14,7 +14,7 @@
 		 <?php include ("/css_config.php"); ?>
 	</head>
 	<body>
-		<?php require ("/view/header.php");?>
+		<?php require ("view/header.php");?>
 		<div>
 			<h4 class="center-align"><?php echo $annprop['announcetitle']; ?></h4>
 		</div>
