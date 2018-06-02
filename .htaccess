@@ -6,4 +6,4 @@ Rewritecond %{REQUEST_URI} !^/index.php
 Rewriterule ^(.*)$ /index.php/ [L]
 RewriteRule ^deposit$ /Deposit.php
 RewriteRule ^connexion$ /Connexion.php [L]
-RewriteRule ^annonce$ /Fiche.php?%{QUERY_STRING}
+RewriteRule ^annonce/(.*)$ /Fiche.php?ann=$1 [QSA]
