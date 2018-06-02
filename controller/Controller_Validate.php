@@ -27,7 +27,7 @@
 
 
       $message='Commande validée!';
-      header('Location: succes'.$message);
+      header('Location: succes/'.$message);
     }
 
 ?>
