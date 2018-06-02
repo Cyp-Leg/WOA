@@ -1,9 +1,7 @@
 <nav>
 	<div class="nav-wrapper greyperso">
 		<a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-		<div class="logosite">
-            <a href="/accueil"> LCDE</a>
-        </div>
+		<a href="/accueil" class="logosite"> LCDE</a>
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="/accueil">Accueil</a></li>
 			<li><a href="/deposit">Désposer une annonce</a></li>
