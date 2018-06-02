@@ -5,7 +5,7 @@
 		<ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="/Accueil.php">Accueil</a></li>
 			<li><a href="/deposit">Désposer une annonce</a></li>
-			<li><a href="/sConsult.php">Consulter les annonces</a></li>
+			<li><a href="/Consult.php">Consulter les annonces</a></li>
 			<?php if(isLogged()){ ?><li><a href="Personnal_orders.php">Mes commandes</a></li><?php } ?>
 			<?php if(isAdmin()){ ?><li><a href="Administrateur.php">Administrateur</a></li><?php } ?>
 		  <?php if(!isLogged()){ ?><li><a href="Connexion.php">Connexion</a></li><?php } ?>
